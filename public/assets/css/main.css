@@ -1,0 +1,666 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto.ttf);
+}
+
+@font-face {
+    font-family: "MuseoCyrl500";
+    src: url(../font/MuseoCyrl500.otf);
+}
+
+@font-face {
+    font-family: "MuseoCyrl900";
+    src: url(../font/MuseoCyrl900.otf);
+}
+
+@font-face {
+    font-family: "MuseoCyrl100";
+    src: url(../font/MuseoCyrl100.otf);
+}
+
+@font-face {
+    font-family: "Robotolight";
+    src: url(../font/Robotolight.ttf);
+}
+
+body {
+    font-family: Roboto;
+}
+
+.right_nav {
+    background: transparent;
+    -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0.12), 0 0px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0.12), 0 0px 0px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+}
+
+nav ul a {
+    color: black !important;
+    font-size: 20px !important;
+    padding: 0 27px !important;
+}
+
+.modal_nav_item {
+    margin-right: 53px;
+    margin-left: 43px;
+    margin-top: 25px;
+}
+
+.modal_text_item {
+    position: relative;
+    top: -15px;
+    left: 13px;
+    Font-Size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul a:hover {
+    background-color: transparent !important;
+}
+
+.img_feedback {
+    position: absolute;
+    right: 47px;
+    top: 22px;
+}
+
+.hover_a_nav:hover:after {
+    position: relative;
+    bottom: 10px;
+    display: block;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: #FFC700;
+    transition: width .3s ease-in-out;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.hover_a_nav {
+    padding-top: 13px;
+    font-weight: 900;
+}
+
+#header {
+    background-image: url(../img/01be865dc62a8af63d4878bb867364e0.jpg);
+    height: 503px;
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header_main_text {
+    background-image: url(../img/Group22.png);
+    height: 1286px;
+    background-repeat: no-repeat;
+}
+
+.header_main_text_p {
+    color: #4B3E5C;
+    font-family: "MuseoCyrl900";
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 138px;
+    padding-left: 49px;
+}
+
+.header_pod_text {
+    font-family: "MuseoCyrl500";
+    color: white;
+    font-size: 26px;
+    padding-left: 49px;
+    margin: 0;
+}
+
+.btn_header {
+    background-color: #4B3E5C !important;
+    color: white !important;
+    font-family: Roboto;
+    font-weight: 300;
+    border-radius: 60px !important;
+    width: 286px !important;
+    height: 83px !important;
+    font-size: 20px !important;
+    padding-top: 22px !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    margin-left: 49px;
+    margin-top: 42px;
+}
+
+.btn_medal {
+    background-color: #4B3E5C !important;
+    color: white !important;
+    font-family: Roboto;
+    font-weight: 300;
+    border-radius: 60px !important;
+    width: 378px !important;
+    height: 101px !important;
+    font-size: 20px !important;
+    padding-top: 33px !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.info_z {
+    font-family: "MuseoCyrl900";
+    font-size: 32px;
+    line-height: 30px;
+    text-align: center;
+    color: #4B3E5C;
+}
+
+.info_z_1 {
+    font-family: "MuseoCyrl500";
+    font-size: 32px;
+    line-height: 30px;
+    text-align: center;
+    color: #4B3E5C;
+}
+
+.info_z_down {
+    font-family: "Robotolight";
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+.img_left_frame {
+    z-index: -1;
+    position: relative;
+    top: 22em;
+}
+
+.img_right_frame {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
+
+.stages_background {
+    background-color: rgba(229, 229, 229, 0.45);
+    padding-top: 30px;
+    padding-bottom: 44px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.text_stages {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-top: 26px;
+    padding: 0px 30px 0px 30px;
+}
+
+.stages_img_padding {
+    margin-bottom: 72px;
+    margin-top: 30px;
+}
+
+.grid_col_stages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.btn_download {
+    font-family: "MuseoCyrl100";
+    line-height: 20px !important;
+    text-align: center;
+    color: #000000 !important;
+    background-color: #FFC700 !important;
+    width: 100%;
+    height: 109px !important;
+    font-size: 32px !important;
+    margin-top: 22px;
+}
+
+.img_dowmload {
+    top: 27px;
+    right: 45px;
+}
+
+.flex_align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nominations_title {
+    color: #4B3E5C;
+    font-family: "MuseoCyrl500";
+    font-size: 28px;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 54px;
+    margin: 0 !important;
+}
+
+.card_nominations {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(17, 17, 17, 0.25) !important;
+    border-radius: 26px !important;
+    height: 550px;
+}
+
+#nominations {
+    background: linear-gradient(359.14deg, #FBFAFA 3.26%, #E5E5E5 98.37%);
+    margin-top: 42px;
+}
+
+.card-image_nominations {
+    padding: 14px 38px 0px 38px;
+}
+
+.img_nominations_card {
+    width: 100%;
+}
+
+.nominations_card_text_title {
+    font-family: "MuseoCyrl500";
+    font-size: 18px;
+    line-height: 22px;
+    color: #4B3E5C !important;
+    padding-top: 19px;
+}
+
+.nominations_card_text_body {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding-top: 0px;
+}
+
+.card .card-content {
+    padding: 19px 28px 0px 29px;
+    border-radius: 0 0 2px 2px;
+}
+
+.medal_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 31px;
+    padding-bottom: 42px;
+    padding-right: 78px;
+}
+
+.medal_block {
+    background: rgba(229, 229, 229, 0.45);
+    margin-top: 59px;
+    margin-bottom: 61px;
+}
+
+.medal_margin {
+    margin-top: 70px;
+}
+
+#contact {
+    background: linear-gradient(107.83deg, #FFC700 2.69%, #FF6B00 100%);
+    z-index: -1;
+    height: 500px;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0 !important;
+}
+
+.grid_contact_main {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.img_contact {
+    position: relative;
+    top: -15px;
+    z-index: 0;
+}
+
+.index_contact {
+    z-index: 1;
+    padding-right: 174px;
+}
+
+.contact_title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 53px;
+}
+
+.input_contact {
+    border: 1px solid #FFFFFF !important;
+    border-radius: 30px !important;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 16px;
+    color: #FFFFFF;
+    height: 48px !important;
+    padding: 0px 0px 0px 38px !important;
+    max-width: 96%;
+}
+
+.text_area_cotnatc,
+.text_area_cotnatc:focus {
+    border: 1px solid #FFFFFF !important;
+    border-radius: 30px !important;
+    height: 115px;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 16px;
+    color: #FFFFFF !important;
+    padding: 10px 0px 0px 38px !important;
+}
+
+textarea:focus {
+    outline-offset: 0 !important;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+.input_contact::placeholder,
+.text_area_cotnatc::placeholder {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-right: 38px;
+}
+
+.a-right {
+    text-align: right;
+}
+
+.btn_contact {
+    background: #4B3E5C;
+    border-radius: 30px;
+    margin-top: 26px;
+    height: 46px;
+    width: 226px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    border: 0;
+}
+
+.organizme_title {
+    font-family: "MuseoCyrl500";
+    font-size: 28px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #4B3E5C;
+    margin-top: 81px;
+    text-align: center;
+    margin-bottom: 71px;
+}
+
+.air_text_title {
+    font-family: "RobotoLight";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #111111;
+    padding-left: 20px;
+}
+
+.air_href {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4B3E5C;
+    position: relative;
+    top: 2px;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.air_marker {
+    list-style-image: url(../img/Vector.png);
+    list-style-position: inside;
+    margin-bottom: 26px;
+    padding-left: 20px !important;
+}
+
+.air_info_body {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #111111;
+    padding-left: 20px;
+}
+
+.air_li {
+    position: relative;
+    top: -8px;
+    left: 24px;
+}
+
+.m81 {
+    margin-bottom: 81px;
+}
+
+#partners {
+    background: rgba(229, 229, 229, 0.45);
+    padding-bottom: 77px;
+}
+
+.partners_title {
+    font-family: "MuseoCyrl500";
+    font-size: 28px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #4B3E5C;
+    padding-bottom: 51px;
+    padding-top: 70px;
+    margin: 0px;
+    text-align: center;
+}
+
+.flex_cetnter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_contact {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 61px;
+}
+
+#footer {
+    background: #4B3E5C;
+}
+
+.footer_copy {
+    font-family: "RobotoLight";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 38px;
+    margin-bottom: 25px;
+}
+
+.btn_footer {
+    background: linear-gradient(95.5deg, #FFC700 6.38%, #FF6B00 94.74%);
+    border-radius: 60px !important;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px !important;
+    line-height: 23px;
+    letter-spacing: 0.2em !important;
+    color: #FFFFFF !important;
+    height: 68px !important;
+    width: 302px !important;
+    padding-top: 17px !important;
+    margin-top: 49px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* media */
+
+@media only screen and (max-width: 1400px) {
+    .grid_col_stages {
+        grid-template-columns: 1fr;
+    }
+    .img_dowmload {
+        top: 27px;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1201px) {
+    .card_nominations {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(17, 17, 17, 0.25) !important;
+        border-radius: 26px !important;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .img_dowmload {
+        top: 0px;
+        right: 0;
+        float: left;
+    }
+    .btn_footer {
+        width: 100% !important;
+    }
+    .medal_text {
+        font-size: 20px;
+        line-height: 26px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    .input_contact {
+        max-width: 85%;
+    }
+    .img_contact {
+        position: relative;
+        top: -15px;
+        z-index: 0;
+        width: 100%;
+        display: none;
+    }
+    .index_contact {
+        z-index: 1;
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    #contact {
+        background: linear-gradient(107.83deg, #FFC700 2.69%, #FF6B00 100%);
+        z-index: -1;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .grid_contact_main {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .btn_download {
+        font-size: 16px !important;
+        padding-top: 26px !important;
+    }
+    .hide-on-med-and-down {
+        display: block !important;
+    }
+    .header_main_text {
+        background-image: url(../img/Group22.png);
+        height: 650px;
+        background-repeat: no-repeat;
+    }
+    .header_main_text_p {
+        color: #4B3E5C;
+        font-size: 30px;
+        line-height: 62px;
+        text-transform: uppercase;
+        margin: 0;
+        padding-top: 138px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .header_pod_text {
+        color: white;
+        font-size: 22px;
+        padding-left: 0;
+        margin: 0;
+        text-align: center;
+        padding: 15px;
+    }
+    .btn_header {
+        background-color: #4B3E5C !important;
+        color: white !important;
+        font-weight: 300;
+        border-radius: 60px !important;
+        width: 230px !important;
+        height: 70px !important;
+        font-size: 20px !important;
+        padding-top: 18px !important;
+        letter-spacing: 3px !important;
+        text-transform: uppercase;
+        margin-left: 0px;
+        margin-top: 42px;
+    }
+    .w-100 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
