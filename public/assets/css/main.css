@@ -550,6 +550,163 @@ textarea:focus {
     text-align: right;
 }
 
+.grid_main_form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main_form_header {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 120px;
+    margin-bottom: 40px;
+}
+
+.modal_img_form_main {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.modal .modal-content {
+    padding: 0px 90px 0px 81px !important;
+}
+
+.input_main_form_modal,
+.select-dropdown {
+    border: 1px solid #000000 !important;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 19px;
+    color: #000000;
+    padding: 0px 0px 0px 10px !important;
+    margin-top: 6px !important;
+    margin-bottom: 25px !important;
+}
+
+.modal_input_label {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.input_date {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.date_input_1 {
+    width: 94px !important;
+    margin-right: 20px !important;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black !important;
+    border-radius: 2px;
+    height: 3rem;
+}
+
+.date_input_2 {
+    width: 132px !important;
+    margin-right: 20px !important;
+}
+
+.date_input_3 {
+    width: 132px !important;
+}
+
+.date_input_4 {
+    width: 220px !important;
+}
+
+.date_input_5 {
+    width: 220px !important;
+}
+
+.soc_image {
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+}
+
+.team_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.team_down_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.team_input,
+.team_input_1 {
+    width: 410px !important;
+}
+
+.team_input {
+    margin-bottom: 15px !important;
+}
+
+.img_plus {
+    float: left;
+}
+
+.text_plus {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    position: relative;
+    top: 13px;
+    left: 24px;
+}
+
+#added_news {
+    cursor: pointer;
+}
+
+.presi_text {
+    font-family: "RobotoLight";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.info_presi {
+    font-family: "RobotoLight";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 16px;
+}
+
+#ucaht_1 {
+    padding-top: 20px;
+    display: none;
+}
+
 
 /* media */
 

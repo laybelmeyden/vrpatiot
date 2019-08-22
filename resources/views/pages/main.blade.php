@@ -4,7 +4,7 @@
 <section id="nav" class="container">
     <nav class="right_nav">
     <div class="nav-wrapper">
-    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse">Меню</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down li_items">
         <li>
           <a href="#info">
@@ -23,7 +23,7 @@
             Организатор
           </div>  
         </a></li>
-        <li><a href="">
+        <li><a href="#contact">
           <div class="modal_nav_item">
             <img src="assets/img/Rectangle2.png" alt="" class="img_feedback" />
               <span class="modal_text_item">
@@ -46,10 +46,128 @@
   <p class="header_main_text_p">Всероссийский<br> конкурс</p>
   <p class="header_pod_text">интерактивных военно-исторических <br>реконструкций</p>
   <div class="w-100">
-  <a class="waves-effect waves-light btn btn_header">Участвовать</a>
+  <a class="waves-effect waves-light btn btn_header modal-trigger" href="#modal1">Участвовать</a>
   </div>
 </div> 
 </section>
+<div id="modal1" class="modal modal-fixed-footer">
+    <img src="assets/img/modal_form.png" alt="" class="modal_img_form_main">
+    <div class="modal-content">
+      <div class="row">
+      <div class="col s12 xl12">
+      <h4 class="main_form_header">Чтобы стать участником Всероссийского конкурса интерактивных военно-исторических реконструкций,заполните данную заявку и отправьте ее.</h4>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Фамилия, имя, отчество </label>
+      <input class="input_main_form_modal" type="text" name="FIO" placeholder="" value="" required>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Дата рождения</label>
+      <div>
+      <input class="input_main_form_modal date_input_1" type="number" min="0" max="31" step="1"  name="day" placeholder="День" value="" required>
+      <label for="" class="modal_input_label"></label>
+      <input class="input_main_form_modal date_input_2" type="number" min="0" max="12" step="1"  name="mouth" placeholder="Месяц" value="" required>
+      <label for="" class="modal_input_label"></label>
+      <input class="input_main_form_modal date_input_3" type="number" min="0" max="2019" step="1"  name="years" placeholder="Год" value="" required>
+      </div>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">E-mail</label>
+      <input class="input_main_form_modal" type="email" name="email" placeholder="" value="" required>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Телефон</label>
+      <input class="input_main_form_modal" type="text" name="phone" placeholder="" value="" required>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Соц. сети</label>
+      <div class="input_date">
+      <div>
+      <img src="assets/img/vk-social-logotype.png" alt="" class="soc_image">
+      <input class="input_main_form_modal date_input_4" type="text"  name="vk" placeholder="" value="">
+      </div>
+      <div>
+      <img src="assets/img/facebook-logo-button.png" alt="" class="soc_image">
+      <input class="input_main_form_modal date_input_4" type="text"  name="facebook" placeholder="" value="">
+      </div>
+      <div>
+      <img src="assets/img/instagram.png" alt="" class="soc_image">
+      <input class="input_main_form_modal date_input_5" type="text"   name="instagram" placeholder="" value="">
+      </div>
+      </div>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Город</label>
+      <input class="input_main_form_modal" type="text" name="city" placeholder="" value="" required>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Образование</label>
+      <input class="input_main_form_modal" type="text" name="edu" placeholder="" value="" required>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Название проекта</label>
+      <input class="input_main_form_modal" type="text" name="name_project" placeholder="" value="" required>
+      </div>
+      <div class="form_item" style="    margin-bottom: 25px !important;">
+      <label for="" class="modal_input_label">Номинация</label>
+      <select class='browser-default' name="select_mon">
+        <option value="Технологии виртуальной (VR) и дополненной реальности (AR) в создании военно-исторической реконструкции">Технологии виртуальной (VR) и дополненной реальности (AR) в создании военно-исторической реконструкции</option>
+        <option value="3D моделирование, современная видеообработка и 2D анимации в создании военно-исторической реконструкции.">3D моделирование, современная видеообработка и 2D анимации в создании военно-исторической реконструкции.</option>
+        <option value="Компьютерные игры и обучающие программы.">Компьютерные игры и обучающие программы.</option>
+      </select>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Краткое описание проекта (300 символов)</label>
+      <textarea class="input_main_form_modal" type="text" name="opis_proj" placeholder="" value="" maxlength="300" required style="height: 116px; padding-top: 20px !important;"></textarea>
+      </div>
+      <div class="form_item">
+      <label for="" class="modal_input_label">Команда</label>
+      <div class="team_grid">
+      <div class="team_down_grid">
+      <div>
+      <input class="input_main_form_modal team_input" type="text" name="name_team" placeholder="ФИО" value="" required>
+      <input class="input_main_form_modal team_input_1" type="email" name="email_team" placeholder="E-mail" value="" required>
+      </div>
+      </div>
+      <div class="team_down_grid">
+      <div>
+      <input class="input_main_form_modal team_input" type="text" name="role_team" placeholder="Роль в команде" value="" required>
+      <input class="input_main_form_modal team_input_1" type="text" name="phone_team" placeholder="Телефон" value="" required>
+      </div>
+      </div>
+      </div>
+      <div class="form_item" id="added_news">
+        <img src="assets/img/plus.png" alt="" class="img_plus">
+        <p class="text_plus">Добавить еще одного участника команды</p>
+      </div>
+      </div>
+      <div class="form_item" id="ucaht_1">
+      <label for="" class="modal_input_label">Доп. участник</label>
+      <div class="team_grid">
+      <div class="team_down_grid">
+      <div>
+      <input class="input_main_form_modal team_input" type="text" name="name_team_1" placeholder="ФИО" value="">
+      <input class="input_main_form_modal team_input_1" type="email" name="email_team_1" placeholder="E-mail" value="">
+      </div>
+      </div>
+      <div class="team_down_grid">
+      <div>
+      <input class="input_main_form_modal team_input" type="text" name="role_team_1" placeholder="Роль в команде" value="">
+      <input class="input_main_form_modal team_input_1" type="text" name="phone_team_1" placeholder="Телефон" value="">
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="form_item">
+      <p class="presi_text">Презентация проекта</p>
+      <p class="info_presi">Загрузите файлы, которые презентуют ваш проект: видео, иллюстрации, текстовые документы </p>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+  </div>
 <section id="info">
   <img class="img_left_frame" src="assets/img/Frame.png" alt="">
   <img class="img_right_frame" src="assets/img/Frame1.png" alt="">
@@ -146,7 +264,7 @@
       </div>
     </div>
     <div class="w-100" style="text-align:center;">
-  <a class="waves-effect waves-light btn btn_medal">Участвовать</a>
+  <a class="waves-effect waves-light btn btn_medal modal-trigger" href="#modal1">Участвовать</a>
   </div>
   </div>
 </div>
@@ -248,7 +366,7 @@
           </p>
         </div>
         <div class="col xl4 text-right">
-        <a class="waves-effect waves-light btn btn_footer">Участвовать</a>
+        <a class="waves-effect waves-light btn btn_footer modal-trigger" href="#modal1">Участвовать</a>
         </div>
         <div class="col">
         <p class="footer_copy">Сайт разработан за счет средств Гранта (субсидии), предоставленных ФГБУ «Роспатриотцентр» на проведение мероприятий по содействию патриотическому воспитанию граждан Российской Федерации.</p>
