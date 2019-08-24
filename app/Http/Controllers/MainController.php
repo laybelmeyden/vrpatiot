@@ -120,8 +120,8 @@ class MainController extends Controller
           'google_file' => request('google_file'),
           'app' => request('app')
       );
-      // back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
-      // return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
+      back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
+      return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     }
 
 }
