@@ -20,6 +20,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 Auth::routes();
 
-Route::get('/', 'MainController@index')->name('home');
+Route::get('/', 'MainController@index')->name('main');
 
 Route::post('/contact', 'MainController@contact');
+Route::post('/main_form', 'MainController@main_form');

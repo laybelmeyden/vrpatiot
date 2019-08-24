@@ -5,6 +5,8 @@
   <title>ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций</title>
   <!--meta-->
   <meta charset="UTF-8">
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="description" content="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций"/>
   <META NAME="keywords" CONTENT="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций">
   <META NAME="AUTHOR" CONTENT="https://vk.com/glrlcocks">
@@ -26,23 +28,18 @@
 </head>
 
 <body>
-@include('layouts.nav')
-        <!-- @if ($flash = session('message'))
-  <div class="alert1">
-   <div class="toast" style="    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    transition: visibility 0s linear 0.3s, opacity 0.3s linear;
-    visibility: visible;
-    z-index: 2000000000;
-    position: fixed;
-    color: black;">{{ $flash }}</div>
-   </div>
+  @if(session('message'))
+  <div id="modalflat" class="modal modal-fixed-footer modal_alert visible">
+    <div class="modal-content">
+      <h4 class="alert_title">{{ session('message') }}</h4>
+      <p class="alert_down">{{ session('message_1') }}</p>
+    </div>
+    <div class="flert">
+    <a class="modal-close waves-effect waves-light btn-flat btn_ok" id="btn_ok">OK</a>
+    </div>
+  </div>
   @endif
-  -->
+ 
 @yield('content')
 @include('layouts.footer')
 @include('layouts.scripts')

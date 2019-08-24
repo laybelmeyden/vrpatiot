@@ -54,19 +54,19 @@
     <img src="assets/img/modal_form.png" alt="" class="modal_img_form_main">
     <div class="modal-content">
       <div class="row">
+      <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
+				{{ csrf_field() }}
       <div class="col s12 xl12">
       <h4 class="main_form_header">Чтобы стать участником Всероссийского конкурса интерактивных военно-исторических реконструкций,заполните данную заявку и отправьте ее.</h4>
       <div class="form_item">
       <label for="" class="modal_input_label">Фамилия, имя, отчество </label>
-      <input class="input_main_form_modal" type="text" name="FIO" placeholder="" value="" required>
+      <input class="input_main_form_modal" type="text" name="fio" placeholder="" value="" required>
       </div>
       <div class="form_item">
       <label for="" class="modal_input_label">Дата рождения</label>
       <div>
       <input class="input_main_form_modal date_input_1" type="number" min="0" max="31" step="1"  name="day" placeholder="День" value="" required>
-      <label for="" class="modal_input_label"></label>
       <input class="input_main_form_modal date_input_2" type="number" min="0" max="12" step="1"  name="mouth" placeholder="Месяц" value="" required>
-      <label for="" class="modal_input_label"></label>
       <input class="input_main_form_modal date_input_3" type="number" min="0" max="2019" step="1"  name="years" placeholder="Год" value="" required>
       </div>
       </div>
@@ -80,19 +80,17 @@
       </div>
       <div class="form_item">
       <label for="" class="modal_input_label">Соц. сети</label>
-      <div class="input_date">
-      <div>
+      <div class="input_social">
       <img src="assets/img/vk-social-logotype.png" alt="" class="soc_image">
       <input class="input_main_form_modal date_input_4" type="text"  name="vk" placeholder="" value="">
       </div>
-      <div>
+      <div class="input_social">
       <img src="assets/img/facebook-logo-button.png" alt="" class="soc_image">
       <input class="input_main_form_modal date_input_4" type="text"  name="facebook" placeholder="" value="">
       </div>
-      <div>
+      <div class="input_social">
       <img src="assets/img/instagram.png" alt="" class="soc_image">
       <input class="input_main_form_modal date_input_5" type="text"   name="instagram" placeholder="" value="">
-      </div>
       </div>
       </div>
       <div class="form_item">
@@ -121,52 +119,50 @@
       </div>
       <div class="form_item">
       <label for="" class="modal_input_label">Команда</label>
-      <div class="team_grid">
-      <div class="team_down_grid">
-      <div>
       <input class="input_main_form_modal team_input" type="text" name="name_team" placeholder="ФИО" value="" required>
-      <input class="input_main_form_modal team_input_1" type="email" name="email_team" placeholder="E-mail" value="" required>
-      </div>
-      </div>
-      <div class="team_down_grid">
-      <div>
+      <input class="input_main_form_modal team_input" type="email" name="email_team" placeholder="E-mail" value="" required>
       <input class="input_main_form_modal team_input" type="text" name="role_team" placeholder="Роль в команде" value="" required>
-      <input class="input_main_form_modal team_input_1" type="text" name="phone_team" placeholder="Телефон" value="" required>
-      </div>
-      </div>
-      </div>
+      <input class="input_main_form_modal team_input" type="text" name="phone_team" placeholder="Телефон" value="" required>
       <div class="form_item" id="added_news">
         <img src="assets/img/plus.png" alt="" class="img_plus">
         <p class="text_plus">Добавить еще одного участника команды</p>
       </div>
       </div>
-      <div class="form_item" id="ucaht_1">
+      <div class="form_item hidden" id="ucaht_1">
+      <div class="pd40">
       <label for="" class="modal_input_label">Доп. участник</label>
-      <div class="team_grid">
-      <div class="team_down_grid">
-      <div>
       <input class="input_main_form_modal team_input" type="text" name="name_team_1" placeholder="ФИО" value="">
-      <input class="input_main_form_modal team_input_1" type="email" name="email_team_1" placeholder="E-mail" value="">
-      </div>
-      </div>
-      <div class="team_down_grid">
-      <div>
+      <input class="input_main_form_modal team_input" type="email" name="email_team_1" placeholder="E-mail" value="">
       <input class="input_main_form_modal team_input" type="text" name="role_team_1" placeholder="Роль в команде" value="">
-      <input class="input_main_form_modal team_input_1" type="text" name="phone_team_1" placeholder="Телефон" value="">
-      </div>
-      </div>
+      <input class="input_main_form_modal team_input" type="text" name="phone_team_1" placeholder="Телефон" value="">
       </div>
       </div>
       <div class="form_item">
       <p class="presi_text">Презентация проекта</p>
       <p class="info_presi">Загрузите файлы, которые презентуют ваш проект: видео, иллюстрации, текстовые документы </p>
       </div>
+      <div class="form_item">
+      <div class="flex_item_file">
+      <a target="_blank" class="waves-effect waves-light btn btn_download_1" id="btn_1"><img src="assets/img/download1.png" class="img_dowmload_file">
+      <span class="btn_file_text">ЗАГРУЗИТЬ ФАЙЛ</span>
+      </a>
+      <img src="assets/img/dropbox-logo.png" alt="" class="drop_file" id="btn_2">
+      <img src="assets/img/a6bede6413b64507d854b92fde9b4d7c.png" alt="" class="google_file" id="btn_3">
+      </div>
+      <input type="file" name="app" class="file_app hidden" id="btn_1_1">
+      <input class="input_main_form_modal team_input hidden" id="btn_2_2" type="text" name="drop_box_file" placeholder="Ссылка на файл DropBox" value="">
+      <input class="input_main_form_modal team_input hidden" id="btn_3_3" type="text" name="google_file" placeholder="Ссылка на файл google disk" value="">
+      </div>
+      <div class="form_item c">
+      <button type="submit" class="waves-effect waves-light btn btn_form_modal">ОТПРАВИТЬ</button>
       </div>
       </div>
+      </form>
+      </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
-    </div>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat modal_form_close_all">
+        <img src="assets/img/delete-button1.png" alt="">
+      </a>
   </div>
 <section id="info">
   <img class="img_left_frame" src="assets/img/Frame.png" alt="">
@@ -210,7 +206,7 @@
       </div>
       <div class="col xl12" style="width: 100%;">
         <div class="flex_align">
-        <a class="waves-effect waves-light btn btn_download"><img src="assets/img/download.png" class="img_dowmload">СКАЧАТЬ ПОЛОЖЕНИЕ О КОНКУРСЕ</a>
+        <a href="https://vk.com/doc32870057_510982310?hash=19bd2f125c2e85f6c5&dl=d1031e41928fb14c07" target="_blank" class="waves-effect waves-light btn btn_download"><img src="assets/img/download.png" class="img_dowmload">СКАЧАТЬ ПОЛОЖЕНИЕ О КОНКУРСЕ</a>
         </div>
       </div>
     </div>
@@ -275,13 +271,6 @@
     <img src="assets/img/Group112.png" alt="" class="img_contact">
     </div>
     <div class="index_contact">
-    <!-- @if ($flash = session('message_contact'))
-    <div class="alert1">
-    <div class="toast">
-    {{ $flash }}
-    </div>
-    </div>
-    @endif -->
     <p class="contact_title">Если у вас возникли вопросы, связанные с конкурсом, напишите нам через данную форму обратной связи</p>
     <form action="/contact" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
 				{{ csrf_field() }}
