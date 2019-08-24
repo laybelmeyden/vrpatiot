@@ -149,7 +149,7 @@
       <img src="assets/img/dropbox-logo.png" alt="" class="drop_file" id="btn_2">
       <img src="assets/img/a6bede6413b64507d854b92fde9b4d7c.png" alt="" class="google_file" id="btn_3">
       </div>
-      <input type="file" name="app" class="file_app hidden" id="btn_1_1">
+      <input type="file" name="app" class="file_app hidden" id="btn_1_1" value="no_file">
       <input class="input_main_form_modal team_input hidden" id="btn_2_2" type="text" name="drop_box_file" placeholder="Ссылка на файл DropBox" value="">
       <input class="input_main_form_modal team_input hidden" id="btn_3_3" type="text" name="google_file" placeholder="Ссылка на файл google disk" value="">
       </div>

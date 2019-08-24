@@ -90,9 +90,10 @@ class MainController extends Controller
             'drop_box_file' => request('drop_box_file'),
             'google_file' => request('google_file'),
             'app' => request('app'),
-              ]
-              );}
-      $data= array(
+              ]); 
+        }
+
+      $data = array(
         'fio' => request('fio'),
           'day' => request('day'),
           'mouth' => request('mouth'),
@@ -119,8 +120,8 @@ class MainController extends Controller
           'google_file' => request('google_file'),
           'app' => request('app')
       );
-      back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
-      return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
+      // back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
+      // return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     }
 
 }
