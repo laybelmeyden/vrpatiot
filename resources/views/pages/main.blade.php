@@ -276,7 +276,7 @@
 				{{ csrf_field() }}
         <input type="email" class="input_contact" name="contact_email" placeholder="E-mail" required>
         <input type="text" class="input_contact" name="phone" placeholder="Телефон" required>
-        <textarea class="text_area_cotnatc" name="text" placeholder="Ваш вопрос" required></textarea>
+        <textarea class="text_area_cotnatc" name="text_contact" placeholder="Ваш вопрос" required></textarea>
         <div class="w-100 a-right">
         <button type="submit" class="btn_contact">Отправить</button>
         </div>
