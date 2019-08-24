@@ -54,6 +54,7 @@
     <img src="assets/img/modal_form.png" alt="" class="modal_img_form_main">
     <div class="modal-content">
       <div class="row">
+    <img src="assets/img/delete-button1.png"  class=" modal-close modal_form_close_all"alt="">
       <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
 				{{ csrf_field() }}
       <div class="col s12 xl12">
@@ -160,9 +161,6 @@
       </form>
       </div>
     </div>
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat modal_form_close_all">
-        <img src="assets/img/delete-button1.png" alt="">
-      </a>
   </div>
 <section id="info">
   <img class="img_left_frame" src="assets/img/Frame.png" alt="">

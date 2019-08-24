@@ -887,6 +887,10 @@ select {
 }
 
 @media only screen and (max-width: 992px) {
+    .flex_item_file {
+        display: block !important;
+        align-items: center;
+    }
     .modal .modal-content {
         padding: 0px 20px 0px 20px !important;
     }
@@ -898,6 +902,14 @@ select {
     }
     .btn_download_1 {
         font-size: 10px !important;
+        width: 100% !important;
+    }
+    .img_dowmload_file {
+        display: none;
+    }
+    .btn_file_text {
+        position: relative;
+        top: 27px;
     }
     .btn_form_modal {
         width: 100% !important;
