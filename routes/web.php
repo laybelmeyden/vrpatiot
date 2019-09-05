@@ -22,5 +22,7 @@ Auth::routes();
 
 Route::get('/', 'MainController@index')->name('main');
 
+Route::get('/result', 'MainController@result')->name('result');
+
 Route::post('/contact', 'MainController@contact');
 Route::post('/main_form', 'MainController@main_form');

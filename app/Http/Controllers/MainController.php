@@ -10,6 +10,12 @@ class MainController extends Controller
     public function index(){
         return view ('pages.main');
     }
+    public function result(){
+      
+      $mainforms = MainForm::latest()->get();
+
+      return view ('pages.result', compact('mainforms'));
+  }
     public function contact(Request $request)
       {
       $data= array(
