@@ -5,6 +5,7 @@
   <title>ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций</title>
   <!--meta-->
   <meta charset="UTF-8">
+  <meta name="yandex-verification" content="dc70469ab3fdb89d" />
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="description" content="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций"/>
