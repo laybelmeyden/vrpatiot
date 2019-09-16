@@ -352,8 +352,10 @@
       <div class="col xl12">
         <div class="col xl8">
           <p class="footer_contact">
-          8(499)753 01 25 <br>8 (999)
-          852 65 25 - куратор Послова Алина
+          8(499) 753 01 25 <br>
+          8 (999) 852 65 25 - куратор Послова Алина
+          <br>
+          <a href="mailto:info@rusinnovations.com">info@rusinnovations.com</a>
           </p>
         </div>
         <div class="col xl4 text-right">
