@@ -330,18 +330,31 @@
     <div class="row">
       <p class="partners_title">Партнёры конкурса</p>
       <div class="col xl12 flex_cetnter">
+        <a href="https://rusinnovations.com">
         <div class="col xl3 flex_cetnter ">
           <img src="assets/img/logo_air.png" alt="" style="width: 100%; max-width: 234px;">
         </div>
+        </a>
+        <a href="http://www.smena.org">
         <div class="col xl3 flex_cetnter ">
           <img src="assets/img/smena.png" alt="" style="width: 100%; max-width: 234px;">
         </div>
+        </a>
+        <a href="https://fadm.gov.ru">
         <div class="col xl3 flex_cetnter ">
           <img src="assets/img/ros_mol.png" alt="" style="width: 100%; max-width: 234px;">
         </div>
+        </a>
+        <a href="http://rospatriotcentr.ru/">
         <div class="col xl3 flex_cetnter ">
           <img src="assets/img/ros_pat.png" alt="" style="width: 100%; max-width: 146px;">
         </div>
+        </a>
+        <a href="https://coddyschool.com">
+        <div class="col xl3 flex_cetnter ">
+          <img src="assets/img/logo-coddy-blue.png" alt="" style="width: 100%; max-width: 146px;">
+        </div>
+        </a>
       </div>
     </div>
 </div>
