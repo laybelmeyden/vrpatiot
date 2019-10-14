@@ -63,7 +63,7 @@ class MainController extends Controller
           'phone_team_1' => request('phone_team_1'),
           'drop_box_file' => request('drop_box_file'),
           'google_file' => request('google_file'),
-          'app' => request('app')-> store('upload'),
+          'app' => request('app') -> store('upload'),
           ]
           );
           

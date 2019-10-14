@@ -46,6 +46,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        return Validator::make($request->all(), [
+            'app' => 'required|file|size:50000',
+        ])->validate();
         return parent::render($request, $exception);
     }
 }
