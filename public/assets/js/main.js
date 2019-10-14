@@ -2,9 +2,6 @@ $(document).ready(function() {
     $(".button-collapse").sideNav();
     $('.modal').modal();
     $('select').material_select();
-    $('btn_1_1').bind('change', function() {
-        alert('Загружаемый файл слишком велик, загрузите его на googledisk или dropbox и прекрепите ссылку в соответсвующие поле: ' + this.files[0].size / 1024 / 1024 + "MB");
-    });
 });
 document.getElementById("added_news").onclick = () => {
     document.getElementById("ucaht_1").classList.toggle('visible');
@@ -20,4 +17,14 @@ document.getElementById("btn_3").onclick = () => {
 }
 document.getElementById("btn_ok").onclick = () => {
     document.getElementById("modalflat").classList.toggle('visible');
+}
+
+function ValidateSize(file) {
+    var FileSize = file.files[0].size / 1024 / 1024; // in MB
+    if (FileSize > 50) {
+        alert('Ваш файл весить больше 50мб, пожалуйста загрузите его на google disk или dropbox и прекрепите ссылки в соответствующее поле');
+        // $(file).val(''); //for clearing with Jquery
+    } else {
+
+    }
 }
