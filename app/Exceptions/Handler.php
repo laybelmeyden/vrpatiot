@@ -47,7 +47,7 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         $validator = Validator::make($request->all(), [
-            'file' => 'max:5120',
+            'app' => 'max:5120',
         ]);
         return parent::render($request, $exception);
     }
