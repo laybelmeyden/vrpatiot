@@ -22,8 +22,8 @@ document.getElementById("btn_ok").onclick = () => {
 function ValidateSize(file) {
     var FileSize = file.files[0].size / 1024 / 1024; // in MB
     if (FileSize > 50) {
-        alert('Ваш файл весить больше 50мб, пожалуйста загрузите его на google disk или dropbox и прекрепите ссылки в соответствующее поле');
-        // $(file).val(''); //for clearing with Jquery
+        alert('Ваш файл весит больше 50 мб, пожалуйста загрузите его на google disk или dropbox и прикрепите ссылки в соответствующее поле');
+        document.getElementById("btn_1_1").value = "";
     } else {
 
     }
