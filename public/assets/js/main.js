@@ -18,14 +18,6 @@ document.getElementById("btn_3").onclick = () => {
 document.getElementById("btn_ok").onclick = () => {
     document.getElementById("modalflat").classList.toggle('visible');
 }
-$('#btn_1_1').bind('change', function() {
-    let filesize = this.files[0].size // On older browsers this can return NULL.
-    let filesizeMB = (filesize / (1024 * 1024)).toFixed(2);
-
-    if (filesizeMB <= 5) {
-        // Allow the form to be submitted here.
-    } else {
-        // Don't allow submission of the form here.
-    }
-
+$('btn_1_1').bind('change', function() {
+    alert('Загружаемый файл слишком велик, загрузите его на googledisk или dropbox и прекрепите ссылку в соответсвующие поле: ' + this.files[0].size / 1024 / 1024 + "MB");
 });
