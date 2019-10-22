@@ -55,7 +55,7 @@
     <div class="modal-content">
       <div class="row">
     <img src="assets/img/delete-button1.png"  class=" modal-close modal_form_close_all"alt="">
-      <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
+      <!-- <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
 				{{ csrf_field() }}
       <div class="col s12 xl12">
       <h4 class="main_form_header">Чтобы стать участником Всероссийского конкурса интерактивных военно-исторических реконструкций,заполните данную заявку и отправьте ее.</h4>
@@ -158,7 +158,10 @@
       <button type="submit" class="waves-effect waves-light btn btn_form_modal">ОТПРАВИТЬ</button>
       </div>
       </div>
-      </form>
+      </form> -->
+      <div class="col xl 12" style="text-align:center;">
+      <p>Конкурс завершен! Ожидайте результатов на почту прикрепленную к отправленной заявке. Спасибо за участие !</p>
+      </div>
       </div>
     </div>
   </div>
