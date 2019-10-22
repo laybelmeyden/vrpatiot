@@ -866,16 +866,17 @@ select {
 
 .end_date {
     position: absolute;
-    top: 1em;
+    top: 3em;
     bottom: 0;
     left: 0;
     right: 0;
     color: #4B3E5C;
     font-family: "MuseoCyrl900";
-    font-size: 48px;
+    font-size: 34px;
     line-height: 62px;
     text-transform: uppercase;
     margin: 0;
+    text-align: center;
 }
 
 
