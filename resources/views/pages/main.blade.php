@@ -159,10 +159,19 @@
       </div>
       </div>
       </form> -->
-      <div class="col xl 12" style="text-align:center;">
-      <p>Конкурс завершен! Ожидайте результатов на почту прикрепленную к отправленной заявке. Спасибо за участие !</p>
       </div>
-      </div>
+      <p style="    
+      position: absolute;
+      top: 1em;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #4B3E5C;
+      font-family: "MuseoCyrl900";
+    font-size: 48px;
+    line-height: 62px;
+    text-transform: uppercase;
+    margin: 0;">Конкурс завершен! Ожидайте результатов на почту прикрепленную к отправленной заявке. Спасибо за участие !</p>
     </div>
   </div>
 <section id="info">
