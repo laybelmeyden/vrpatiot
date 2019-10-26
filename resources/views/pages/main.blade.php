@@ -6,6 +6,13 @@
     <div class="nav-wrapper">
     <a href="#" data-activates="mobile-demo" class="button-collapse">Меню</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down li_items">
+      <li>
+          <a href="/programm">
+            <div class="hover_a_nav">
+            Итоги
+          </div>
+          </a>
+        </li>
         <li>
           <a href="#info">
             <div class="hover_a_nav">
@@ -33,10 +40,11 @@
         </a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="">О конкурсе</a></li>
-        <li><a href="">Номинации</a></li>
-        <li><a href="">Организатор</a></li>
-        <li><a href="">Обратная связь</a></li>
+      <li><a href="/programm">Итоги</a></li>
+        <li><a href="#info">О конкурсе</a></li>
+        <li><a href="#nominations">Номинации</a></li>
+        <li><a href="#organize">Организатор</a></li>
+        <li><a href="#contact">Обратная связь</a></li>
       </ul>
     </div>
   </nav>
@@ -46,7 +54,7 @@
   <p class="header_main_text_p">Всероссийский<br> конкурс</p>
   <p class="header_pod_text">интерактивных военно-исторических <br>реконструкций</p>
   <div class="w-100">
-  <a class="waves-effect waves-light btn btn_header modal-trigger" href="#modal1">Участвовать</a>
+  <a class="waves-effect waves-light btn btn_header modal-trigger" href="/programm">ИТОГИ</a>
   </div>
 </div> 
 </section>
@@ -259,7 +267,7 @@
       </div>
     </div>
     <div class="w-100" style="text-align:center;">
-  <a class="waves-effect waves-light btn btn_medal modal-trigger" href="#modal1">Участвовать</a>
+  <a class="waves-effect waves-light btn btn_medal modal-trigger" href="/programm">ИТОГИ</a>
   </div>
   </div>
 </div>
@@ -373,7 +381,7 @@
           </p>
         </div>
         <div class="col xl4 text-right">
-        <a class="waves-effect waves-light btn btn_footer modal-trigger" href="#modal1">Участвовать</a>
+        <a class="waves-effect waves-light btn btn_footer modal-trigger" href="/programm">ИТОГИ</a>
         </div>
         <div class="col">
         <p class="footer_copy">Сайт разработан за счет средств Гранта (субсидии), предоставленных ФГБУ «Роспатриотцентр» на проведение мероприятий по содействию патриотическому воспитанию граждан Российской Федерации.</p>

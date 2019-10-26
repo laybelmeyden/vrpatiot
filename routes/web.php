@@ -21,6 +21,7 @@ Route::group(['prefix' => 'admin'], function () {
 Auth::routes();
 
 Route::get('/', 'MainController@index')->name('main');
+Route::get('/programm', 'MainController@programm')->name('programm');
 
 Route::get('/result', 'MainController@result')->name('result');
 
