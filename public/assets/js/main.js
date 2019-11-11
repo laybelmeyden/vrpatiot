@@ -28,3 +28,6 @@ function ValidateSize(file) {
 
     }
 }
+$(document).ready(function() {
+    $('.tabs').tabs();
+});

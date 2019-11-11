@@ -150,11 +150,31 @@ nav ul a:hover {
 }
 
 .info_z {
-    font-family: "MuseoCyrl900";
-    font-size: 32px;
+    font-family: "MuseoCyrl900" !important;
+    font-size: 32px !important;
     line-height: 30px;
     text-align: center;
-    color: #4B3E5C;
+    color: #4B3E5C !important;
+}
+
+.info_z_tabs {
+    font-family: "MuseoCyrl900" !important;
+    font-size: 32px !important;
+    line-height: 30px;
+    text-align: center;
+    color: #4B3E5C !important;
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #FFC700 !important;
+    will-change: left, right;
+}
+
+nav a {
+    color: black !important;
 }
 
 .info_z_1 {
@@ -902,6 +922,13 @@ select {
 }
 
 @media only screen and (max-width: 992px) {
+    .info_z_tabs {
+        font-family: "MuseoCyrl900" !important;
+        font-size: 14px !important;
+        line-height: 30px;
+        text-align: center;
+        color: #4B3E5C !important;
+    }
     .flex_item_file {
         display: block !important;
         align-items: center;
