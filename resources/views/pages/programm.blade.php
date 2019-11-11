@@ -85,6 +85,12 @@
         <img src="assets/img/download.png" class="img_dowmload">ИТОГИ ПРИЕМА ЗАЯВОК</a>
         </div>
       </div>
+      <div class="col xl12" style="width: 100%; margin-bottom:30px;">
+        <div class="flex_align">
+        <a href="https://vk.com/doc32870057_523178545?hash=524556940267fa5a07&dl=34bcf7dacd63345ee9" target="_blank" class="waves-effect waves-light btn btn_download">
+        <img src="assets/img/download.png" class="img_dowmload">ПРОТОКОЛ - ИТОГИ КОНКУРСА</a>
+        </div>
+      </div>
   </div>
 </div>
 </section>
