@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
   <title>ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций</title>
@@ -8,7 +8,7 @@
   <meta name="yandex-verification" content="dc70469ab3fdb89d" />
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <meta name="description" content="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций"/>
+  <meta name="description" content="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций" />
   <META NAME="keywords" CONTENT="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций">
   <META NAME="AUTHOR" CONTENT="https://vk.com/glrlcocks">
   <meta name="revisit-after" content="5 days">
@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/materialize.css">
-
+  
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -36,14 +36,13 @@
       <p class="alert_down">{{ session('message_1') }}</p>
     </div>
     <div class="flert">
-    <a class="modal-close waves-effect waves-light btn-flat btn_ok" id="btn_ok">OK</a>
+      <a class="modal-close waves-effect waves-light btn-flat btn_ok" id="btn_ok">OK</a>
     </div>
   </div>
   @endif
- 
-@yield('content')
-@include('layouts.footer')
-@include('layouts.scripts')
-
+    @yield('content')
+  @include('layouts.footer')
+  @include('layouts.scripts')
 </body>
+
 </html>

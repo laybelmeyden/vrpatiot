@@ -4,133 +4,66 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\MainForm;
+use App\FileName;
 
 class MainController extends Controller
 {
-    public function index(){
-        return view ('pages.main');
-    }
-    public function programm(){
-      return view ('pages.programm');
+  public function index()
+  {
+    $mainforms = MainForm::latest()->get();
+    return view('pages.main', compact('mainforms'));
   }
-    public function result(){
-      
-      $mainforms = MainForm::latest()->get();
-
-      return view ('pages.result', compact('mainforms'));
+  public function programm()
+  {
+    return view('pages.programm');
   }
-    public function contact(Request $request)
-      {
-      $data= array(
-        'phone' => request('phone'),
-        'contact_email' => request('contact_email'),
-        'text_contact' => request('text_contact'),
-      );
+  public function result()
+  {
+    
+    $mainforms = MainForm::latest()->get();
+    return view('pages.result', compact('mainforms'));
+  }
+  public function contact(Request $request)
+  {
+    $data = array(
+      'phone' => request('phone'),
+      'contact_email' => request('contact_email'),
+      'text_contact' => request('text_contact'),
+    );
 
-       \Mail::send('email.mailcontact', $data, function($message_contact) use ($data)
+    \Mail::send('email.mailcontact', $data, function ($message_contact) use ($data) {
+      $mail_admin = env('MAIL_ADMIN_CONTACT');
+      $message_contact->from($data['contact_email'], $data['phone'], $data['text_contact']);
+      $message_contact->to($mail_admin, 'For Admin')->subject('Message from site');
+    });
+
+    back()->with('message_1', 'Ваш вопрос отправлен куратору форума и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
+    return redirect('/')->with('message', 'СПАСИБО ЗА ВАШУ АКТИВНОСТЬ И ИНТЕРЕС!');
+  }
+  public function main_form(Request $request)
+  {
+    if($request->hasFile('photos'))
     {
-        $mail_admin = env('MAIL_ADMIN_CONTACT');
-        $message_contact->from($data['contact_email'],$data['phone'], $data['text_contact']);
-        $message_contact->to($mail_admin, 'For Admin')->subject('Message from site');
-     });
 
-     back()->with('message_1', 'Ваш вопрос отправлен куратору форума и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
-     return redirect('/')->with('message', 'СПАСИБО ЗА ВАШУ АКТИВНОСТЬ И ИНТЕРЕС!');
+    $items= MainForm::create($request->all());
+    
+    foreach ($request->photos as $photo) {
+    $filename = $photo->store('public/upload');
+    FileName::create([
+    'fileid' => $items->id,
+    'filename' => $filename,
+    ]);
     }
-    public function main_form(Request $request)
-      {
-        if ( $request -> hasFile('app')){
-
-          MainForm::create([
-          'fio' => request('fio'),
-          'day' => request('day'),
-          'mouth' => request('mouth'),
-          'years' => request('years'),
-          'email' => request('email'),
-          'phone' => request('phone'),
-          'vk' => request('vk'),
-          'facebook' => request('facebook'),
-          'instagram' => request('instagram'),
-          'city' => request('city'),
-          'edu' => request('edu'),
-          'name_project' => request('name_project'),
-          'select_mon' => request('select_mon'),
-          'opis_proj' => request('opis_proj'),
-          'name_team' => request('name_team'),
-          'email_team' => request('email_team'),
-          'role_team' => request('role_team'),
-          'phone_team' => request('phone_team'),
-          'name_team_1' => request('name_team_1'),
-          'email_team_1' => request('email_team_1'),
-          'role_team_1' => request('role_team_1'),
-          'phone_team_1' => request('phone_team_1'),
-          'drop_box_file' => request('drop_box_file'),
-          'google_file' => request('google_file'),
-          'app' => request('app') -> store('upload'),
-          ]
-          );
-          
-            $request -> app -> store('public/upload');
-            
-          } else {
-            MainForm::create([
-            'fio' => request('fio'),
-            'day' => request('day'),
-            'mouth' => request('mouth'),
-            'years' => request('years'),
-            'email' => request('email'),
-            'phone' => request('phone'),
-            'vk' => request('vk'),
-            'facebook' => request('facebook'),
-            'instagram' => request('instagram'),
-            'city' => request('city'),
-            'edu' => request('edu'),
-            'name_project' => request('name_project'),
-            'select_mon' => request('select_mon'),
-            'opis_proj' => request('opis_proj'),
-            'name_team' => request('name_team'),
-            'email_team' => request('email_team'),
-            'role_team' => request('role_team'),
-            'phone_team' => request('phone_team'),
-            'name_team_1' => request('name_team_1'),
-            'email_team_1' => request('email_team_1'),
-            'role_team_1' => request('role_team_1'),
-            'phone_team_1' => request('phone_team_1'),
-            'drop_box_file' => request('drop_box_file'),
-            'google_file' => request('google_file'),
-            'app' => request('app'),
-              ]); 
-        }
-
-      $data = array(
-        'fio' => request('fio'),
-          'day' => request('day'),
-          'mouth' => request('mouth'),
-          'years' => request('years'),
-          'email' => request('email'),
-          'phone' => request('phone'),
-          'vk' => request('vk'),
-          'facebook' => request('facebook'),
-          'instagram' => request('instagram'),
-          'city' => request('city'),
-          'edu' => request('edu'),
-          'name_project' => request('name_project'),
-          'select_mon' => request('select_mon'),
-          'opis_proj' => request('opis_proj'),
-          'name_team' => request('name_team'),
-          'email_team' => request('email_team'),
-          'role_team' => request('role_team'),
-          'phone_team' => request('phone_team'),
-          'name_team_1' => request('name_team_1'),
-          'email_team_1' => request('email_team_1'),
-          'role_team_1' => request('role_team_1'),
-          'phone_team_1' => request('phone_team_1'),
-          'drop_box_file' => request('drop_box_file'),
-          'google_file' => request('google_file'),
-          'app' => request('app')
-      );
-      back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
-      return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
+    back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
+    return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
+    }else{
+    back()->with('message_1', 'Пожалуйста, прикрепите файл к заявке!');
+    return redirect('/')->with('message', 'ВАША ЗАЯВКА НЕ БЫЛА ОТПРАВЛЕНА!');
     }
+  }
 
+  public function update_main_form(Request $request)
+  {
+    return "oks";
+  }
 }

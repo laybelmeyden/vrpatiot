@@ -36,9 +36,9 @@ body {
 }
 
 nav ul a {
-    color: black !important;
+    color: white !important;
     font-size: 20px !important;
-    padding: 0 27px !important;
+    padding: 0 25px !important;
 }
 
 .modal_nav_item {
@@ -80,16 +80,92 @@ nav ul a:hover {
 }
 
 .hover_a_nav {
-    padding-top: 13px;
+    padding-top: 10px;
     font-weight: 900;
 }
 
+h1,
+h3 {
+    margin: 0 !important;
+    padding: 0;
+}
+
+#header h1 {
+    padding-top: 155px;
+    color: white;
+    font-family: "MuseoCyrl500";
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
+}
+
+.btn_header {
+    background: #D81A12 !important;
+    border-radius: 60px !important;
+    width: 286px !important;
+    height: 83px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.2em !important;
+    text-transform: uppercase !important;
+    color: #FFFFFF;
+    margin-top: 42px;
+}
+
+.btn_header:hover {
+    background: #D6A217 !important;
+}
+
+#header h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    font-weight: 100;
+    padding-top: 25px;
+}
+
+.btn_a_nav {
+    background: #D6A217;
+    border-radius: 30px;
+    height: 42px;
+    width: 188px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 85px;
+    margin-left: 35px;
+}
+
+.header_title span {
+    background-image: url(../img/506-5061203_-png-9-1.svg);
+}
+
+.header_font {
+    position: absolute;
+    right: 0;
+    top: 105px;
+}
+
+.btn_a_nav:hover {
+    background: #D81A12 !important;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+
 #header {
-    background-image: url(../img/01be865dc62a8af63d4878bb867364e0.jpg);
-    height: 503px;
-    background-size: 80% 100%;
+    background-image: url(../img/Group31.svg);
+    height: 610px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 }
 
 .header_main_text {
@@ -117,44 +193,39 @@ nav ul a:hover {
     margin: 0;
 }
 
-.btn_header {
-    background-color: #4B3E5C !important;
-    color: white !important;
-    font-family: Roboto;
-    font-weight: 300;
-    border-radius: 60px !important;
-    width: 286px !important;
-    height: 83px !important;
-    font-size: 20px !important;
-    padding-top: 22px !important;
-    letter-spacing: 3px !important;
-    text-transform: uppercase;
-    margin-left: 49px;
-    margin-top: 42px;
+p {
+    margin: 0;
 }
 
 .btn_medal {
-    background-color: #4B3E5C !important;
+    background-color: #D81A12 !important;
     color: white !important;
     font-family: Roboto;
     font-weight: 300;
     border-radius: 60px !important;
-    width: 378px !important;
-    height: 101px !important;
-    font-size: 20px !important;
-    padding-top: 33px !important;
-    letter-spacing: 3px !important;
+    width: 384px !important;
+    height: 83px !important;
+    font-size: 16px !important;
+    letter-spacing: 0.2em !important;
+    line-height: 20px;
     text-transform: uppercase;
-    margin-bottom: 75px;
     text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btn_medal:hover {
+    background-color: #D6A217 !important;
 }
 
 .info_z {
     font-family: "MuseoCyrl900" !important;
     font-size: 32px !important;
     line-height: 30px;
-    text-align: center;
     color: #4B3E5C !important;
+    padding-top: 42px;
 }
 
 .info_z_tabs {
@@ -188,8 +259,13 @@ nav a {
 .info_z_down {
     font-family: "Robotolight";
     color: black;
-    font-size: 22px;
-    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+.info_containers {
+    max-width: 780px;
 }
 
 .img_left_frame {
@@ -225,8 +301,14 @@ nav a {
 }
 
 .stages_img_padding {
-    margin-bottom: 72px;
-    margin-top: 30px;
+    margin-bottom: 52px;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px !important;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 .grid_col_stages {
@@ -235,16 +317,29 @@ nav a {
     text-align: center;
 }
 
+.img_dowmload {
+    padding-right: 57px;
+    padding-left: 23px;
+}
+
 .btn_download {
-    font-family: "MuseoCyrl100";
-    line-height: 20px !important;
+    margin-top: 81px;
     text-align: center;
-    color: #000000 !important;
-    background-color: #FFC700 !important;
-    width: 100%;
-    height: 109px !important;
-    font-size: 32px !important;
-    margin-top: 22px;
+    width: 590px;
+    height: 81px !important;
+    background-color: #D6A217 !important;
+    border-radius: 20px !important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px !important;
+    line-height: 20px !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.btn_download:hover {
+    background: #D81A12 !important;
 }
 
 .flert {
@@ -337,11 +432,6 @@ nav a {
     align-items: center;
 }
 
-.img_dowmload {
-    top: 27px;
-    right: 45px;
-}
-
 .flex_align {
     display: flex;
     justify-content: center;
@@ -350,25 +440,28 @@ nav a {
 
 .nominations_title {
     color: #4B3E5C;
-    font-family: "MuseoCyrl500";
-    font-size: 28px;
-    line-height: 29px;
+    font-family: "MuseoCyrl900";
+    font-size: 30px;
+    line-height: 36px;
     text-align: center;
     padding-top: 46px;
-    padding-bottom: 54px;
+    padding-bottom: 81px;
     margin: 0 !important;
 }
 
 .card_nominations {
-    background: #FFFFFF;
-    box-shadow: 0px 0px 30px rgba(17, 17, 17, 0.25) !important;
+    background-color: transparent !important;
+    box-shadow: 0px 0px 0px rgba(17, 17, 17, 0.25) !important;
     border-radius: 26px !important;
-    height: 550px;
+    height: auto;
+}
+
+.req {
+    padding-top: 44px;
 }
 
 #nominations {
-    background: linear-gradient(359.14deg, #FBFAFA 3.26%, #E5E5E5 98.37%);
-    margin-top: 42px;
+    margin-top: 35px;
 }
 
 .card-image_nominations {
@@ -414,9 +507,8 @@ nav a {
 }
 
 .medal_block {
-    background: rgba(229, 229, 229, 0.45);
-    margin-top: 59px;
-    margin-bottom: 61px;
+    margin-top: 49px;
+    margin-bottom: 42px;
 }
 
 .medal_margin {
@@ -424,9 +516,17 @@ nav a {
 }
 
 #contact {
-    background: linear-gradient(107.83deg, #FFC700 2.69%, #FF6B00 100%);
+    background: #425C5A;
     z-index: -1;
-    height: 500px;
+    margin-top: 56px;
+    height: auto;
+}
+
+.img_fluid_contact {
+    background-image: url(../img/bigstar.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .row {
@@ -442,13 +542,22 @@ nav a {
 
 .img_contact {
     position: relative;
-    top: -15px;
     z-index: 0;
+    width: 585px;
+}
+
+.btn_pd {
+    width: 624px;
+    padding-bottom: 41px;
 }
 
 .index_contact {
     z-index: 1;
     padding-right: 174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact_title {
@@ -458,12 +567,14 @@ nav a {
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
-    margin-top: 53px;
+    margin-top: 51px;
+    margin-bottom: 32px;
+    max-width: 652px;
+    width: 100%;
 }
 
 .input_contact {
     border: 1px solid #FFFFFF !important;
-    border-radius: 30px !important;
     font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
@@ -471,22 +582,34 @@ nav a {
     line-height: 16px;
     color: #FFFFFF;
     height: 48px !important;
-    padding: 0px 0px 0px 38px !important;
-    max-width: 96%;
+    padding: 0px 10px 0px 37px !important;
+    width: 100%;
+    max-width: 576px;
+}
+
+.logo_part {
+    width: 100%;
+    max-width: 234px;
+}
+
+.logo_part:hover {
+    opacity: 0.5;
 }
 
 .text_area_cotnatc,
 .text_area_cotnatc:focus {
     border: 1px solid #FFFFFF !important;
-    border-radius: 30px !important;
-    height: 115px;
+    height: 115px !important;
     font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
     font-size: 14px !important;
     line-height: 16px;
     color: #FFFFFF !important;
-    padding: 10px 0px 0px 38px !important;
+    padding: 24px 0px 0px 38px !important;
+    width: 100% !important;
+    max-width: 624px !important;
+    max-height: 624px !important;
 }
 
 textarea:focus {
@@ -512,8 +635,12 @@ textarea:focus {
     text-align: right;
 }
 
+.btn_contact:hover {
+    background-color: #D6A217 !important;
+}
+
 .btn_contact {
-    background: #4B3E5C;
+    background: #D81A12;
     border-radius: 30px;
     margin-top: 26px;
     height: 46px;
@@ -625,7 +752,7 @@ textarea:focus {
 }
 
 #footer {
-    background: #4B3E5C;
+    background: #425C5A;
 }
 
 .footer_copy {
@@ -641,19 +768,27 @@ textarea:focus {
 }
 
 .btn_footer {
-    background: linear-gradient(95.5deg, #FFC700 6.38%, #FF6B00 94.74%);
+    background: #D81A12 !important;
     border-radius: 60px !important;
-    font-family: "Roboto";
+    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px !important;
-    line-height: 23px;
-    letter-spacing: 0.2em !important;
-    color: #FFFFFF !important;
-    height: 68px !important;
-    width: 302px !important;
-    padding-top: 17px !important;
-    margin-top: 49px;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    width: 286px !important;
+    height: 83px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.btn_footer:hover {
+    background-color: #D6A217 !important;
 }
 
 .text-right {
@@ -922,6 +1057,9 @@ select {
 }
 
 @media only screen and (max-width: 992px) {
+    .header_font {
+        display: none;
+    }
     .info_z_tabs {
         font-family: "MuseoCyrl900" !important;
         font-size: 14px !important;
@@ -1000,12 +1138,6 @@ select {
         padding-right: 60px;
         padding-left: 60px;
     }
-    #contact {
-        background: linear-gradient(107.83deg, #FFC700 2.69%, #FF6B00 100%);
-        z-index: -1;
-        height: auto;
-        padding-bottom: 40px;
-    }
     .grid_contact_main {
         display: grid;
         grid-template-columns: 100%;
@@ -1039,20 +1171,6 @@ select {
         margin: 0;
         text-align: center;
         padding: 15px;
-    }
-    .btn_header {
-        background-color: #4B3E5C !important;
-        color: white !important;
-        font-weight: 300;
-        border-radius: 60px !important;
-        width: 230px !important;
-        height: 70px !important;
-        font-size: 20px !important;
-        padding-top: 18px !important;
-        letter-spacing: 3px !important;
-        text-transform: uppercase;
-        margin-left: 0px;
-        margin-top: 42px;
     }
     .w-100 {
         display: flex;

@@ -34,4 +34,8 @@ class MainForm extends Model
         'google_file',
         'app',
         ];
+        public function item()
+        {
+        return $this->hasMany('App\FileName');
+        }    
 }

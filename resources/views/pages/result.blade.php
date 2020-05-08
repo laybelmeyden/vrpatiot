@@ -5,12 +5,14 @@
 <div class="container">
 <div class="row">
 <h1>Заявки поданные на конкурс</h1>
+
 @foreach ($mainforms as $mainform)
         <div class="col s12">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
             <span>Номер проекта = {{ $mainform -> id}}</span>
             <span class="card-title">Название проекта = {{ $mainform -> name_project}}</span>
+            
               <p>
               ФИО = {{ $mainform -> fio}}<br>
               Дата рождения = {{ $mainform -> day}}.{{ $mainform -> mouth}}.{{ $mainform -> years}}<br>
@@ -72,4 +74,5 @@
 @endforeach
       </div>
 </div>
+
 @endsection

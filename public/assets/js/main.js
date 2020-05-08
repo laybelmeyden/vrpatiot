@@ -2,6 +2,7 @@ $(document).ready(function() {
     $(".button-collapse").sideNav();
     $('.modal').modal();
     $('select').material_select();
+    $('.tabs').tabs();
 });
 document.getElementById("added_news").onclick = () => {
     document.getElementById("ucaht_1").classList.toggle('visible');
@@ -28,6 +29,3 @@ function ValidateSize(file) {
 
     }
 }
-$(document).ready(function() {
-    $('.tabs').tabs();
-});
