@@ -12,7 +12,7 @@
             <div class="card-content white-text">
             <span>Номер проекта = {{ $mainform -> id}}</span>
             <span class="card-title">Название проекта = {{ $mainform -> name_project}}</span>
-            
+            @foreach ($items as $item) <a href="{{ asset('storage/'.$item -> filename)}}">{{ asset($item -> filename)}}</a> @endforeach
               <p>
               ФИО = {{ $mainform -> fio}}<br>
               Дата рождения = {{ $mainform -> day}}.{{ $mainform -> mouth}}.{{ $mainform -> years}}<br>

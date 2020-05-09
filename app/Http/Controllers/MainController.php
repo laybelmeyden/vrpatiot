@@ -19,9 +19,9 @@ class MainController extends Controller
   }
   public function result()
   {
-    
+    $items = FileName::latest()->get();
     $mainforms = MainForm::latest()->get();
-    return view('pages.result', compact('mainforms'));
+    return view('pages.result', compact('mainforms','items'));
   }
   public function contact(Request $request)
   {
@@ -48,10 +48,10 @@ class MainController extends Controller
     $items= MainForm::create($request->all());
     
     foreach ($request->photos as $photo) {
-    $filename = $photo->store('public/upload');
+    // $filename = $photo->store('public/upload');
     FileName::create([
     'fileid' => $items->id,
-    'filename' => $filename,
+    'filename' => $photo->store('public/upload'),
     ]);
     }
     back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
