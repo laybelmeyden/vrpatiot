@@ -1,17 +1,38 @@
 <template>
-  <div class="container">
-    <div class="progress" style="height:40px;" :val="fileProgress" v-if="fileProgress">
+  <div class="file_manager">
+    <label for="file" class="btn btn-tertiary js-labelFile">
+      <i class="icon fa fa-check"></i>
+      <span class="js-fileName">Загрузить файл</span>
+    </label>
+    <input
+      class="input_main_form_modal input_cloud"
+      id="btn_2_2"
+      type="text"
+      name="drop_box_file"
+      placeholder="Ссылка на файл DropBox"
+      value
+    />
+    <div class="progress" :val="fileProgress" v-if="fileProgress">
       <div
         class="progress-bar"
         role="progressbar"
         :style="{ width:fileProgress + '%'}"
-      >{{ fileCurrent }}%</div>
+      >{{ fileCurrent}}%</div>
     </div>
-    <hr />
-    <input type="file" name="photos[]" multiple @change="fileInputChange" />
+    <div class="example-2">
+      <div class="form-group">
+        <input
+          type="file"
+          name="photos[]"
+          multiple
+          @change="fileInputChange"
+          id="file"
+          class="input-file"
+        />
+      </div>
+    </div>
     <!-- <input type="file" name="app1"  @change="fileInputChange" /> -->
-    <hr />
-    <div class="row">
+    <div class="row" :val="fileOrder" v-if="fileOrder">
       <div class="col-sm-6">
         <h3 class="text-center">Файлы в очереди ({{ fileOrder.length}})</h3>
         <ul class="list-group">
@@ -22,7 +43,7 @@
           >{{ file.name }} : {{ file.type }}</li>
         </ul>
       </div>
-      <div class="col-sm-6">
+      <!-- <div class="col-sm-6">
         <h3 class="text-center">Загруженные файлы ({{ filesFinish.length }})</h3>
         <ul class="list-group">
           <li
@@ -31,7 +52,7 @@
             :key="idx"
           >{{ file.name }} : {{ file.type }}</li>
         </ul>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -40,7 +61,7 @@
 export default {
   data() {
     return {
-      fileOrder: [],
+      fileOrder: false,
       filesFinish: [],
       fileProgress: 0,
       fileCurrent: ""
@@ -68,8 +89,8 @@ export default {
           }
         })
         .then(response => {
-          this.fileProgress = false;
-          this.fileCurrent = false;
+          this.fileProgress = 100;
+          this.fileCurrent = "Все файлы были загружены на 100";
           this.filesFinish.push(item);
           this.fileOrder.splice(item, 1);
         })

@@ -12,7 +12,6 @@
             <div class="card-content white-text">
             <span>Номер проекта = {{ $mainform -> id}}</span>
             <span class="card-title">Название проекта = {{ $mainform -> name_project}}</span>
-            @foreach ($items as $item) <a href="{{ asset('storage/'.$item -> filename)}}">{{ asset($item -> filename)}}</a> @endforeach
               <p>
               ФИО = {{ $mainform -> fio}}<br>
               Дата рождения = {{ $mainform -> day}}.{{ $mainform -> mouth}}.{{ $mainform -> years}}<br>
@@ -36,10 +35,10 @@
                 <h1 style="font-size: 25px;
     margin: 0;
     padding: 10px;">Команда</h1>
-                Телефон = {{ $mainform -> name_team}} <br>
-                Телефон = {{ $mainform -> email_team}} <br>
-                Телефон = {{ $mainform -> role_team}} <br>
-                Телефон = {{ $mainform -> phone_team}} <br>
+                ФИО члена команды 1 = {{ $mainform -> name_team}} <br>
+                Почта члена команды 1  = {{ $mainform -> email_team}} <br>
+                Роль члена команды 1 = {{ $mainform -> role_team}} <br>
+                Телефон члена команды 1 = {{ $mainform -> phone_team}} <br>
                 </li>
                 </ul>
                 @if ($mainform['name_team_1'] || $mainform['email_team_1'] !== null)
@@ -59,15 +58,10 @@
               </p>
             </div>
             <div class="card-action">
-            @if ($mainform['app'] !== null)
-              <a href="https://vrpatriot.ru//storage/{{ $mainform -> app}}">Скачать файл</a>
-            @endif
-            @if ($mainform['drop_box_file'] !== null)
-              <a href="{{ $mainform -> drop_box_file}}">Скачать файл drop_box</a>
-            @endif
-            @if ($mainform['google_file'] !== null)
-              <a href="{{ $mainform -> google_file}}">Скачать файл GOOGLE</a>
-            @endif
+            Прикрепленные файлы <br>
+            @foreach ($items as $item) 
+            <a href="{{ asset('storage/'.$item -> filename)}}">{{ asset($item -> filename)}}</a> <br><br>
+            @endforeach
             </div>
           </div>
         </div>

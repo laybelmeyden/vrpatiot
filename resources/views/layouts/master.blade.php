@@ -28,9 +28,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body class="body">
   @if(session('message'))
-  <div id="modalflat" class="modal modal-fixed-footer modal_alert visible">
+  <div id="modalflat" class="modal modal-fixed-footer modal_alert visible" onclick="modal_main_toggle_close();">
     <div class="modal-content">
       <h4 class="alert_title">{{ session('message') }}</h4>
       <p class="alert_down">{{ session('message_1') }}</p>
@@ -40,7 +40,7 @@
     </div>
   </div>
   @endif
-    @yield('content')
+  @yield('content')
   @include('layouts.footer')
   @include('layouts.scripts')
 </body>

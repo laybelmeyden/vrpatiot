@@ -1788,10 +1788,31 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      fileOrder: [],
+      fileOrder: false,
       filesFinish: [],
       fileProgress: 0,
       fileCurrent: ""
@@ -1853,8 +1874,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     _this2.fileCurrent = item.name + " " + _this2.fileProgress;
                   }
                 }).then(function (response) {
-                  _this2.fileProgress = false;
-                  _this2.fileCurrent = false;
+                  _this2.fileProgress = 100;
+                  _this2.fileCurrent = "Все файлы были загружены на 100";
 
                   _this2.filesFinish.push(item);
 
@@ -38329,15 +38350,24 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "file_manager" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("input", {
+      staticClass: "input_main_form_modal input_cloud",
+      attrs: {
+        id: "btn_2_2",
+        type: "text",
+        name: "drop_box_file",
+        placeholder: "Ссылка на файл DropBox",
+        value: ""
+      }
+    }),
+    _vm._v(" "),
     _vm.fileProgress
       ? _c(
           "div",
-          {
-            staticClass: "progress",
-            staticStyle: { height: "40px" },
-            attrs: { val: _vm.fileProgress }
-          },
+          { staticClass: "progress", attrs: { val: _vm.fileProgress } },
           [
             _c(
               "div",
@@ -38352,53 +38382,54 @@ var render = function() {
         )
       : _vm._e(),
     _vm._v(" "),
-    _c("hr"),
-    _vm._v(" "),
-    _c("input", {
-      attrs: { type: "file", name: "photos[]", multiple: "" },
-      on: { change: _vm.fileInputChange }
-    }),
-    _vm._v(" "),
-    _c("hr"),
-    _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-6" }, [
-        _c("h3", { staticClass: "text-center" }, [
-          _vm._v("Файлы в очереди (" + _vm._s(_vm.fileOrder.length) + ")")
-        ]),
-        _vm._v(" "),
-        _c(
-          "ul",
-          { staticClass: "list-group" },
-          _vm._l(_vm.fileOrder, function(file, idx) {
-            return _c("li", { key: idx, staticClass: "list-group-item" }, [
-              _vm._v(_vm._s(file.name) + " : " + _vm._s(file.type))
-            ])
-          }),
-          0
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6" }, [
-        _c("h3", { staticClass: "text-center" }, [
-          _vm._v("Загруженные файлы (" + _vm._s(_vm.filesFinish.length) + ")")
-        ]),
-        _vm._v(" "),
-        _c(
-          "ul",
-          { staticClass: "list-group" },
-          _vm._l(_vm.filesFinish, function(file, idx) {
-            return _c("li", { key: idx, staticClass: "list-group-item" }, [
-              _vm._v(_vm._s(file.name) + " : " + _vm._s(file.type))
-            ])
-          }),
-          0
-        )
+    _c("div", { staticClass: "example-2" }, [
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          staticClass: "input-file",
+          attrs: { type: "file", name: "photos[]", multiple: "", id: "file" },
+          on: { change: _vm.fileInputChange }
+        })
       ])
-    ])
+    ]),
+    _vm._v(" "),
+    _vm.fileOrder
+      ? _c("div", { staticClass: "row", attrs: { val: _vm.fileOrder } }, [
+          _c("div", { staticClass: "col-sm-6" }, [
+            _c("h3", { staticClass: "text-center" }, [
+              _vm._v("Файлы в очереди (" + _vm._s(_vm.fileOrder.length) + ")")
+            ]),
+            _vm._v(" "),
+            _c(
+              "ul",
+              { staticClass: "list-group" },
+              _vm._l(_vm.fileOrder, function(file, idx) {
+                return _c("li", { key: idx, staticClass: "list-group-item" }, [
+                  _vm._v(_vm._s(file.name) + " : " + _vm._s(file.type))
+                ])
+              }),
+              0
+            )
+          ])
+        ])
+      : _vm._e()
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "btn btn-tertiary js-labelFile", attrs: { for: "file" } },
+      [
+        _c("i", { staticClass: "icon fa fa-check" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "js-fileName" }, [_vm._v("Загрузить файл")])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 

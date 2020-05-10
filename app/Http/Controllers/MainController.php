@@ -21,7 +21,7 @@ class MainController extends Controller
   {
     $items = FileName::latest()->get();
     $mainforms = MainForm::latest()->get();
-    return view('pages.result', compact('mainforms','items'));
+    return view('pages.result', compact('mainforms', 'items'));
   }
   public function contact(Request $request)
   {
@@ -42,23 +42,22 @@ class MainController extends Controller
   }
   public function main_form(Request $request)
   {
-    if($request->hasFile('photos'))
-    {
+    if ($request->hasFile('photos')) {
 
-    $items= MainForm::create($request->all());
-    
-    foreach ($request->photos as $photo) {
-    // $filename = $photo->store('public/upload');
-    FileName::create([
-    'fileid' => $items->id,
-    'filename' => $photo->store('public/upload'),
-    ]);
-    }
-    back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
-    return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
-    }else{
-    back()->with('message_1', 'Пожалуйста, прикрепите файл к заявке!');
-    return redirect('/')->with('message', 'ВАША ЗАЯВКА НЕ БЫЛА ОТПРАВЛЕНА!');
+      $items = MainForm::create($request->all());
+
+      foreach ($request->photos as $photo) {
+        $photo->store('public/upload');
+        FileName::create([
+          'fileid' => $items->id,
+          'filename' => $photo->store('upload'),
+        ]);
+      }
+      back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
+      return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
+    } else {
+      back()->with('message_1', 'Пожалуйста, прикрепите файл к заявке!');
+      return redirect('/')->with('message', 'ВАША ЗАЯВКА НЕ БЫЛА ОТПРАВЛЕНА!');
     }
   }
 
