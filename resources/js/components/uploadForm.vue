@@ -1,7 +1,8 @@
 <template>
-  <div class="file_manager">
-    <label for="file" class="btn btn-tertiary js-labelFile">
-      <i class="icon fa fa-check"></i>
+  <div>
+   <div class="file_manager">
+      <label for="file" class=" btn btn_download js-labelFile">
+      <img src="assets/img/downloadf.svg" alt="">
       <span class="js-fileName">Загрузить файл</span>
     </label>
     <input
@@ -9,10 +10,11 @@
       id="btn_2_2"
       type="text"
       name="drop_box_file"
-      placeholder="Ссылка на файл DropBox"
+      placeholder="Ссылка на файл в облаке"
       value
     />
-    <div class="progress" :val="fileProgress" v-if="fileProgress">
+   </div>
+    <div class="progress prg1" :val="fileProgress" v-if="fileProgress">
       <div
         class="progress-bar"
         role="progressbar"
@@ -34,7 +36,7 @@
     <!-- <input type="file" name="app1"  @change="fileInputChange" /> -->
     <div class="row" :val="fileOrder" v-if="fileOrder">
       <div class="col-sm-6">
-        <h3 class="text-center">Файлы в очереди ({{ fileOrder.length}})</h3>
+        <h3 class="text-center fileiuty">Файлы в очереди ({{ fileOrder.length}})</h3>
         <ul class="list-group">
           <li
             class="list-group-item"

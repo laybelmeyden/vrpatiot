@@ -2,24 +2,24 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-  <title>ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций</title>
+  <title>Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны</title>
   <!--meta-->
   <meta charset="UTF-8">
   <meta name="yandex-verification" content="dc70469ab3fdb89d" />
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <meta name="description" content="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций" />
-  <META NAME="keywords" CONTENT="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций">
+  <meta name="description" content="Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны" />
+  <META NAME="keywords" CONTENT="Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны">
   <META NAME="AUTHOR" CONTENT="https://vk.com/glrlcocks">
   <meta name="revisit-after" content="5 days">
-  <link rel="SHORTCUT ICON" href="assets/img/Group7.png" type="image/x-icon">
+  <link rel="SHORTCUT ICON" href="assets/img/506-5061203_-png-9-1.svg" type="image/x-icon">
   <!--соц сети-->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций" />
-  <meta property="og:description" content="ВСЕРОССИЙСКИЙ КОНКУРС - интерактивных военно-исторических реконструкций" />
-  <meta property="og:image" href="" />
-  <meta property="og:url" content="ccskm" />
-  <meta property="og:site_name" content="AIR" />
+  <meta property="og:title" content="Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны">
+<meta property="og:description" content="призван стимулировать молодежь к яркому и всестороннему освещению патриотической тематики, связанной с традициями и современными задачами патриотического воспитания, через применение современных технических, цифровых средств в своих проектах. Особенностью конкурса 2020 года является его тематическая направленность, посвященная 75-летию Победы в Великой Отечественной войне.">
+<meta property="og:image" content="assets/img/rty.png">
+<meta itemprop="image" content="assets/img/rty.png"/>
+<meta name="twitter:image:src" content="assets/img/rty.png"/>
+<meta property="og:url" content="">
 
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/materialize.css">

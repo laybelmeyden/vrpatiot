@@ -47,15 +47,19 @@
                 <h1 style="font-size: 25px;
     margin: 0;
     padding: 10px;">Доп член команды</h1>
-              Телефон = {{ $mainform -> name_team_1}} <br>
-              Телефон = {{ $mainform -> email_team_1}} <br>
-              Телефон = {{ $mainform -> role_team_1}} <br>
-              Телефон = {{ $mainform -> phone_team_1}} <br>
-              Телефон = {{ $mainform -> city}} <br>
+              ФИО члена команды 2 = {{ $mainform -> name_team_1}} <br>
+              Почта члена команды 2 = {{ $mainform -> email_team_1}} <br>
+              Роль члена команды 2 = {{ $mainform -> role_team_1}} <br>
+              Телефон члена команды 2 = {{ $mainform -> phone_team_1}} <br>
               </li>
                 </ul>
                 @endif
               </p>
+            </div>
+            <div class="card-action">
+            @if ($mainform['drop_box_file'] !== null)
+            Ссылка на файл в облаке - <a href="{{ $mainform -> drop_box_file}}">{{ $mainform -> drop_box_file}}</a>
+            @endif
             </div>
             <div class="card-action">
             Прикрепленные файлы <br>

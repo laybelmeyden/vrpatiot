@@ -12,29 +12,29 @@
                               <h4 class="main_form_header">Чтобы стать участником Всероссийского конкурса интерактивных реконструкций событий Великой Отечественной войны, внимательно заполните все поля данной заявки, загрузите необходимые файлы и отправьте.</h4>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Фамилия, Имя, Отчество</label>
-                                  <input class="input_main_form_modal" type="text" name="fio" placeholder="" value="" req>
+                                  <input class="input_main_form_modal" type="text" name="fio" placeholder="" value="" required>
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Дата рождения</label>
                                   <div class="bth_grid">
                                       <div>
-                                          <input class="input_main_form_modal date_input_1" type="number" min="0" max="31" step="1" name="day" placeholder="День" value="" req>
+                                          <input class="input_main_form_modal date_input_1" type="number" min="0" max="31" step="1" name="day" placeholder="День" value="" required>
                                       </div>
                                       <div>
-                                          <input class="input_main_form_modal date_input_2" type="number" min="0" max="12" step="1" name="mouth" placeholder="Месяц" value="" req>
+                                          <input class="input_main_form_modal date_input_2" type="number" min="0" max="12" step="1" name="mouth" placeholder="Месяц" value="" required>
                                       </div>
                                       <div>
-                                          <input class="input_main_form_modal date_input_3" type="number" min="0" max="2019" step="1" name="years" placeholder="Год" value="" req>
+                                          <input class="input_main_form_modal date_input_3" type="number" min="0" max="2019" step="1" name="years" placeholder="Год" value="" required>
                                       </div>
                                   </div>
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">E-mail <span>(Пожалуйста, укажите свой e-mail, чтоб мы могли держать вас в курсе всех новостей и этапов конкурса)</span></label>
-                                  <input class="input_main_form_modal" type="email" name="email" placeholder="" value="" req>
+                                  <input class="input_main_form_modal" type="email" name="email" placeholder="" value="" required>
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Телефон</label>
-                                  <input class="input_main_form_modal" type="text" name="phone" placeholder="" value="" req>
+                                  <input class="input_main_form_modal" type="text" name="phone" placeholder="" value="" required>
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Соц. сети</label>
@@ -55,15 +55,15 @@
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Город</label>
-                                  <input class="input_main_form_modal" type="text" name="city" placeholder="" value="" req>
+                                  <input class="input_main_form_modal" type="text" name="city" placeholder="" value="" required>
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Образование <span> (Укажите название образовательного учреждения, в котором вы учитесь или которое уже окончили)</span></label>
-                                  <input class="input_main_form_modal" type="text" name="edu" placeholder="" value="" req>
+                                  <input class="input_main_form_modal" type="text" name="edu" placeholder="" value="" required>
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Название проекта</label>
-                                  <input class="input_main_form_modal" type="text" name="name_project" placeholder="" value="" req>
+                                  <input class="input_main_form_modal" type="text" name="name_project" placeholder="" value="" required>
                               </div>
                               <div class="form_item" style="    margin-bottom: 25px !important;">
                                   <label for="" class="modal_input_label">Номинация</label>
@@ -76,22 +76,22 @@
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Краткое описание проекта (400 символов). <span>Расскажите нам самое важное о вашем проекте - о чём он, какие
                                           технологии были использованы и пр.</span></label>
-                                  <textarea class="input_main_form_modal" type="text" name="opis_proj" placeholder="" value="" maxlength="400" req style="height: 116px; padding-top: 20px !important;"></textarea>
+                                  <textarea class="input_main_form_modal" type="text" name="opis_proj" placeholder="" value="" maxlength="400" style="height: 116px; padding-top: 20px !important;" required></textarea>
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Команда</label>
                                   <div class="team_grid">
                                       <div class="frst_team">
-                                          <input class="input_main_form_modal team_input" type="text" name="name_team" placeholder="ФИО" value="" req>
-                                          <input class="input_main_form_modal team_input" type="email" name="email_team" placeholder="E-mail" value="" req>
+                                          <input class="input_main_form_modal team_input" type="text" name="name_team" placeholder="ФИО" value="" required>
+                                          <input class="input_main_form_modal team_input" type="email" name="email_team" placeholder="E-mail" value="" required>
                                       </div>
                                       <div class="second_team">
-                                          <input class="input_main_form_modal team_input" type="text" name="role_team" placeholder="Роль в команде" value="" req>
-                                          <input class="input_main_form_modal team_input" type="text" name="phone_team" placeholder="Телефон" value="" req>
+                                          <input class="input_main_form_modal team_input" type="text" name="role_team" placeholder="Роль в команде" value="" required>
+                                          <input class="input_main_form_modal team_input" type="text" name="phone_team" placeholder="Телефон" value="" required>
                                       </div>
                                   </div>
                                   <div class="form_item" id="added_news">
-                                      <img src="assets/img/plus.png" alt="" class="img_plus">
+                                      <img src="assets/img/plus.svg" alt="" class="img_plus">
                                       <p class="text_plus">Добавить еще одного участника команды</p>
                                   </div>
                               </div>
@@ -128,7 +128,7 @@
                                   </div>
                               </div>
                               <div class="form_item c">
-                                  <button type="submit" class="waves-effect waves-light btn btn_form_modal">ОТПРАВИТЬ</button>
+                                  <button type="submit" class="waves-effect waves-light btn btn_form_modal">Подать заявку</button>
                               </div>
                           </div>
                       </form>
