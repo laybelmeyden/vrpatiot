@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\MainForm;
 use App\FileName;
+use DB;
+use Excel;
+use App\Exports\ProjectExport;
 
 class MainController extends Controller
 {
@@ -65,4 +68,8 @@ class MainController extends Controller
   {
     return "oks";
   }
+  public function excel_export()
+    {
+        return Excel::download(new ProjectExport, 'projects.xlsx');
+    }
 }
