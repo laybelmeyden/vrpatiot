@@ -7,7 +7,6 @@ use App\MainForm;
 use App\FileName;
 use Excel;
 use App\Exports\ProjectExport;
-use Maatwebsite\Excel\Facades\Excel;
 
 class MainController extends Controller
 {
