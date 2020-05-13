@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\MainForm;
 use App\FileName;
-use DB;
 use Excel;
 use App\Exports\ProjectExport;
 
