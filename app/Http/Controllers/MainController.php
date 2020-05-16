@@ -7,6 +7,7 @@ use App\MainForm;
 use App\FileName;
 use Excel;
 use App\Exports\ProjectExport;
+use Illuminate\Support\Facades\Mail;
 
 class MainController extends Controller
 {
@@ -28,13 +29,13 @@ class MainController extends Controller
   public function contact(Request $request)
   {
     $data = array(
-      'phone' => request('phone'),
       'contact_email' => request('contact_email'),
+      'phone' => request('phone'),
       'text_contact' => request('text_contact'),
     );
 
-    \Mail::send('email.mailcontact', $data, function ($message_contact) use ($data) {
-      $mail_admin = env('MAIL_ADMIN_CONTACT');
+    $mail_admin = env('MAIL_ADMIN_CONTACT');
+    Mail::send('email.mailcontact', $data, function ($message_contact) use ($data,$mail_admin) {
       $message_contact->from($data['contact_email'], $data['phone'], $data['text_contact']);
       $message_contact->to($mail_admin, 'For Admin')->subject('Message from site');
     });
