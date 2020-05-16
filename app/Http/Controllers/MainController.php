@@ -34,11 +34,11 @@ class MainController extends Controller
       'text_contact' => request('text_contact'),
     );
 
-    $mail_admin = env('MAIL_ADMIN_CONTACT');
-    Mail::send('email.mailcontact', $data, function ($message_contact) use ($data,$mail_admin) {
-      $message_contact->from($data['contact_email'], $data['phone'], $data['text_contact']);
-      $message_contact->to($mail_admin, 'For Admin')->subject('Message from site');
-    });
+    $to_email = env('MAIL_ADMIN_CONTACT');
+    Mail::send('email.mailmain', $data, function ($message) use ($data, $to_email) {
+      $message->from($to_email, $data['contact_email'], $data['phone'], $data['text_contact']);
+      $message->to($to_email)->subject('Message from site');
+  });
 
     back()->with('message_1', 'Ваш вопрос отправлен куратору форума и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
     return redirect('/')->with('message', 'СПАСИБО ЗА ВАШУ АКТИВНОСТЬ И ИНТЕРЕС!');
