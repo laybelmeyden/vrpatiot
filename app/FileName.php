@@ -11,8 +11,4 @@ class FileName extends Model
         'fileid',
         'filename',
         ];
-        public function item()
-        {
-        return $this->hasMany('App\MainForm');
-        }       
-}
+    }

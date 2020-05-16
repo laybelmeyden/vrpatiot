@@ -44,6 +44,9 @@
     background-color: #fefffa;
     margin: 0;
     cursor: pointer;
+    height: 72px;
+    display: flex;
+    align-items: center;
   }
 
   p {
@@ -73,7 +76,6 @@
     padding: 0;
     margin: 0;
     padding-bottom: 4px;
-    padding-top: 18px;
     border-top: 1px dotted #dce7eb;
   }
 
@@ -102,9 +104,12 @@
   ul li i {
     position: absolute;
     transform: translate(-6px, 0);
-    margin-top: 16px;
+    margin-top: 30px;
     right: 0;
     margin-right: 30px;
+  }
+  div{
+    min-height: 72px;
   }
 
   ul li i:before,
@@ -153,6 +158,19 @@
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     min-height: 72px;
   }
+  .res_p{
+    padding: 23px;
+    background: #D81A12;
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-family: "Montserrat" !important;
+  }
+  .res_mian{
+    margin: 0;
+    padding-left: 90px;
+    z-index: -1;
+  }
 
   @keyframes flipdown {
     0% {
@@ -193,7 +211,7 @@
       <li>
         <input type="checkbox" checked>
         <i></i>
-        <h2><span>{{ $mainform -> id}}</span> - {{ $mainform -> name_project}}</h2>
+        <div><p class="res_p">{{ $mainform -> id}}</p> - <p class="res_mian">{{ $mainform -> name_project}}</p></div>
         <p><br>
           ФИО = {{ $mainform -> fio}}<br>
           Дата рождения = {{ $mainform -> day}}.{{ $mainform -> mouth}}.{{ $mainform -> years}}<br>
@@ -230,8 +248,8 @@
           <br><br>
           @endif
           Прикрепленные файлы <br><br>
-          @foreach ($items as $item)
-          <a href="{{ asset('storage/'.$item -> filename)}}">{{ asset($item -> filename)}}</a> <br><br>
+          @foreach ($mainform -> file_names  as $items)
+          {{ asset($item -> filename)}}
           @endforeach
         </p>
       </li>
