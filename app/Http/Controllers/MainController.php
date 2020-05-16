@@ -28,17 +28,18 @@ class MainController extends Controller
   }
   public function contact(Request $request)
   {
+    $to_name = "vrpatriot";
+    $to_email = "vrpatriot@rusinnovations.com";
     $data = array(
-      'contact_email' => request('contact_email'),
-      'phone' => request('phone'),
-      'text_contact' => request('text_contact'),
+        'contact_email' => request('contact_email'),
+        'phone' => request('phone'),
+        'text_contact' => request('text_contact'),
     );
-
-    $to_email = env('MAIL_ADMIN_CONTACT');
-    Mail::send('email.mailmain', $data, function ($message) use ($data, $to_email) {
-      $message->from($to_email, $data['contact_email'], $data['phone'], $data['text_contact']);
-      $message->to($to_email)->subject('Сообщение с сайта');
-  });
+      Mail::send('email.mailcontact', $data, function($message) use ($data, $to_email, $to_name)
+      {
+        $message->from($to_email, $data['contact_email'],$data['phone'], $data['text_contact']);
+        $message->to($to_email)->subject('Message from site');
+     });
 
     back()->with('message_1', 'Ваш вопрос отправлен куратору форума и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
     return redirect('/')->with('message', 'СПАСИБО ЗА ВАШУ АКТИВНОСТЬ И ИНТЕРЕС!');
