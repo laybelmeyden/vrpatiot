@@ -34,7 +34,7 @@ class MainController extends Controller
         'phone' => request('phone'),
         'text_contact' => request('text_contact'),
     );
-      Mail::send('email.mailcontact', $data, function($message) use ($data, $to_email, $to_name)
+      \Mail::send('email.mailcontact', $data, function($message) use ($data, $to_email, $to_name)
       {
         $message->from($to_email, $data['contact_email'],$data['phone'], $data['text_contact']);
         $message->to($to_email)->subject('Message from site');
