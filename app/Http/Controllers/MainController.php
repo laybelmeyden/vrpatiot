@@ -37,7 +37,7 @@ class MainController extends Controller
     $to_email = env('MAIL_ADMIN_CONTACT');
     Mail::send('email.mailmain', $data, function ($message) use ($data, $to_email) {
       $message->from($to_email, $data['contact_email'], $data['phone'], $data['text_contact']);
-      $message->to($to_email)->subject('Message from site');
+      $message->to($to_email)->subject('Сообщение с сайта');
   });
 
     back()->with('message_1', 'Ваш вопрос отправлен куратору форума и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
