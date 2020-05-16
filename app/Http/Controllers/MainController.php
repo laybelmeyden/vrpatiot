@@ -7,7 +7,6 @@ use App\MainForm;
 use App\FileName;
 use Excel;
 use App\Exports\ProjectExport;
-use Illuminate\Support\Facades\Mail;
 
 class MainController extends Controller
 {
