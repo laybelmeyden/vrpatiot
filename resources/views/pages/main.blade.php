@@ -104,7 +104,7 @@
       </div>
       <div class="col xl12" style="width: 100%;">
         <div class="flex_align">
-          <a href="https://vk.com/doc22052708_515231706?hash=bd620e6438b1933740&dl=4bb64a7b40d2583170" target="_blank" class=" btn btn_download"><img src="assets/img/download.svg" class="img_dowmload">СКАЧАТЬ ПОЛОЖЕНИЕ О КОНКУРСЕ</a>
+          <a href="https://vk.com/doc158927846_548435323?hash=da6fd6c0b65e71f00d&dl=9e7e39bf2637450f4b" target="_blank" class=" btn btn_download"><img src="assets/img/download.svg" class="img_dowmload">СКАЧАТЬ ПОЛОЖЕНИЕ О КОНКУРСЕ</a>
         </div>
       </div>
     </div>
