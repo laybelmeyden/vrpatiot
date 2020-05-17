@@ -50,6 +50,7 @@
   }
 
   p {
+    word-break: break-all;
     color: rgba(48, 69, 92, 0.8);
     font-size: 17px;
     line-height: 26px;
