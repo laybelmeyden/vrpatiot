@@ -71,6 +71,7 @@ class MainController extends Controller
       back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
       return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     } else {
+      $items = MainForm::create($request->all());
       back()->with('message_1', 'Пожалуйста, прикрепите файл к заявке!');
       return redirect('/')->with('message', 'ВАША ЗАЯВКА НЕ БЫЛА ОТПРАВЛЕНА!');
     }
