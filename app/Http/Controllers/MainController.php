@@ -72,6 +72,16 @@ class MainController extends Controller
       return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     } else {
       $items = MainForm::create($request->all());
+      $to_email='vrpatriot@rusinnovations.com';
+      $to_name=env('MAIL_FROM_NAME');
+      $data = array(
+          'email' => request('email'),
+      );
+        \Mail::send('email.mailcontactuser', $data, function($message) use ($data,$to_email, $to_name)
+        {
+          $message->from($to_email);
+          $message->to($data['email'], $to_name)->subject('Уведомление о получении проекта');
+       });
       back()->with('message_1', 'Пожалуйста, прикрепите файл к заявке!');
       return redirect('/')->with('message', 'ВАША ЗАЯВКА НЕ БЫЛА ОТПРАВЛЕНА!');
     }
