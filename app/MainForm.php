@@ -36,6 +36,6 @@ class MainForm extends Model
         ];
         public function file_names()
         {
-        return $this->hasMany('App\FileName');
+        return $this->hasMany('App\FileName', 'fileid');
         }    
 }

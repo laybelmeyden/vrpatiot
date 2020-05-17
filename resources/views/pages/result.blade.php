@@ -248,8 +248,8 @@
           <br><br>
           @endif
           Прикрепленные файлы <br><br>
-          @foreach ($mainform -> file_names  as $items)
-          {{ asset($item -> filename)}}
+          @foreach ($mainform-> file_names  as $file_name)
+          {{ asset($file_name -> filename)}}
           @endforeach
         </p>
       </li>

@@ -21,8 +21,8 @@ class MainController extends Controller
   }
   public function result()
   {
-    $items = FileName::all();
-    $mainforms = MainForm::all();
+    $items = FileName::latest()->get();
+    $mainforms = MainForm::with('file_names')->latest()->get();
     return view('pages.result', compact('mainforms', 'items'));
   }
   public function contact(Request $request)
