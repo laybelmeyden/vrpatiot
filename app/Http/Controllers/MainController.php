@@ -57,13 +57,14 @@ class MainController extends Controller
         ]);
       }
       $to_email='vrpatriot@rusinnovations.com';
+      $to_name=env('MAIL_FROM_NAME');
       $data = array(
           'email' => request('email'),
       );
-        \Mail::send('email.mailcontactuser', $data, function($message) use ($data,$to_email)
+        \Mail::send('email.mailcontactuser', $data, function($message) use ($data,$to_email, $to_name)
         {
           $message->from($to_email);
-          $message->to($data['email'])->subject('Уведомление о получении проекта');
+          $message->to($data['email'], $to_name)->subject('Уведомление о получении проекта');
        });
 
 
