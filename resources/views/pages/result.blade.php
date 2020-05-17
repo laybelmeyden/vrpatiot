@@ -249,7 +249,7 @@
           @endif
           Прикрепленные файлы <br><br>
           @foreach ($mainform-> file_names  as $file_name)
-          {{ asset($file_name -> filename)}}
+          <a href="https://{{ asset($file_name -> filename)}}">{{ asset($file_name -> filename)}}</a>
           @endforeach
         </p>
       </li>
