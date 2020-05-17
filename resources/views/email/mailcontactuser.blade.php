@@ -47,7 +47,9 @@ style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,
                         <br> 
 Ваш проект был успешно загружен.
 <br> 
-После окончания приёма заявок (30.09.) ваш проект пройдёт экспертную оценку, о результатах которой вы сможете узнать на сайте: <a href="https://vrpatriot.ru/">https://vrpatriot.ru/</a> и в социальных сетях:
+После окончания приёма заявок (30.09.) ваш проект пройдёт экспертную оценку, о результатах которой вы сможете узнать на сайте: <a href="https://vrpatriot.ru/">https://vrpatriot.ru/</a> и в социальных сетях:<br>
+<a href="https://vk.com/aidrussia">https://vk.com/aidrussia</a><br>
+<a href="https://www.facebook.com/groups/2621611817948990/">https://www.facebook.com/groups/2621611817948990/</a>
                         </p>
                         <hr>
                         <tr>
@@ -59,8 +61,7 @@ style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,
                         margin-top: 0;
                         text-align: center;
                         font-size: 14px;"
-                        ><a href="https://vk.com/aidrussia">https://vk.com/aidrussia</a><br>
-<a href="https://www.facebook.com/groups/2621611817948990/">https://www.facebook.com/groups/2621611817948990/</a><br>
+                        >
 
 Большое спасибо за проявленный интерес!<br>
 
