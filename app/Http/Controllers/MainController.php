@@ -56,6 +56,17 @@ class MainController extends Controller
           'filename' => $photo->store('upload'),
         ]);
       }
+      $to_email='vrpatriot@rusinnovations.com';
+      $data = array(
+          'email' => request('email'),
+      );
+        \Mail::send('email.mailcontactuser', $data, function($message) use ($data,$to_email)
+        {
+          $message->from($to_email);
+          $message->to($data['email'])->subject('Уведомление о получении проекта');
+       });
+
+
       back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
       return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     } else {
