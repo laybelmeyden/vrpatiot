@@ -249,7 +249,7 @@
           @endif
           Прикрепленные файлы <br><br>
           @foreach ($mainform-> file_names  as $file_name)
-          <a href="storage/{{ asset($file_name -> filename)}}">{{ asset($file_name -> filename)}}</a>
+          <a download href="{{ asset('storage/'.$file_name -> filename)}}">{{ asset($file_name -> filename)}}</a>
           @endforeach
         </p>
       </li>
