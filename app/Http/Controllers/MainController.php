@@ -82,8 +82,8 @@ class MainController extends Controller
           $message->from($to_email);
           $message->to($data['email'], $to_name)->subject('Уведомление о получении проекта');
        });
-      back()->with('message_1', 'Пожалуйста, прикрепите файл к заявке!');
-      return redirect('/')->with('message', 'ВАША ЗАЯВКА НЕ БЫЛА ОТПРАВЛЕНА!');
+      back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
+      return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     }
   }
 
