@@ -158,6 +158,28 @@ h3 {
     overflow: hidden;
 }
 
+
+/* file */
+
+#custom-button {
+    padding: 10px;
+    color: white;
+    background-color: #009578;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#custom-button:hover {
+    background-color: #00b28f;
+}
+
+#custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+}
+
 .form_modal_body {
     background-color: white;
     padding-right: 116px;
@@ -1334,7 +1356,7 @@ nav {
 }
 
 .js-labelFile {
-    width: 100% !important;
+    width: 50% !important;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1352,9 +1374,6 @@ nav {
 }
 
 .file_manager {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 22px;
 }
 

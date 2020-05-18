@@ -1,37 +1,31 @@
 <template>
   <div>
    <div class="file_manager">
-      <label for="file" class=" btn btn_download js-labelFile">
-      <img src="assets/img/downloadf.svg" alt="">
-      <span class="js-fileName">Загрузить файл</span>
-    </label>
-    <input
+       <input
       class="input_main_form_modal input_cloud"
-      id="btn_2_2"
+      id="real-file"
       type="text"
       name="drop_box_file"
       placeholder="Ссылка на файл в облаке"
       value
     />
+     <div class="file-field input-field">
+      <div class="btn btn_download js-labelFile">
+        <span class="js-fileName">Загрузить файл</span>
+        <input type="file" name="photos[]" @change="fileInputChange" multiple>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Выберите один или несколько файлов">
+      </div>
+    </div>
    </div>
+
     <div class="progress prg1" :val="fileProgress" v-if="fileProgress">
       <div
         class="progress-bar"
         role="progressbar"
         :style="{ width:fileProgress + '%'}"
       >{{ fileCurrent}}%</div>
-    </div>
-    <div class="example-2">
-      <div class="form-group">
-        <input
-          type="file"
-          name="photos[]"
-          multiple
-          @change="fileInputChange"
-          id="file"
-          class="input-file"
-        />
-      </div>
     </div>
     <!-- <input type="file" name="app1"  @change="fileInputChange" /> -->
     <div class="row" :val="fileOrder" v-if="fileOrder">
@@ -97,7 +91,7 @@ export default {
           this.fileOrder.splice(item, 1);
         })
         .catch(error => {
-          alert("FUCKINA IADIAID");
+          alert("Выбранный файл слишком большой, пожалуйста, загрузите все файлы в облако!");
         });
     }
   }
