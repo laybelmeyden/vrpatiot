@@ -1,12 +1,21 @@
   <div id="body_modal" class="form_modal">
-      <div class="container form_modal_body">
+      <div class="container form_modal_body" style="    display: flex;
+    justify-content: center;
+    align-items: center;">
+          <div>
+              <p style="font-family: MontserratB !important;
+    font-size: 32px !important;
+    line-height: 30px;
+    color: #425C5A !important;
+    font-weight: 800;">Старт приёма заявок - 24 июня</p>
+          </div>
           <div id="modalmain" class="modal_main_form">
               <div class="modal-content">
                   <div class="modal_btn">
                       <img src="assets/img/delete-button.svg" class=" modal-close modal_form_close_all" alt="" onclick="modal_main_toggle();">
                   </div>
                   <div class="row">
-                      <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
+                      <!-- <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
                           {{ csrf_field() }}
                           <div class="col s12 xl12">
                               <h4 class="main_form_header">Чтобы стать участником Всероссийского конкурса интерактивных реконструкций событий Великой Отечественной войны, внимательно заполните все поля данной заявки, загрузите необходимые файлы и отправьте.</h4>
@@ -131,7 +140,7 @@
                                   <button type="submit" class="waves-effect waves-light btn btn_form_modal">Подать заявку</button>
                               </div>
                           </div>
-                      </form>
+                      </form> -->
                   </div>
               </div>
           </div>
