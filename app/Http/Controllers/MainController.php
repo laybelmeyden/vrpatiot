@@ -27,25 +27,30 @@ class MainController extends Controller
   }
   public function contact(Request $request)
   {
-    $this->validate(request(), [
-      'g-recaptcha-response' => 'required|captcha'
-  ]);
-    $to_name = "vrpatriot";
-    $to_email = "vrpatriot@rusinnovations.com";
-    $data = array(
-        'contact_email' => request('contact_email'),
-        'phone' => request('phone'),
-        'text_contact' => request('text_contact'),
-    );
-      \Mail::send('email.mailcontact', $data, function($message) use ($data, $to_email, $to_name)
-      {
-        $message->from($to_email, $data['contact_email'],$data['phone'], $data['text_contact']);
-        $message->to($to_email)->subject('Message from site');
-     });
-
-    back()->with('message_1', 'Ваш вопрос отправлен куратору форума и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
-    return redirect('/')->with('message', 'СПАСИБО ЗА ВАШУ АКТИВНОСТЬ И ИНТЕРЕС!');
-  }
+    if(){
+      $this->validate(request(), [
+        'g-recaptcha-response' => 'required|captcha'
+    ]);
+      $to_name = "vrpatriot";
+      $to_email = "vrpatriot@rusinnovations.com";
+      $data = array(
+          'contact_email' => request('contact_email'),
+          'phone' => request('phone'),
+          'text_contact' => request('text_contact'),
+      );
+        \Mail::send('email.mailcontact', $data, function($message) use ($data, $to_email, $to_name)
+        {
+          $message->from($to_email, $data['contact_email'],$data['phone'], $data['text_contact']);
+          $message->to($to_email)->subject('Message from site');
+       });
+  
+      back()->with('message_1', 'Ваш вопрос отправлен куратору форума и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
+      return redirect('/')->with('message', 'СПАСИБО ЗА ВАШУ АКТИВНОСТЬ И ИНТЕРЕС!');
+    }else{
+      back()->with('message_1', 'Ваш вопрос не был отправлен !');
+      return redirect('/')->with('message', 'Проверьте правильность заполненных данных !');
+    }
+    }
   public function main_form(Request $request)
   {
     if ($request->hasFile('photos')) {

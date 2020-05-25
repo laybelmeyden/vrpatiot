@@ -204,11 +204,6 @@
           {!! NoCaptcha::renderJs() !!}
           {!! NoCaptcha::display() !!}
         </div>
-        @if ($errors->has('g-recaptcha-response'))
-        <span class="help-block">
-          <strong>captcha была введена неверно !</strong>
-        </span>
-        @endif
         <div class="w-100 a-right btn_pd">
           <button type="submit" class="btn_contact">Отправить</button>
         </div>
