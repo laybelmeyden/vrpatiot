@@ -27,7 +27,7 @@ class MainController extends Controller
   }
   public function contact(Request $request)
   {
-    if(){
+    if($request){
       $this->validate(request(), [
         'g-recaptcha-response' => 'required|captcha'
     ]);
