@@ -27,6 +27,9 @@ class MainController extends Controller
   }
   public function contact(Request $request)
   {
+    $this->validate(request(), [
+      'g-recaptcha-response' => 'required|captcha'
+  ]);
     $to_name = "vrpatriot";
     $to_email = "vrpatriot@rusinnovations.com";
     $data = array(

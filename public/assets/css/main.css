@@ -1539,6 +1539,11 @@ nav {
     -webkit-transform: rotate(45deg);
 }
 
+.captchajs {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 /* endmobile */
 

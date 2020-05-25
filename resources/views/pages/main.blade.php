@@ -87,9 +87,9 @@
       <p class="pansf">- расскажем подробности о конкурсе<br>
         - обсудим вопросы, связанные с подготовкой заявки<br>
         - проведем мастер-класс по VR и AR-технологиям и успешной презентации проекта</p>
-        <div class="btn_a">
+      <div class="btn_a">
         <a href="https://rusinnovations.timepad.ru/event/1315006/" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
-        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -200,6 +200,15 @@
         <input type="email" class="input_contact" name="contact_email" placeholder="E-mail" required>
         <input type="text" class="input_contact" name="phone" placeholder="Телефон" required>
         <textarea class="text_area_cotnatc" name="text_contact" placeholder="Ваш вопрос" required></textarea>
+        <div class="captchajs">
+          {!! NoCaptcha::renderJs() !!}
+          {!! NoCaptcha::display() !!}
+        </div>
+        @if ($errors->has('g-recaptcha-response'))
+        <span class="help-block">
+          <strong>captcha была введена неверно !</strong>
+        </span>
+        @endif
         <div class="w-100 a-right btn_pd">
           <button type="submit" class="btn_contact">Отправить</button>
         </div>
