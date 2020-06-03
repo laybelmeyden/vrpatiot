@@ -244,42 +244,32 @@
 <section id="partners">
   <div class="container">
       <p class="partners_title">Партнёры конкурса</p>
-      <div class="flex_cetnter">
-        <div class="flex_cetnter ">
+      <div class="flex_container_part">
           <div class="logo_part_container">
-            <a href="https://rusinnovations.com">
+            <a href="https://rusinnovations.com" class="flex_cetnter">
               <img src="assets/img/logo_air.svg" alt="" class="logo_part">
             </a>
           </div>
-        </div>
-        <div class="flex_cetnter ">
           <div class="logo_part_container">
-            <a href="http://www.smena.org">
+            <a href="http://www.smena.org" class="flex_cetnter">
               <img src="assets/img/smena.png" alt="" class="logo_part">
             </a>
           </div>
-        </div>
-        <div class="flex_cetnter ">
           <div class="logo_part_container">
-            <a href="https://fadm.gov.ru">
+            <a href="https://fadm.gov.ru" class="flex_cetnter">
               <img src="assets/img/ros_mol.png" alt="" class="logo_part">
             </a>
           </div>
-        </div>
-        <div class="flex_cetnter ">
           <div class="logo_part_container">
-            <a href="http://rospatriotcentr.ru/">
+            <a href="http://rospatriotcentr.ru/" class="flex_cetnter">
               <img src="assets/img/ros_pat.png" alt="" class="logo_part">
             </a>
           </div>
-        </div>
-        <div class="flex_cetnter ">
           <div class="logo_part_container">
-            <a href="https://coddyschool.com/">
-              <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part">
+            <a href="https://coddyschool.com/" class="flex_cetnter">
+              <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part w80">
             </a>
           </div>
-        </div>
       </div>
   </div>
   </div>
