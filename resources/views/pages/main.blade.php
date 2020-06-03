@@ -247,32 +247,43 @@
       <p class="partners_title">Партнёры конкурса</p>
       <div class="col xl12 flex_cetnter">
         <div class="col xl3 flex_cetnter ">
-          <a href="https://rusinnovations.com">
-            <img src="assets/img/logo_air.svg" alt="" class="logo_part">
-          </a>
+          <div class="logo_part">
+            <a href="https://rusinnovations.com">
+              <img src="assets/img/logo_air.svg" alt="" class="logo_part">
+            </a>
+          </div>
         </div>
         <div class="col xl3 flex_cetnter ">
-          <a href="http://www.smena.org">
-            <img src="assets/img/smena.png" alt="" class="logo_part">
-          </a>
+          <div class="logo_part">
+            <a href="http://www.smena.org">
+              <img src="assets/img/smena.png" alt="" class="logo_part">
+            </a>
+          </div>
         </div>
         <div class="col xl3 flex_cetnter ">
-          <a href="https://fadm.gov.ru">
-            <img src="assets/img/ros_mol.png" alt="" class="logo_part">
-          </a>
+          <div class="logo_part">
+            <a href="https://fadm.gov.ru">
+              <img src="assets/img/ros_mol.png" alt="" class="logo_part">
+            </a>
+          </div>
         </div>
         <div class="col xl3 flex_cetnter ">
-          <a href="http://rospatriotcentr.ru/">
-            <img src="assets/img/ros_pat.png" alt="" class="logo_part">
-          </a>
+          <div class="logo_part">
+            <a href="http://rospatriotcentr.ru/">
+              <img src="assets/img/ros_pat.png" alt="" class="logo_part">
+            </a>
+          </div>
         </div>
         <div class="col xl3 flex_cetnter ">
-          <a href="https://coddyschool.com/">
-            <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part">
-          </a>
+          <div class="logo_part">
+            <a href="https://coddyschool.com/">
+              <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part">
+            </a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 <section id="footer">

@@ -549,6 +549,10 @@ nav a {
     z-index: 99999999;
 }
 
+.logo_part {
+    height: 100px;
+}
+
 .progress-bar {
     display: -webkit-box;
     display: -ms-flexbox;
