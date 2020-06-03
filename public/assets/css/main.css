@@ -549,7 +549,7 @@ nav a {
     z-index: 99999999;
 }
 
-.logo_part {
+.logo_part_container {
     height: 100px;
 }
 
