@@ -266,6 +266,11 @@
             <img src="assets/img/ros_pat.png" alt="" class="logo_part">
           </a>
         </div>
+        <div class="col xl3 flex_cetnter ">
+          <a href="https://coddyschool.com/">
+            <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part">
+          </a>
+        </div>
       </div>
     </div>
   </div>
