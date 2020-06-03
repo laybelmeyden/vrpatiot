@@ -980,6 +980,10 @@ textarea:focus {
     max-width: 200px;
 }
 
+.w65 {
+    width: 65%;
+}
+
 .w80 {
     width: 80%;
 }

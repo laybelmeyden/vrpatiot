@@ -262,12 +262,12 @@
           </div>
           <div class="logo_part_container">
             <a href="http://rospatriotcentr.ru/" class="flex_cetnter">
-              <img src="assets/img/ros_pat.png" alt="" class="logo_part">
+              <img src="assets/img/ros_pat.png" alt="" class="logo_part w80">
             </a>
           </div>
           <div class="logo_part_container">
             <a href="https://coddyschool.com/" class="flex_cetnter">
-              <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part w80">
+              <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part w65">
             </a>
           </div>
       </div>
