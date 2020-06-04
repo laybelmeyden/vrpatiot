@@ -11,8 +11,13 @@ const modal_cookie_open = () => {
     document.getElementById("cok_modal").classList.add('modal_notifications_visible');
 };
 
-function modal_main_toggle_2() { document.getElementById("cok_modal").classList.remove('modal_notifications_visible'); }
-setTimeout(modal_cookie_open, 5000);
+function modal_main_toggle_2() {
+    document.getElementById("cok_modal").classList.remove('modal_notifications_visible');
+}
+
+window.onload = setTimeout(modal_cookie_open, 5000);
+
+
 document.getElementById("added_news").onclick = () => {
     document.getElementById("ucaht_1").classList.toggle('visible');
 }
