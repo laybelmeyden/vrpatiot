@@ -959,6 +959,20 @@ textarea:focus {
     padding: 15px;
 }
 
+.modal_notifications_visible {
+    display: block !important;
+}
+
+.ultra_b {
+    background: #D81A12 !important;
+    padding: 3px;
+    color: white;
+}
+
+.ultra_b a {
+    color: white;
+}
+
 .flex_cetnter {
     display: flex;
     justify-content: center;
