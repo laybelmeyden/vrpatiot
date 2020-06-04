@@ -959,6 +959,11 @@ textarea:focus {
     padding: 15px;
 }
 
+.modal_cookie_scroll {
+    height: 85vh;
+    overflow-x: scroll;
+}
+
 .modal_notifications_visible {
     display: block !important;
 }

@@ -1,7 +1,7 @@
 <div class="form_modal" id="cok_modal">
       <div class="container">
           <div>
-          <section class="secans">
+          <section class="secans modal_cookie_scroll">
   <div class="container">
     <div class="row">
       <p class="pans"><span class="spanans">17 июня</span> состоится онлайн-конференция, посвященная старту конкурса (платформа Zoom)<br><br>
