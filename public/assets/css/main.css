@@ -960,7 +960,7 @@ textarea:focus {
 }
 
 .modal_cookie_scroll {
-    height: 85vh;
+    height: 85vh !important;
     overflow-x: scroll;
 }
 
