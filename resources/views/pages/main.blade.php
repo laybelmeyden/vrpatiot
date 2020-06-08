@@ -123,7 +123,7 @@
       </div>
       <div class="col xl12" style="width: 100%;">
         <div class="flex_align">
-          <a href="https://drive.google.com/file/d/16kiAESiOpu_N-Cb-AeMajs7B5u-VksXg/view?usp=sharing" target="_blank" class=" btn btn_download"><img src="assets/img/download.svg" class="img_dowmload">СКАЧАТЬ ПОЛОЖЕНИЕ О КОНКУРСЕ</a>
+          <a href="https://vk.com/doc32870057_553379141?hash=a7208bba4b6b0a05bb&dl=6431f1eb9c40d29399" target="_blank" class=" btn btn_download"><img src="assets/img/download.svg" class="img_dowmload">СКАЧАТЬ ПОЛОЖЕНИЕ О КОНКУРСЕ</a>
         </div>
       </div>
     </div>
