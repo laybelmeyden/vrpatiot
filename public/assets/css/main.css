@@ -964,6 +964,10 @@ textarea:focus {
     overflow-x: scroll;
 }
 
+.footer_contact a {
+    color: white;
+}
+
 .modal_notifications_visible {
     display: block !important;
 }
