@@ -286,6 +286,8 @@
           <p class="footer_contact">
             8(499) 753 01 25 <br>
             8 (999) 852 65 25 - куратор Послова Алина
+            <br>
+            <a href="mailto:vrpatriot@rusinnovations.com">vrpatriot@rusinnovations.com</a>
           </p>
         </div>
         <div class="col xl4 s12 text-right">
