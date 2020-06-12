@@ -274,6 +274,11 @@
               <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part w65">
             </a>
           </div>
+          <div class="logo_part_container">
+            <a href="https://zenit3d.ru/" class="flex_cetnter">
+              <img src="assets/img/Zenit-3D-Logo_1.svg" alt="" class="logo_part w65">
+            </a>
+          </div>
       </div>
   </div>
   </div>
