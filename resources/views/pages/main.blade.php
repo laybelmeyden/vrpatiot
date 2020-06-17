@@ -54,7 +54,6 @@
     </div>
   </nav>
 </section>
-@include('layouts.modalcookie')
 <section id="header">
   <div class="header_font">
     <img src="assets/img/Group_333.svg" alt="">
@@ -83,16 +82,11 @@
   <img src="assets/img/ans2.svg" class="imgans" alt="">
   <div class="container">
     <div class="row">
-      <p class="pans"><span class="spanans">17 июня</span> состоится онлайн-конференция, посвященная старту конкурса (платформа Zoom)<br><br>
-      Настоятельно рекомендуем всем потенциальным участникам (всем членам команды и их наставникам) <b class="ultra_b"><a href="https://rusinnovations.timepad.ru/event/1315006/">зарегистрироваться на онлайн-конференцию</a></b></p>
-      <p class="pansz">В рамках онлайн-мероприятия:</p>
-      <p class="pansf">- расскажем подробности о конкурсе <br>
-- поможем подготовить успешную заявку <br>
-- проведем уникальный мастер-класс по использованию цифровых технологий в ваших проектах <br>
-- раскроем секреты идеальной презентации проекта <br>
-- ответим на все вопросы о конкурсе</p>
+      <p class="pans">Запись онлайн-конференции, посвященной старту конкурса:<br><br>
+      <p class="pansf">- Информация о конкурсе<br>
+      - Мастер-классы: "Технологии номинаций конкурса" и "Лайфхаки для «упаковки» проекта" <br>
       <div class="btn_a">
-        <a href="https://rusinnovations.timepad.ru/event/1315006/" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
+        <a target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Скоро здесь появится запись на мероприятия!</a>
       </div>
     </div>
   </div>

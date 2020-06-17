@@ -1,4 +1,4 @@
-<div class="form_modal" id="cok_modal">
+<!-- <div class="form_modal" id="cok_modal">
       <div class="container">
           <div>
           <section class="secans modal_cookie_scroll">
@@ -27,4 +27,4 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> -->

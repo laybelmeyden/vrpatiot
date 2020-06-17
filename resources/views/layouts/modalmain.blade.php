@@ -8,10 +8,6 @@
     line-height: 30px;
     color: #425C5A !important;
     font-weight: 800; text-align: center;">Старт приёма заявок - 24 июня <br><br>
-    А пока настоятельно рекомендуем всем потенциальным участникам (всем членам команды и их наставникам) зарегистрироваться на онлайн-конференцию, где мы ответим на все ваши вопросы и поделимся полезной информацией. </p>
-    <br><br><div class="btn_a">
-        <a href="https://rusinnovations.timepad.ru/event/1315006/" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
-      </div>
           </div>
           <div id="modalmain" class="modal_main_form">
               <div class="modal-content">
