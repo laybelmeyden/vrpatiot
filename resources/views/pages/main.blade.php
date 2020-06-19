@@ -83,11 +83,11 @@
   <div class="container">
     <div class="row">
       <p class="pans">Запись онлайн-конференции, посвященной старту конкурса:<br><br>
-      <p class="pansf">- Информация о конкурсе<br>
-      - Мастер-классы: "Технологии номинаций конкурса" и "Лайфхаки для «упаковки» проекта" <br>
-      <div class="btn_a">
-        <a target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Скоро здесь появится запись на мероприятия!</a>
-      </div>
+        <p class="pansf">- Информация о конкурсе<br>
+          - Мастер-классы: "Технологии номинаций конкурса" и "Лайфхаки для «упаковки» проекта" <br>
+          <div class="btn_a">
+          <iframe  src="https://www.youtube.com/embed/suo0Zp-UkVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
     </div>
   </div>
 </section>
@@ -241,39 +241,39 @@
 </section>
 <section id="partners">
   <div class="container">
-      <p class="partners_title">Партнёры конкурса</p>
-      <div class="flex_container_part">
-          <div class="logo_part_container">
-            <a href="https://rusinnovations.com" class="flex_cetnter">
-              <img src="assets/img/logo_air.svg" alt="" class="logo_part">
-            </a>
-          </div>
-          <div class="logo_part_container">
-            <a href="http://www.smena.org" class="flex_cetnter">
-              <img src="assets/img/smena.png" alt="" class="logo_part">
-            </a>
-          </div>
-          <div class="logo_part_container">
-            <a href="https://fadm.gov.ru" class="flex_cetnter">
-              <img src="assets/img/ros_mol.png" alt="" class="logo_part">
-            </a>
-          </div>
-          <div class="logo_part_container">
-            <a href="http://rospatriotcentr.ru/" class="flex_cetnter">
-              <img src="assets/img/ros_pat.png" alt="" class="logo_part w80">
-            </a>
-          </div>
-          <div class="logo_part_container">
-            <a href="https://coddyschool.com/" class="flex_cetnter">
-              <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part w65">
-            </a>
-          </div>
-          <div class="logo_part_container">
-            <a href="https://zenit3d.ru/" class="flex_cetnter">
-              <img src="assets/img/Zenit-3D-Logo_1.svg" alt="" class="logo_part">
-            </a>
-          </div>
+    <p class="partners_title">Партнёры конкурса</p>
+    <div class="flex_container_part">
+      <div class="logo_part_container">
+        <a href="https://rusinnovations.com" class="flex_cetnter">
+          <img src="assets/img/logo_air.svg" alt="" class="logo_part">
+        </a>
       </div>
+      <div class="logo_part_container">
+        <a href="http://www.smena.org" class="flex_cetnter">
+          <img src="assets/img/smena.png" alt="" class="logo_part">
+        </a>
+      </div>
+      <div class="logo_part_container">
+        <a href="https://fadm.gov.ru" class="flex_cetnter">
+          <img src="assets/img/ros_mol.png" alt="" class="logo_part">
+        </a>
+      </div>
+      <div class="logo_part_container">
+        <a href="http://rospatriotcentr.ru/" class="flex_cetnter">
+          <img src="assets/img/ros_pat.png" alt="" class="logo_part w80">
+        </a>
+      </div>
+      <div class="logo_part_container">
+        <a href="https://coddyschool.com/" class="flex_cetnter">
+          <img src="assets/img/logo-coddy-blue.png" alt="" class="logo_part w65">
+        </a>
+      </div>
+      <div class="logo_part_container">
+        <a href="https://zenit3d.ru/" class="flex_cetnter">
+          <img src="assets/img/Zenit-3D-Logo_1.svg" alt="" class="logo_part">
+        </a>
+      </div>
+    </div>
   </div>
   </div>
 </section>
