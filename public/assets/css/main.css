@@ -1647,6 +1647,14 @@ nav {
 }
 
 @media only screen and (max-width: 992px) {
+    .items_captcha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
     .mobile-menu {
         display: block;
     }
@@ -1656,6 +1664,8 @@ nav {
         align-items: center;
         flex-direction: column;
         width: 100%;
+        max-width: 300px;
+        margin-bottom: 40px;
     }
     .air_promo img {
         padding-right: 0;
