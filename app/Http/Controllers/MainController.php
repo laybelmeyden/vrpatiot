@@ -53,6 +53,10 @@ class MainController extends Controller
     }
   public function main_form(Request $request)
   {
+    if($request['g-recaptcha-response']){
+      $this->validate(request(), [
+        'g-recaptcha-response' => 'required|captcha'
+    ]);
     if ($request->hasFile('photos')) {
 
       $items = MainForm::create($request->all());
@@ -92,6 +96,10 @@ class MainController extends Controller
        });
       back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
       return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
+    }
+    }else{
+      back()->with('message_1', 'Проверка капчи не прошла !');
+      return redirect('/')->with('message', 'Ваш проект не был отправлен ! Пройдите google Captcha');
     }
   }
 

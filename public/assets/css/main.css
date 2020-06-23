@@ -470,6 +470,19 @@ nav a {
     top: 10px;
 }
 
+.items_captcha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items_captcha iframe {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 40px;
+}
+
 .modal_btn {
     position: fixed;
     right: 18%;

@@ -32,6 +32,7 @@ class MainForm extends Model
         'phone_team_1',
         'drop_box_file',
         'google_file',
+        'pocht_index',
         'app',
         ];
         public function file_names()
