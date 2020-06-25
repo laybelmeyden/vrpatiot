@@ -44,7 +44,7 @@ class MainController extends Controller
           $message->to($to_email)->subject('Message from site');
        });
   
-      back()->with('message_1', 'Ваш вопрос отправлен куратору форума и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
+      back()->with('message_1', 'Ваш вопрос отправлен куратору конкурса и в ближайшее время мы свяжемся с вами, чтобы ответить на него!');
       return redirect('/')->with('message', 'СПАСИБО ЗА ВАШУ АКТИВНОСТЬ И ИНТЕРЕС!');
     }else{
       back()->with('message_1', 'Проверьте правильность заполненных данных и отправьте форму еще раз!');
@@ -80,7 +80,7 @@ class MainController extends Controller
        });
 
 
-      back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
+      back()->with('message_1', 'Ожидайте письмо-подтверждение о получении проекта на E-mail, указанный в заявке');
       return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     } else {
       $items = MainForm::create($request->all());
@@ -94,7 +94,7 @@ class MainController extends Controller
           $message->from($to_email);
           $message->to($data['email'], $to_name)->subject('Уведомление о получении проекта');
        });
-      back()->with('message_1', 'После обработки вашей анкеты, мы свяжемся с вами.');
+      back()->with('message_1', 'Ожидайте письмо-подтверждение о получении проекта на E-mail, указанный в заявке');
       return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     }
     }else{

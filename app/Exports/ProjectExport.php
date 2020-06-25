@@ -17,7 +17,9 @@ class ProjectExport implements FromCollection, WithHeadings, ShouldAutoSize
   {
     return [
       "Номер проекта",
-      "ФИО",
+      "Имя",
+      "Фамилия",
+      "Отчество",
       "День",
       "Месяц",
       "Год",
@@ -48,6 +50,8 @@ class ProjectExport implements FromCollection, WithHeadings, ShouldAutoSize
     return MainForm::select(
       'id',
       'fio',
+      'fio2',
+      'fio3',
       'day',
       'mouth',
       'years',

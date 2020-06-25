@@ -214,10 +214,13 @@
         <i></i>
         <div><p class="res_p">{{ $mainform -> id}}</p> - <p class="res_mian">{{ $mainform -> name_project}}</p></div>
         <p><br>
-          ФИО = {{ $mainform -> fio}}<br>
+          Имя = {{ $mainform -> fio}}<br>
+          Фамилия = {{ $mainform -> fio2}}<br>
+          Отчество = {{ $mainform -> fio3}}<br>
           Дата рождения = {{ $mainform -> day}}.{{ $mainform -> mouth}}.{{ $mainform -> years}}<br>
           EMAIL = {{ $mainform -> email}} <br>
           Телефон = {{ $mainform -> phone}} <br>
+          Почтовый индекс = {{ $mainform -> pocht_index}} <br>
           @if ($mainform['vk'] !== null)
           VK = <a href="{{ $mainform -> vk}}">{{ $mainform -> vk}}</a> <br>
           @endif

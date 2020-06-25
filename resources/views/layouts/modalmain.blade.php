@@ -18,8 +18,18 @@
                           <div class="col s12 xl12">
                               <h4 class="main_form_header">Чтобы стать участником Всероссийского конкурса интерактивных реконструкций событий Великой Отечественной войны, внимательно заполните все поля данной заявки, загрузите необходимые файлы и отправьте.</h4>
                               <div class="form_item">
-                                  <label for="" class="modal_input_label">Фамилия, Имя, Отчество</label>
-                                  <input class="input_main_form_modal" type="text" name="fio" placeholder="" value="" required>
+                                  <label for="" class="modal_input_label">ФИО</label>
+                                  <div class="social_grid">
+                                      <div class="input_social_1">
+                                          <input class="input_main_form_modal name_input_1" type="text" name="vk" placeholder="Имя" value="">
+                                      </div>
+                                      <div class="input_social_2">
+                                          <input class="input_main_form_modal name_input_2" type="text" name="facebook" placeholder="Фамилия" value="">
+                                      </div>
+                                      <div class="input_social_3">
+                                          <input class="input_main_form_modal name_input_3" type="text" name="instagram" placeholder="Отчество" value="">
+                                      </div>
+                                  </div>
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Дата рождения</label>
@@ -90,15 +100,15 @@
                                   <textarea class="input_main_form_modal" type="text" name="opis_proj" placeholder="" value="" maxlength="400" style="height: 116px; padding-top: 20px !important;" required></textarea>
                               </div>
                               <div class="form_item">
-                                  <label for="" class="modal_input_label">Команда</label>
+                                  <label for="" class="modal_input_label">Команда проекта <span>(укажите членов команды, если таковые имеются)</span></label>
                                   <div class="team_grid">
                                       <div class="frst_team">
-                                          <input class="input_main_form_modal team_input" type="text" name="name_team" placeholder="ФИО" value="" required>
-                                          <input class="input_main_form_modal team_input" type="email" name="email_team" placeholder="E-mail" value="" required>
+                                          <input class="input_main_form_modal team_input" type="text" name="name_team" placeholder="ФИО" value="" >
+                                          <input class="input_main_form_modal team_input" type="email" name="email_team" placeholder="E-mail" value="" >
                                       </div>
                                       <div class="second_team">
-                                          <input class="input_main_form_modal team_input" type="text" name="role_team" placeholder="Роль в команде" value="" required>
-                                          <input class="input_main_form_modal team_input" type="text" name="phone_team" placeholder="Телефон" value="" required>
+                                          <input class="input_main_form_modal team_input" type="text" name="role_team" placeholder="Роль в команде" value="" >
+                                          <input class="input_main_form_modal team_input" type="text" name="phone_team" placeholder="Телефон" value="" >
                                       </div>
                                   </div>
                                   <div class="form_item" id="added_news">
