@@ -9,6 +9,8 @@ class MainForm extends Model
 {
     protected $fillable = [
         'fio',
+        'fio2',
+        'fio3',
         'day',
         'mouth',
         'years',

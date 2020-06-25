@@ -21,13 +21,13 @@
                                   <label for="" class="modal_input_label">ФИО</label>
                                   <div class="social_grid">
                                       <div class="input_social_1">
-                                          <input class="input_main_form_modal name_input_1" type="text" name="vk" placeholder="Имя" value="">
+                                          <input class="input_main_form_modal name_input_1" type="text" name="fio" placeholder="Имя" value="">
                                       </div>
                                       <div class="input_social_2">
-                                          <input class="input_main_form_modal name_input_2" type="text" name="facebook" placeholder="Фамилия" value="">
+                                          <input class="input_main_form_modal name_input_2" type="text" name="fio2" placeholder="Фамилия" value="">
                                       </div>
                                       <div class="input_social_3">
-                                          <input class="input_main_form_modal name_input_3" type="text" name="instagram" placeholder="Отчество" value="">
+                                          <input class="input_main_form_modal name_input_3" type="text" name="fio3" placeholder="Отчество" value="">
                                       </div>
                                   </div>
                               </div>
