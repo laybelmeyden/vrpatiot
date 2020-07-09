@@ -82,9 +82,14 @@
   <img src="assets/img/ans2.svg" class="imgans" alt="">
   <div class="container">
     <div class="row">
-      <p class="pans">Запись онлайн-конференции, посвященной старту конкурса:<br><br>
-        <p class="pansf">- Информация о конкурсе<br>
-          - Мастер-классы: "Технологии номинаций конкурса" и "Лайфхаки для «упаковки» проекта" <br>
+      <p class="pans">Запись онлайн-конференции, посвященной старту конкурса:<br><br></p>
+        <p class="pansf">Тайм-код: <br>
+        17:27 - 44:35 - приветственная часть, информация о конкурсе <br>
+        44:50 - 1:16:00 - мастер-класс "Технологии номинаций конкурса" <br>
+1:17:00 - 1:45:20 - мастер-класс "Лайфхаки для «упаковки» проекта" <br>
+1:45:30 - ответы на вопросы от спикеров<br>
+      
+      </p>
           <div class="btn_a">
           <iframe  src="https://www.youtube.com/embed/suo0Zp-UkVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
