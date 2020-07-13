@@ -278,6 +278,11 @@
           <img src="assets/img/Zenit-3D-Logo_1.svg" alt="" class="logo_part">
         </a>
       </div>
+      <div class="logo_part_container">
+        <a href="https://www.sp3d.ru/collection/pla-ecofil-2" class="flex_cetnter">
+          <img src="assets/img/logo_preview.jpg" alt="" class="logo_part">
+        </a>
+      </div>
     </div>
   </div>
   </div>
