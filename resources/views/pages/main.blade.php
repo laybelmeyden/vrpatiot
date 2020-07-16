@@ -203,12 +203,14 @@
         <input type="email" class="input_contact" name="contact_email" placeholder="E-mail" required>
         <input type="text" class="input_contact" name="phone" placeholder="Телефон" required>
         <textarea class="text_area_cotnatc" name="text_contact" placeholder="Ваш вопрос" required></textarea>
+        <div class="form_btn_main">
         <div class="captchajs">
           {!! NoCaptcha::renderJs() !!}
           {!! NoCaptcha::display() !!}
         </div>
         <div class="w-100 a-right btn_pd">
           <button type="submit" class="btn_contact">Отправить</button>
+        </div>
         </div>
       </form>
     </div>

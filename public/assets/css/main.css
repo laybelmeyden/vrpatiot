@@ -1670,7 +1670,17 @@ nav {
     text-align: right;
 }
 
+.form_btn_main {
+    display: flex;
+}
+
 @media only screen and (max-width: 992px) {
+    .form_btn_main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
     .name_input_2,
     .name_input_1,
     .name_input_3 {
