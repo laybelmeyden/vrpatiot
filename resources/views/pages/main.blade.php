@@ -292,6 +292,11 @@
           <img src="assets/img/logomiamir.png" alt="" class="logo_part">
         </a>
       </div>
+      <div class="logo_part_container">
+        <a href="http://zabgu.ru" class="flex_cetnter">
+          <img src="assets/img/emblem.png" alt="" class="logo_part">
+        </a>
+      </div>
     </div>
   </div>
   </div>
