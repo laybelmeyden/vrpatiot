@@ -980,7 +980,7 @@ iframe {
 }
 
 .modal_cookie_scroll {
-    height: 85vh !important;
+    height: 40vh !important;
     overflow-x: scroll;
 }
 

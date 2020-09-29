@@ -297,6 +297,16 @@
           <img src="assets/img/emblem.png" alt="" class="logo_part">
         </a>
       </div>
+      <div class="logo_part_container">
+        <a href="http://nasha-molodezh.ru/" class="flex_cetnter">
+          <img src="assets/img/Nasha_Molodezh_logo.png" alt="" class="logo_part">
+        </a>
+      </div>
+      <div class="logo_part_container">
+        <a href="https://vk.com/slfusptu" class="flex_cetnter">
+          <img src="assets/img/VV6cQ5TCxw4.jpg" alt="" class="logo_part">
+        </a>
+      </div>
     </div>
   </div>
   </div>
