@@ -304,7 +304,7 @@
       </div>
       <div class="logo_part_container">
         <a href="https://vk.com/slfusptu" class="flex_cetnter">
-          <img src="assets/img/VV6cQ5TCxw4.jpg" alt="" class="logo_part">
+          <img src="assets/img/VV6cQ5TCxw4.jpg" alt="" class="logo_part" style="    max-width: 100px;">
         </a>
       </div>
     </div>
