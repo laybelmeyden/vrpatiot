@@ -17,6 +17,7 @@ class ProjectExport implements FromCollection, WithHeadings, ShouldAutoSize
   {
     return [
       "Номер проекта",
+      "Название проекта",
       "Имя",
       "Фамилия",
       "Отчество",
@@ -31,7 +32,6 @@ class ProjectExport implements FromCollection, WithHeadings, ShouldAutoSize
       "ИНСТ",
       "Город",
       "Образование",
-      "Название проекта",
       "Номинация",
       "Краткое описание проекта",
       "Команда фио 1",
@@ -49,6 +49,7 @@ class ProjectExport implements FromCollection, WithHeadings, ShouldAutoSize
   {
     return MainForm::select(
       'id',
+      'name_project',
       'fio',
       'fio2',
       'fio3',
@@ -63,7 +64,6 @@ class ProjectExport implements FromCollection, WithHeadings, ShouldAutoSize
       'instagram',
       'city',
       'edu',
-      'name_project',
       'select_mon',
       'opis_proj',
       'name_team',
