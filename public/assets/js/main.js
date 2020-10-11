@@ -15,7 +15,7 @@ function modal_main_toggle_2() {
     document.getElementById("cok_modal").classList.remove('modal_notifications_visible');
 }
 
-window.onload = setTimeout(modal_cookie_open, 1000);
+// window.onload = setTimeout(modal_cookie_open, 1000);
 
 
 document.getElementById("added_news").onclick = () => {
