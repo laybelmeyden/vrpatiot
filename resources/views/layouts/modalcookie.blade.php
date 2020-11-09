@@ -6,7 +6,7 @@
     align-items: center;">
   <div class="container">
     <div class="row">
-      <p class="pans"><span class="spanans"></span> <b class="ultra_b"><a href="https://rusinnovations.timepad.ru/event/1315006/">Срок приёма заявок продлён до 11 октября!</a></b></p>
+      <p class="pans"><span class="spanans"></span> <b class="ultra_b"><a href="https://vk.com/wall-78620921_751?hash=be5a9429367275557e">Информация о подведении итогов конкурса по ссылке</a></b></p>
       <!-- <p class="pansz">В рамках онлайн-мероприятия:</p>
       <p class="pansf">- расскажем подробности о конкурсе <br>
 - поможем подготовить успешную заявку <br>
