@@ -11,7 +11,7 @@
       <p class="pansz">«Всероссийский конкурс интерактивных реконструкций Великой Отечественной войны» подходит к своему завершению</p>
       <p class="pansf">13 ноября в 14:00 состоится online-финал конкурса на платформе Zoom, где мы объявим победителей.</p>
       <!-- <div class="btn_a"> -->
-        <a href="https://rusinnovations.timepad.ru/event/1315006/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Смотреть</a>
+        <a href="https://vk.com/wall-78620921_751?hash=be5a9429367275557e" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Смотреть</a>
       <!-- </div> -->
     </div>
   </div>
