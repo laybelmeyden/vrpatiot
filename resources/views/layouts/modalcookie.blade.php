@@ -3,19 +3,16 @@
           <div>
           <section class="secans modal_cookie_scroll" style="display: flex;
     justify-content: center;
-    align-items: center;">
+    align-items: center;
+    height: 70vh !important;">
   <div class="container">
     <div class="row">
-      <p class="pans"><span class="spanans"></span> <b class="ultra_b"><a href="https://vk.com/wall-78620921_751?hash=be5a9429367275557e">Информация о подведении итогов конкурса по ссылке</a></b></p>
-      <!-- <p class="pansz">В рамках онлайн-мероприятия:</p>
-      <p class="pansf">- расскажем подробности о конкурсе <br>
-- поможем подготовить успешную заявку <br>
-- проведем уникальный мастер-класс по использованию цифровых технологий в ваших проектах <br>
-- раскроем секреты идеальной презентации проекта <br>
-- ответим на все вопросы о конкурсе</p>
-      <div class="btn_a">
-        <a href="https://rusinnovations.timepad.ru/event/1315006/" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
-      </div> -->
+      <p class="pans"><span class="spanans"></span> <b><a href="https://vk.com/wall-78620921_751?hash=be5a9429367275557e" style="color:white;">Информация о подведении итогов конкурса</a></b></p>
+      <p class="pansz">«Всероссийский конкурс интерактивных реконструкций Великой Отечественной войны» подходит к своему завершению</p>
+      <p class="pansf">13 ноября в 14:00 состоится online-финал конкурса на платформе Zoom, где мы объявим победителей.</p>
+      <!-- <div class="btn_a"> -->
+        <a href="https://rusinnovations.timepad.ru/event/1315006/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Смотреть</a>
+      <!-- </div> -->
     </div>
   </div>
 </section>
