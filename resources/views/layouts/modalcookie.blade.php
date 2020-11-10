@@ -7,11 +7,11 @@
     height: 70vh !important;">
   <div class="container">
     <div class="row">
-      <p class="pans"><span class="spanans"></span> <b><a href="https://vk.com/im?sel=c86&w=wall-78620921_755%2Fd6ab89d4e466ddf8dc" style="color:white;">Информация о подведении итогов конкурса</a></b></p>
+      <p class="pans"><span class="spanans"></span> <b><a href="https://vk.com/wall-78620921_755?w=wall-78620921_755" style="color:white;">Информация о подведении итогов конкурса</a></b></p>
       <p class="pansz">«Всероссийский конкурс интерактивных реконструкций Великой Отечественной войны» подходит к своему завершению</p>
       <p class="pansf">13 ноября в 14:00 состоится online-финал конкурса на платформе Zoom, где мы объявим победителей.</p>
       <!-- <div class="btn_a"> -->
-        <a href="https://vk.com/im?sel=c86&w=wall-78620921_755%2Fd6ab89d4e466ddf8dc" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Подробнее</a>
+        <a href="https://vk.com/wall-78620921_755?w=wall-78620921_755" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Подробнее</a>
       <!-- </div> -->
     </div>
   </div>
