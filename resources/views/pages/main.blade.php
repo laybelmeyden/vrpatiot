@@ -5,13 +5,13 @@
   <nav class="right_nav">
     <div class="nav-wrapper">
       <ul id="nav-mobile" class="right hide-on-med-and-down li_items">
-        <!-- <li>
+        <li>
           <a href="/programm">
             <div class="hover_a_nav">
             Итоги
           </div>
           </a>
-        </li> -->
+        </li>
         <li>
           <a href="#info">
             <div class="hover_a_nav">
@@ -43,6 +43,7 @@
           </label>
           <div class="mobile-menu__container">
             <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="/programm" class="mobile-menu__link">Итоги</a></li>
               <li class="mobile-menu__item"><a href="#info" class="mobile-menu__link">О конкурсе</a></li>
               <li class="mobile-menu__item"><a href="#nominations" class="mobile-menu__link">Номинации</a></li>
               <li class="mobile-menu__item"><a href="#organize" class="mobile-menu__link">Организатор</a></li>
@@ -62,11 +63,13 @@
     <div class="container">
       <h1>Всер<img src="assets/img/506-5061203_-png-9-1.svg" alt="">ссийский <br> конкурс</h1>
       <h3>интерактивных реконструкций событий <br> Великой Отечественной войны</h3>
-      <a id="form_modal_open" class="waves-effect waves-light btn btn_header modal-trigger" onclick="modal_main_toggle();">Подать заявку</a>
+      <!-- <a id="form_modal_open" class="waves-effect waves-light btn btn_header modal-trigger" onclick="modal_main_toggle();">Подать заявку</a> -->
+          <a id="form_modal_open" class="waves-effect waves-light btn btn_header modal-trigger" href="/programm">Итоги</a>
+
     </div>
   </div>
 </section>
-@include('layouts.modalmain')
+<!-- @include('layouts.modalmain') -->
 <section id="info">
   <div class="container">
     <div class="row info_containers">
@@ -187,7 +190,9 @@
           </div>
         </div>
         <div class="w-100" style="text-align:center;">
-          <a class="waves-effect waves-light btn btn_medal modal-trigger" onclick="modal_main_toggle();">Подать заявку</a>
+          <!-- <a class="waves-effect waves-light btn btn_medal modal-trigger" onclick="modal_main_toggle();">Подать заявку</a> -->
+          <a class="waves-effect waves-light btn btn_medal modal-trigger" href="/programm">Итоги</a>
+
         </div>
       </div>
     </div>
@@ -324,7 +329,9 @@
           </p>
         </div>
         <div class="col xl4 s12 text-right">
-          <a class="waves-effect waves-light btn btn_footer modal-trigger" onclick="modal_main_toggle();">Подать заявку</a>
+          <!-- <a class="waves-effect waves-light btn btn_footer modal-trigger" onclick="modal_main_toggle();">Подать заявку</a> -->
+          <a class="waves-effect waves-light btn btn_footer modal-trigger" href="/programm">Итоги</a>
+
         </div>
         <div class="col">
           <p class="footer_copy">Сайт разработан за счет средств Гранта (субсидии), предоставленных ФГБУ «Роспатриотцентр» на проведение мероприятий по содействию патриотическому воспитанию граждан Российской Федерации.</p>
