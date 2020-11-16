@@ -1583,7 +1583,7 @@ nav {
 }
 
 .mobile-menu__checkbox:checked~.mobile-menu__container {
-    height: 300px;
+    height: 400px;
     transition-delay: 0s;
 }
 
