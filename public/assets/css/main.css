@@ -1016,6 +1016,8 @@ iframe {
     line-height: 28px;
     color: #FFFFFF;
     margin-top: 61px;
+    width: 100%;
+    word-break: break-word;
 }
 
 .logo_part {
