@@ -41,7 +41,7 @@
   </div>
   @endif
   @yield('content')
-  @include('layouts.modalcookie')
+  <!-- @include('layouts.modalcookie') -->
   @include('layouts.footer')
   @include('layouts.scripts')
 </body>
