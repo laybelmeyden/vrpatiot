@@ -69,7 +69,7 @@
     </div>
   </div>
 </section>
-<!-- @include('layouts.modalmain') -->
+@include('layouts.modalmain')
 <section id="info">
   <div class="container">
     <div class="row info_containers">
