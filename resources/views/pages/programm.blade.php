@@ -11,7 +11,7 @@
       <div class="col s12">
         <p class="info_z" id="info_vol">Пришло время подвести итоги Всероссийского конкурса интерактивных реконструкций событий Великой Отечественной войны!<br><br></p>
         
-        <iframe width="100%" height="350" src="https://www.youtube.com/embed/lnnGc-qKjLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="550" src="https://www.youtube.com/embed/lnnGc-qKjLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="info_z_down" style="text-align: justify;">
         Благодарим всех участников за замечательные проекты, за активность и творческий подход! Мы очень рады, что создаётся так много проектов, которые делают историю доступной и интересной, которые воспитывают в нас и в будущих поколениях любовь к родине и истории своей страны.
         <br><br>
