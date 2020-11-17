@@ -10,6 +10,8 @@
     <div class="row">
       <div class="col s12">
         <p class="info_z" id="info_vol">Пришло время подвести итоги Всероссийского конкурса интерактивных реконструкций событий Великой Отечественной войны!<br><br></p>
+        
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/lnnGc-qKjLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="info_z_down" style="text-align: justify;">
         Благодарим всех участников за замечательные проекты, за активность и творческий подход! Мы очень рады, что создаётся так много проектов, которые делают историю доступной и интересной, которые воспитывают в нас и в будущих поколениях любовь к родине и истории своей страны.
         <br><br>
@@ -69,16 +71,16 @@
 <br><br>
 <b>3D-моделирование и анимация: </b>
 <br><br>
-1 место - Т-34, Чебоксары
-<br>
-Команда: Перепелкин Даниил
+1 место :<br>
+·Т-34, Чебоксары<br>
+Команда: Перепелкин Даниил<br>
+· Миг 15 бис, Станица Ленинградская<br>
+Команда: Смоленко Андрей, Медведев Владимир, Шевелев Андрей<br>
 <br><br>
-2 место - Июнь 1941, Екатеринбург
-<br>
-Команда: Чугунова Валерия, Тарасова Анжелика, Снегирева Мария
-<br><br>
-3 место - Трофейный броневик, Тверь
-<br>
+2 место - Июнь 1941, Екатеринбург<br>
+Команда: Чугунова Валерия, Тарасова Анжелика, Снегирева Мария<br><br>
+
+3 место - Трофейный броневик, Тверь<br>
 Команда: Степанов Владислав, Чесноков Александр
 <br><br>
 <b>Реконструкция в формате компьютерной игры:</b>
@@ -123,7 +125,7 @@
         <div class="flex_align">
           <a style="    display: flex;
     align-items: center;
-    justify-content: center;" href="https://drive.google.com/file/d/1dvJembvhCwjvP3BqVxRk0PpVdivNLGiY/view?usp=sharing" target="_blank" class=" btn btn_download">
+    justify-content: center;" href="https://rusinnovations.com//storage/7o2RvMLhrKlFQtIxR3NLJnEh1CCRg6jb44l1gqtD.pdf" target="_blank" class=" btn btn_download">
     <img src="assets/img/download.svg" class="" style="padding-right: 30px;">Итоговый протокол</a>
         </div>
       </div>
