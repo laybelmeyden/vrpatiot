@@ -1,7 +1,7 @@
-// function modal_main_toggle() {
-//     document.querySelector("#body_modal").classList.toggle('visible');
-//     document.querySelector(".body").classList.toggle('noscroll');
-// }
+function modal_main_toggle() {
+    document.querySelector("#body_modal").classList.toggle('visible');
+    document.querySelector(".body").classList.toggle('noscroll');
+}
 
 
 function modal_main_toggle_close() {
@@ -32,3 +32,25 @@ function modal_main_toggle_close() {
 
 //     }
 // }
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 1,
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 3,
+        }
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

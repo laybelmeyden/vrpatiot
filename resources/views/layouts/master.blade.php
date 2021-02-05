@@ -15,15 +15,18 @@
   <link rel="SHORTCUT ICON" href="assets/img/506-5061203_-png-9-1.svg" type="image/x-icon">
   <!--соц сети-->
   <meta property="og:title" content="Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны">
-<meta property="og:description" content="призван стимулировать молодежь к яркому и всестороннему освещению патриотической тематики, связанной с традициями и современными задачами патриотического воспитания, через применение современных технических, цифровых средств в своих проектах. Особенностью конкурса 2020 года является его тематическая направленность, посвященная 75-летию Победы в Великой Отечественной войне.">
-<meta property="og:image" content="assets/img/rty.png">
-<meta itemprop="image" content="assets/img/rty.png"/>
-<meta name="twitter:image:src" content="assets/img/rty.png"/>
-<meta property="og:url" content="">
-
+  <meta property="og:description" content="призван стимулировать молодежь к яркому и всестороннему освещению патриотической тематики, связанной с традициями и современными задачами патриотического воспитания, через применение современных технических, цифровых средств в своих проектах. Особенностью конкурса 2020 года является его тематическая направленность, посвященная 75-летию Победы в Великой Отечественной войне.">
+  <meta property="og:image" content="assets/img/rty.png">
+  <meta itemprop="image" content="assets/img/rty.png" />
+  <meta name="twitter:image:src" content="assets/img/rty.png" />
+  <meta property="og:url" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main2021.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/materialize.css">
-  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
