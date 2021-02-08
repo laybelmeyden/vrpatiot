@@ -982,7 +982,7 @@ textarea:focus {
 iframe {
     width: 100%;
     height: auto;
-    min-height: 500px;
+    min-height: auto;
     padding-bottom: 40px;
 }
 
