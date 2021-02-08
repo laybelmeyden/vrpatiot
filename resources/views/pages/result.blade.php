@@ -208,7 +208,7 @@
     <a href="/excel_export" class="waves-effect waves-light btn btn_header modal-trigger" style="margin: 0 auto; margin-bottom: 30px;">Выгрузить проекты в эксель</a>
     <ul>
       @foreach ($mainforms as $mainform)
-      <div>
+      <div style="background: white;">
       <li>
         <input type="checkbox" checked>
         <i></i>
