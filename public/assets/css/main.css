@@ -434,8 +434,8 @@ nav a {
     text-align: center;
     width: 590px;
     height: 81px !important;
-    background-color: #D6A217 !important;
-    border-radius: 20px !important;
+    background: #E2575F !important;
+    border-radius: 40px !important;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
@@ -516,12 +516,13 @@ nav a {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #D81A12 !important;
+    background: linear-gradient(85.95deg, #E2575F -16.36%, #481659 55.34%, #2B1B4E 101.93%);
+    box-shadow: 0px 4px 4px rgba(33, 0, 48, 0.41);
+    border-radius: 60px !important;
     height: 83px !important;
     width: 384px !important;
     margin-top: 53px;
     margin-bottom: 48px;
-    border-radius: 60px !important;
 }
 
 .btn_form_modal:hover {
@@ -581,7 +582,7 @@ nav a {
     justify-content: center;
     color: #fff;
     text-align: center;
-    background-color: #425C5A;
+    background: linear-gradient(85.95deg, #E2575F -16.36%, #481659 55.34%, #2B1B4E 101.93%);
     transition: width .6s ease;
 }
 
@@ -1103,7 +1104,7 @@ iframe {
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: #261E6B;
     margin-bottom: 40px;
     margin-top: 80px;
 }
@@ -1136,6 +1137,13 @@ input {
 
 .last_social {
     text-align: right !important;
+}
+
+.team_input__textare {
+    padding-top: 20px;
+    text-indent: 20px;
+    min-height: 200px;
+    width: 100%;
 }
 
 .input_main_form_modal,

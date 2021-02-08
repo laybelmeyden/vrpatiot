@@ -107,7 +107,7 @@
   </div>
 </section>
 @include('layouts.modalmain')
-<section id="news">
+<!-- <section id="news">
   <div class="container">
     <p class="news__title">НОВОСТИ И МЕРОПРИЯТИЯ</p>
   </div>
@@ -124,11 +124,10 @@
       <div class="swiper-slide">Slide 9</div>
       <div class="swiper-slide">Slide 10</div>
     </div>
-    <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
-</section>
+</section> -->
 <section id="org">
   <div class="container">
     <div class="org__container">

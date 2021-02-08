@@ -465,3 +465,124 @@ body {
         padding-bottom: 20px;
     }
 }
+
+@media screen and (max-width:1201px) {
+    #stages .stages__count_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #org .org__container .org__ul {
+        padding-left: 30px;
+    }
+    #org .org__container .org__lows {
+        max-width: 300px;
+    }
+    .org__lows {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    #header__main .btn__main #form_modal_open {
+        width: 100%;
+    }
+    #header__main h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    #header__main h3 {
+        font-size: 26px;
+    }
+    #stages .stages__count_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 30px;
+        width: 100%;
+        padding-top: 100px;
+    }
+    #stages .stages__count_grid p:first-child {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    #nominations .nomination__items .nominations__p {
+        padding-left: 0;
+    }
+    #nominations .nomination__items {
+        width: 100%;
+        background: #2D2C5A;
+        box-shadow: 0px -4px 6px rgb(255 255 255 / 20%), 0px 4px 4px #0c0b2e;
+        border-radius: 30px;
+        padding-top: 42px;
+        padding-bottom: 37px;
+        padding-left: 23px;
+        padding-right: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 49px;
+        flex-direction: column;
+        text-align: center;
+    }
+    #uchat img {
+        display: none;
+    }
+    #uchat .uchat__blade {
+        max-width: 100%;
+        margin-left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #uchat .uchat__blade ul li span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+    #rules {
+        padding-top: 70px;
+    }
+    #rules .rules__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E2575F;
+        padding-bottom: 38px;
+        font-family: "MuseoCyrl900";
+    }
+    #org .org__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #org .org__container .org__ul {
+        padding-left: 0;
+        width: 80%;
+    }
+    #partenrs__2021 .partners__logo_container {
+        padding-top: 90px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    #footer .footer__contact {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    #footer .footer__container_grid {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 230px;
+        flex-direction: column;
+    }
+    .footer__forms {
+        margin-top: 30px;
+    }
+}

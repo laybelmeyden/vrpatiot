@@ -2,23 +2,23 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-  <title>Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны</title>
+  <title>Патриоты Сибири - Конкурс проектов интерактивных военно-исторических реконструкций</title>
   <!--meta-->
   <meta charset="UTF-8">
   <meta name="yandex-verification" content="dc70469ab3fdb89d" />
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <meta name="description" content="Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны" />
-  <META NAME="keywords" CONTENT="Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны">
+  <meta name="description" content="Патриоты Сибири - Конкурс проектов интерактивных военно-исторических реконструкций" />
+  <META NAME="keywords" CONTENT="Патриоты Сибири - Конкурс проектов интерактивных военно-исторических реконструкций">
   <META NAME="AUTHOR" CONTENT="https://vk.com/glrlcocks">
   <meta name="revisit-after" content="5 days">
   <link rel="SHORTCUT ICON" href="assets/img/506-5061203_-png-9-1.svg" type="image/x-icon">
   <!--соц сети-->
-  <meta property="og:title" content="Всероссийский конкурс интерактивных реконструкций событий Великой Отечественной войны">
+  <meta property="og:title" content="Патриоты Сибири - Конкурс проектов интерактивных военно-исторических реконструкций">
   <meta property="og:description" content="призван стимулировать молодежь к яркому и всестороннему освещению патриотической тематики, связанной с традициями и современными задачами патриотического воспитания, через применение современных технических, цифровых средств в своих проектах. Особенностью конкурса 2020 года является его тематическая направленность, посвященная 75-летию Победы в Великой Отечественной войне.">
-  <meta property="og:image" content="assets/img/rty.png">
-  <meta itemprop="image" content="assets/img/rty.png" />
-  <meta name="twitter:image:src" content="assets/img/rty.png" />
+  <meta property="og:image" content="assets/img/social__back.jpg">
+  <meta itemprop="image" content="assets/img/social__back.jpg" />
+  <meta name="twitter:image:src" content="assets/img/social__back.jpg" />
   <meta property="og:url" content="">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">

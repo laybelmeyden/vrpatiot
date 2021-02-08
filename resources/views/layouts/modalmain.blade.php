@@ -24,7 +24,7 @@
                       <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
                           {{ csrf_field() }}
                           <div class="col s12 xl12">
-                              <h4 class="main_form_header">Чтобы стать участником Всероссийского конкурса интерактивных реконструкций событий Великой Отечественной войны, внимательно заполните все поля данной заявки, загрузите необходимые файлы и отправьте.</h4>
+                              <h4 class="main_form_header">Чтобы стать участником Конкурса проектов интерактивных военно-исторических реконструкций "Патриоты Сибири", внимательно заполните все поля данной заявки, загрузите необходимые файлы и отправьте.</h4>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">ФИО</label>
                                   <div class="social_grid">
@@ -121,21 +121,21 @@
                                   </div>
                                   <div class="form_item" id="added_news">
                                       <img src="assets/img/plus.svg" alt="" class="img_plus">
-                                      <p class="text_plus">Добавить еще одного участника команды</p>
+                                      <p class="text_plus">Добавить участников</p>
                                   </div>
                               </div>
                               <div class="form_item hidden" id="ucaht_1">
                                   <div class="pd40">
-                                      <label for="" class="modal_input_label">Доп. участник</label>
-                                      <div class="team_grid">
-                                          <div class="frst_team">
-                                              <input class="input_main_form_modal team_input" type="text" name="name_team_1" placeholder="ФИО" value="">
-                                              <input class="input_main_form_modal team_input" type="email" name="email_team_1" placeholder="E-mail" value="">
-                                          </div>
-                                          <div class="second_team">
+                                      <label for="" class="modal_input_label">Доп. участники</label>
+                                      <div class="">
+                                          <!-- <div class="frst_team"> -->
+                                              <textarea class="input_main_form_modal team_input team_input__textare" type="text" name="name_team_1" placeholder="ФИО" value=""> </textarea>
+                                              <!-- <input class="input_main_form_modal team_input" type="email" name="email_team_1" placeholder="E-mail" value=""> -->
+                                          <!-- </div> -->
+                                          <!-- <div class="second_team">
                                               <input class="input_main_form_modal team_input" type="text" name="role_team_1" placeholder="Роль в команде" value="">
                                               <input class="input_main_form_modal team_input" type="text" name="phone_team_1" placeholder="Телефон" value="">
-                                          </div>
+                                          </div> -->
                                       </div>
                                   </div>
                               </div>
