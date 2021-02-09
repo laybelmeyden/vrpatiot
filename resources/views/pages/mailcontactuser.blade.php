@@ -58,7 +58,9 @@ style=" font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetic
                             text-align:center;
                             width:100%;">
                         Большое спасибо за проявленный интерес и участие в нашем конкурсе!<br><br>
-По всем вопросам можете обращаться на почту: siberian-patriot@anoasi.com
+По всем вопросам можете обращаться на почту: <a style="color:white;
+                            text-align:left;
+                            width:100%;"  href="mailto:siberian-patriot@anoasi.com">siberian-patriot@anoasi.com</a>
                         </p>
                     </td>
                 </tr>

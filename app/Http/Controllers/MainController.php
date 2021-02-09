@@ -31,8 +31,8 @@ class MainController extends Controller
       $this->validate(request(), [
         'g-recaptcha-response' => 'required|captcha'
     ]);
-      $to_name = "vrpatriot";
-      $to_email = "vrpatriot@rusinnovations.com";
+      $to_name = "Патриоты Сибири";
+      $to_email = "siberian-patriot@anoasi.com";
       $data = array(
           'contact_email' => request('contact_email'),
           'phone' => request('phone'),
@@ -68,7 +68,7 @@ class MainController extends Controller
           'filename' => $photo->store('upload'),
         ]);
       }
-      $to_email='vrpatriot@rusinnovations.com';
+      $to_email='siberian-patriot@anoasi.com';
       $to_name=env('MAIL_FROM_NAME');
       $data = array(
           'email' => request('email'),
@@ -84,7 +84,7 @@ class MainController extends Controller
       return redirect('/')->with('message', 'ВАША ЗАЯВКА ОТПРАВЛЕНА!');
     } else {
       $items = MainForm::create($request->all());
-      $to_email='vrpatriot@rusinnovations.com';
+      $to_email='siberian-patriot@anoasi.com';
       $to_name=env('MAIL_FROM_NAME');
       $data = array(
           'email' => request('email'),
