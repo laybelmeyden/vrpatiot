@@ -43,11 +43,11 @@ style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,
                         text-align: left;"
                         >
                         <br><br> 
-                        Почта - {{$contact_email}}
+                        Почта - contact_email
                         <br>
-                        Телефон - {{$phone}}
+                        Телефон - phone
                         <br>
-                        Сообщение - {{$text_contact}}
+                        Сообщение - text_contact
                         <br>
                         </p>
                     </td>

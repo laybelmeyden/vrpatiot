@@ -98,7 +98,7 @@
                                   <label for="" class="modal_input_label">Номинация</label>
                                   <select class='browser-default' name="select_mon">
                                       <option value="Реконструкция с применением VR- и AR-технологий">Реконструкция с применением VR- и AR-технологий</option>
-                                      <option value="3D-моделирование и анимация">3D-моделирование и анимация</option>
+                                      <option value="3D-моделирование, анимация и видеомонтаж">3D-моделирование, анимация и видеомонтаж</option>
                                       <option value="Реконструкция в формате компьютерной игры">Реконструкция в формате компьютерной игры</option>
                                   </select>
                               </div>
@@ -106,6 +106,7 @@
                                   <label for="" class="modal_input_label">Краткое описание проекта (400 символов). <span>Расскажите нам самое важное о вашем проекте - о чём он, какие
                                           технологии были использованы и пр.</span></label>
                                   <textarea class="input_main_form_modal" type="text" name="opis_proj" placeholder="" value="" maxlength="400" style="height: 116px; padding-top: 20px !important;" required></textarea>
+                                  
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Команда проекта <span>(укажите членов команды, если таковые имеются)</span></label>
@@ -126,12 +127,12 @@
                               </div>
                               <div class="form_item hidden" id="ucaht_1">
                                   <div class="pd40">
-                                      <label for="" class="modal_input_label">Доп. участники</label>
-                                      <div class="">
+                                      <label for="" class="modal_input_label">Доп. члены команды (введите информацию об остальных членах команды в формате - Фамилия Имя - роль в команде, e-mail)</label>
+                                      <div class="input-field">
                                           <!-- <div class="frst_team"> -->
-                                              <textarea class="input_main_form_modal team_input team_input__textare" type="text" name="name_team_1" placeholder="ФИО" value=""> </textarea>
+                                              <textarea id="textarea1" class="input_main_form_modal team_input team_input__textare" name="name_team_1" placeholder="введите информацию об остальных членах команды в формате - Фамилия Имя - роль в команде, e-mail" value=""></textarea>
                                               <!-- <input class="input_main_form_modal team_input" type="email" name="email_team_1" placeholder="E-mail" value=""> -->
-                                          <!-- </div> -->
+                                              <!-- </div> -->
                                           <!-- <div class="second_team">
                                               <input class="input_main_form_modal team_input" type="text" name="role_team_1" placeholder="Роль в команде" value="">
                                               <input class="input_main_form_modal team_input" type="text" name="phone_team_1" placeholder="Телефон" value="">

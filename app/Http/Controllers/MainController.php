@@ -111,4 +111,12 @@ class MainController extends Controller
     {
         return Excel::download(new ProjectExport, 'projects.xlsx');
     }
+    public function mail1()
+  {
+    return view('pages.mailcontact');
+  }
+  public function mail2()
+  {
+    return view('pages.mailcontactuser');
+  }
 }

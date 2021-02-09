@@ -241,10 +241,7 @@
           Телефон члена команды 1 = {{ $mainform -> phone_team}} <br><br>
           @if ($mainform['name_team_1'] || $mainform['email_team_1'] !== null)
           Доп член команды<br><br>
-          ФИО члена команды 2 = {{ $mainform -> name_team_1}} <br>
-          Почта члена команды 2 = {{ $mainform -> email_team_1}} <br>
-          Роль члена команды 2 = {{ $mainform -> role_team_1}} <br>
-          Телефон члена команды 2 = {{ $mainform -> phone_team_1}} <br>
+          Члены команды = {{ $mainform -> name_team_1}} <br>
           @endif
           @if ($mainform['drop_box_file'] !== null)
           <br><br>

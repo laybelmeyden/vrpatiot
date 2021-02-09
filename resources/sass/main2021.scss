@@ -15,14 +15,12 @@ body {
 }
 
 #header__main {
-    .main__back {
-        background-image: url(assets/img/main__back.png);
-        height: auto;
-        background-repeat: no-repeat;
-        min-height: 935px;
-        background-size: cover;
-        background-position: bottom;
-    }
+    background-image: url(assets/img/back__main.png);
+    height: auto;
+    background-repeat: no-repeat;
+    min-height: 935px;
+    background-size: cover;
+    background-position: bottom;
     h1 {
         font-style: normal;
         font-weight: bold;
@@ -258,7 +256,7 @@ body {
 }
 
 #rules {
-    padding-top: 270px;
+    padding-top: 370px;
     .rules__title {
         font-style: normal;
         font-weight: bold;
@@ -421,7 +419,6 @@ body {
     background-position: top;
     background-size: cover;
     .footer__contact {
-        max-width: 559px;
         padding-right: 159px;
         p:first-child {
             font-style: normal;

@@ -830,6 +830,18 @@ textarea:focus {
     outline-offset: 0 !important;
 }
 
+textarea::placeholder {
+    color: color: rgb(0, 0, 0, 0.4) !important;
+}
+
+textarea::-webkit-input-placeholder {
+    color: rgb(0, 0, 0, 0.4) !important;
+}
+
+textarea:-moz-placeholder {
+    color: color: rgb(0, 0, 0, 0.4) !important;
+}
+
 :focus {
     outline: 0 !important;
 }
@@ -1157,6 +1169,7 @@ input {
     color: #000000;
     margin-top: 6px !important;
     margin-bottom: 25px !important;
+    text-indent: 20px;
 }
 
 .modal_input_label {
@@ -1622,7 +1635,8 @@ nav {
 
 .captchajs {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
+    margin-bottom: 20px;
 }
 
 
@@ -1688,6 +1702,7 @@ nav {
 
 .form_btn_main {
     display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 992px) {

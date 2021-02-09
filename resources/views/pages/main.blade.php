@@ -3,6 +3,7 @@
 @section('content')
 
 <section id="header__main">
+  <!-- <img src="assets/img/back__main.png" alt=""> -->
   <div class="main__back">
     <div class="container">
       <h1>Патриоты <br> Сибири</h1>
@@ -93,7 +94,7 @@
     <div class="uchat__blade">
       <p>Участники</p>
       <ul>
-        <li><span>Жители Сибирского Федерального округа</span></li>
+        <!-- <li><span>Жители Сибирского Федерального округа</span></li> -->
         <li><span>Младшая возрастная группа – 11-17 лет (включительно)</span></li>
         <li><span>Старшая возрастная группа – 18-30 лет (включительно)</span></li>
       </ul>
@@ -164,10 +165,10 @@
         <img src="assets/img/smena_logo.svg" alt="">
       </div>
       <div>
-        <img src="assets/img/ros_logo.svg" alt="">
+        <img src="assets/img/pgrants_logo_gp_gark.png" alt="">
       </div>
       <div>
-        <img src="assets/img/patriot_logo.svg" alt="">
+        <img src="assets/img/unnamed.jpg" alt="">
       </div>
     </div>
   </div>
@@ -188,7 +189,7 @@
           {{ csrf_field() }}
           <input type="text" class="input_contact" name="phone" placeholder="Имя" required>
           <input type="email" class="input_contact" name="contact_email" placeholder="E-mail" required>
-          <input type="text" class="input_contact"name="text_contact" placeholder="Ваш вопрос" required>
+          <input type="text" class="input_contact" name="text_contact" placeholder="Ваш вопрос" required>
           <div class="form_btn_main">
             <div class="captchajs">
               {!! NoCaptcha::renderJs() !!}

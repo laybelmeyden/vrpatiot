@@ -30,3 +30,7 @@ Route::post('/main_form', 'MainController@main_form');
 Route::post('/update_main_form', 'MainController@update_main_form');
 
 Route::get('/excel_export', 'MainController@excel_export');
+
+
+Route::get('/mail1', 'MainController@mail1');
+Route::get('/mail2', 'MainController@mail2');

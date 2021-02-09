@@ -88,7 +88,6 @@ export default {
             this.fileProgress = 100;
             this.fileCurrent = "Выбранный файл слишком большой, пожалуйста, загрузите все файлы в облако!";
         }else{
-          console.log(item.size)
           await this.uploadFile(item);
         }
       }
