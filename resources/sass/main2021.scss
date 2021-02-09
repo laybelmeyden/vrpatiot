@@ -419,7 +419,8 @@ body {
     background-position: top;
     background-size: cover;
     .footer__contact {
-        padding-right: 159px;
+        padding-right: 60px;
+        max-width: 550px;
         p:first-child {
             font-style: normal;
             font-weight: normal;
