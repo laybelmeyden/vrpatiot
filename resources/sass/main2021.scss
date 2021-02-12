@@ -104,6 +104,25 @@ body {
 }
 
 #stages {
+    #btn__rules {
+        margin-top: 38px;
+        background: linear-gradient( 85.95deg, #E2575F -16.36%, #481659 55.34%, #2B1B4E 101.93%);
+        box-shadow: 0px 4px 4px rgb(33 0 48 / 41%);
+        border-radius: 60px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        width: 100%;
+        height: 103px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
     padding-top: 112px;
     .stages__main {
         width: 100%;

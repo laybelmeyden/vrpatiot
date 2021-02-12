@@ -47,6 +47,9 @@
         <p>выявление и поощрение авторов лучших инновационных проектов патриотической и исторической направленности</p>
       </div>
     </div>
+    <div class="btn__rules">
+  <a id="btn__rules" href="https://siberian-patriot.ru/storage/Polozhenie_o_Konkurse_proektov_interaktivnykh_voenno-istoricheskikh_rekonstruktsiy_Patrioty_Sibiri_33.pdf" class="waves-effect waves-light btn btn_header modal-trigger">Скачать Положение о Конкурсе</a>
+  </div>
   </div>
 </section>
 
@@ -168,7 +171,7 @@
         <img src="assets/img/pgrants_logo_gp_gark.png" alt="">
       </div>
       <div>
-        <img src="assets/img/unnamed.jpg" alt="">
+        <img src="assets/img/wRGDFyN_RPU.jpg" alt="">
       </div>
     </div>
   </div>
@@ -181,7 +184,8 @@
         <p>Если у вас остались вопросы, вы можете связаться с куратором или написать нам через форму обратной связи:</p>
         <p>куратор Послова Алина <br>
           <a href="tel:8(499) 753 01 25">8(499) 753 01 25 </a>
-          <br> <a href="tel:8 (999) 852 65 25">8 (999) 852 65 25</a>
+          <br> <a href="tel:8 (999) 852 65 25">8 (999) 852 65 25</a><br>
+          <a href="mailto:siberian-patriot@anoasi.com">siberian-patriot@anoasi.com</a>
         </p>
       </div>
       <div class="footer__forms">
@@ -203,6 +207,7 @@
       </div>
     </div>
     <p class="copy__foter">Проект реализуется за счет гранта Президента Российской Федерации на развитие гражданского общества, предоставленного Фондом президентских грантов</p>
+  <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=72355792&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/72355792/1_0_14133FFF_14133FFF_1_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="72355792" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(72355792, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/72355792" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   </div>
 </section>
 @endsection
