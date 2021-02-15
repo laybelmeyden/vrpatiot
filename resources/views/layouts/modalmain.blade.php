@@ -106,18 +106,18 @@
                                   <label for="" class="modal_input_label">Краткое описание проекта (400 символов). <span>Расскажите нам самое важное о вашем проекте - о чём он, какие
                                           технологии были использованы и пр.</span></label>
                                   <textarea class="input_main_form_modal" type="text" name="opis_proj" placeholder="" value="" maxlength="400" style="height: 116px; padding-top: 20px !important;" required></textarea>
-                                  
+
                               </div>
                               <div class="form_item">
                                   <label for="" class="modal_input_label">Команда проекта <span>(укажите членов команды, если таковые имеются)</span></label>
                                   <div class="team_grid">
                                       <div class="frst_team">
-                                          <input class="input_main_form_modal team_input" type="text" name="name_team" placeholder="ФИО" value="" >
-                                          <input class="input_main_form_modal team_input" type="email" name="email_team" placeholder="E-mail" value="" >
+                                          <input class="input_main_form_modal team_input" type="text" name="name_team" placeholder="ФИО" value="">
+                                          <input class="input_main_form_modal team_input" type="email" name="email_team" placeholder="E-mail" value="">
                                       </div>
                                       <div class="second_team">
-                                          <input class="input_main_form_modal team_input" type="text" name="role_team" placeholder="Роль в команде" value="" >
-                                          <input class="input_main_form_modal team_input" type="text" name="phone_team" placeholder="Телефон" value="" >
+                                          <input class="input_main_form_modal team_input" type="text" name="role_team" placeholder="Роль в команде" value="">
+                                          <input class="input_main_form_modal team_input" type="text" name="phone_team" placeholder="Телефон" value="">
                                       </div>
                                   </div>
                                   <div class="form_item" id="added_news">
@@ -130,9 +130,9 @@
                                       <label for="" class="modal_input_label">Доп. члены команды (введите информацию об остальных членах команды в формате - Фамилия Имя - роль в команде, e-mail)</label>
                                       <div class="input-field">
                                           <!-- <div class="frst_team"> -->
-                                              <textarea id="textarea1" class="input_main_form_modal team_input team_input__textare" name="name_team_1" placeholder="введите информацию об остальных членах команды в формате - Фамилия Имя - роль в команде, e-mail" value=""></textarea>
-                                              <!-- <input class="input_main_form_modal team_input" type="email" name="email_team_1" placeholder="E-mail" value=""> -->
-                                              <!-- </div> -->
+                                          <textarea id="textarea1" class="input_main_form_modal team_input team_input__textare" name="name_team_1" placeholder="введите информацию об остальных членах команды в формате - Фамилия Имя - роль в команде, e-mail" value=""></textarea>
+                                          <!-- <input class="input_main_form_modal team_input" type="email" name="email_team_1" placeholder="E-mail" value=""> -->
+                                          <!-- </div> -->
                                           <!-- <div class="second_team">
                                               <input class="input_main_form_modal team_input" type="text" name="role_team_1" placeholder="Роль в команде" value="">
                                               <input class="input_main_form_modal team_input" type="text" name="phone_team_1" placeholder="Телефон" value="">
@@ -148,7 +148,8 @@
                                       при проверке вашей работы.
                                       <br><br>
                                       Все файлы можно направить одним архивом, а также использовать сервисы облачного хранения данных:
-                                      Dropbox, Google Диск, Яндекс Диск и пр</p>
+                                      Dropbox, Google Диск, Яндекс Диск и пр
+                                  </p>
                                   <br><br>
                                   <p>Загрузите файлы, или прикрепите ссылку на файлы в «облаке»</p>
                               </div>
@@ -157,11 +158,25 @@
                                       <form-file></form-file>
                                   </div>
                               </div>
-                              <div class="form_item c items_captcha">
-                              <div class="">
-                                  {!! NoCaptcha::renderJs() !!}
-                                  {!! NoCaptcha::display() !!}
+                              <div class="main_modal__checked">
+                                  <div class="form-group">
+                                      <input type="checkbox" id="main_ckd" checked>
+                                      <label for="main_ckd">Согласие на обработку персональных данных.
+                                          Участник настоящим дает АНО «АСИ» согласие на обработку персональных данных (автоматизированную и не автоматизированную) и совершение с нижеуказанными данными любых действий, предусмотренных пунктом 3 статьи 3 Федерального закона РФ №152-ФЗ от 27.07.2006 «О персональных данных» (без ограничения) сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу), обезличивание, блокирование и уничтожение).
+                                          <br><br>
+                                          Персональные данные, в отношении которых дается согласие, включают фамилию, имя, отчество, адрес, дата рождения, контактный телефон, и другие персональные данные в объеме, содержащемся в представляемых регистрационных формах. Настоящее согласие действует в течение 5 (пяти) лет.
+                                          И сделать ссылку на документ (во вложении)
+                                          <br><br>
+                                          <a href="https://siberian-patriot.ru/storage/Politika_konfidentsialnosti.pdf">Политика конфиденциальности.pdf</a>
+                                      </label>
+                                  </div>
                               </div>
+
+                              <div class="form_item c items_captcha">
+                                  <div class="">
+                                      {!! NoCaptcha::renderJs() !!}
+                                      {!! NoCaptcha::display() !!}
+                                  </div>
                                   <button type="submit" class="waves-effect waves-light btn btn_form_modal">Подать заявку</button>
                               </div>
                           </div>
@@ -171,3 +186,11 @@
           </div>
       </div>
   </div>
+  <script>
+      const checkBtn = document.querySelector('.btn_form_modal'),
+          ckdInp = document.querySelector('#main_ckd');
+      ckdInp.addEventListener('input', () => {
+          ckdInp.checked ? checkBtn.removeAttribute("disabled", "disabled") : checkBtn.setAttribute("disabled", "disabled")
+      })
+      console.log(ckdInp.checked)
+  </script>

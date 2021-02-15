@@ -3,11 +3,15 @@
 @section('content')
 
 <section id="header__main">
-  <!-- <img src="assets/img/back__main.png" alt=""> -->
+  <!-- <div class="container__back">
+  <img class="back__one" src="assets/img/back22.png" alt="">
+  <img class="back__two" src="assets/img/back__main.png" alt="">
+  </div> -->
   <div class="main__back">
     <div class="container">
       <h1>Патриоты <br> Сибири</h1>
       <h3>Конкурс проектов интерактивных <br> военно-исторических <br> реконструкций</h3>
+      <a class="header__a" href="https://siberian-patriot.ru/storage/Metodicheskie_rekomendatsii_po_uchastiyu_v_konkurse_Patrioty_Sibiri_33.pdf">Методические рекомендации по участию в конкурсе</a>
       <div class="btn__main">
         <a id="form_modal_open" class="waves-effect waves-light btn btn_header modal-trigger" onclick="modal_main_toggle();">УЧАСТВОВАТЬ</a>
       </div>
