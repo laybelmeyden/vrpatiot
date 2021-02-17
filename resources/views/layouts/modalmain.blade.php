@@ -1,26 +1,27 @@
   <div id="body_modal" class="form_modal">
       <div class="container form_modal_body">
-          <!-- <div style="height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+          <div style="height: 100%;
+    display: flex;  
+    padding-top: 17%;
     flex-direction: column;">
               <p style="font-family: MontserratB !important;
     font-size: 32px !important;
     line-height: 30px;
     color: #425C5A !important;
-    font-weight: 800; text-align: center; ">Приём проектов окончен, следите за новостями в <a href="https://vk.com/aidrussia" style="color:#D81A12 !important">группе VK</a></p>
+    font-weight: 800; text-align: center; ">Старт приёма заявок 15 марта. Online- презентация Конкурса проектов интерактивных военно-исторических реконструкций "Патриоты Сибири!" состоится 12 марта. Настоятельно рекомендуем всем потенциальным участникам (всем членам команды и их наставникам) зарегистрироваться на мероприятие, где мы ответим на все ваши вопросы и поделимся полезной информацией</p>
+        <div class="btn_a" style="margin-top: 40px;">
+        <a href="https://anoasi.timepad.ru/event/1554606/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
+      </div>
     <p class="air_text_title" style="padding-top:60px;text-align: center;">
-Для уточнения вопросов по Вашим проектам можете обратиться на почту <a href="mailto:vrpatriot@rusinnovations.com" style="color:#D81A12 !important">vrpatriot@rusinnovations.com</a>
+Для уточнения вопросов по Вашим проектам можете обратиться на почту <a href="mailto:siberian-patriot@anoasi.com" style="color:#D81A12 !important">siberian-patriot@anoasi.com</a>
         </p>
-
-          </div> -->
+          </div>
           <div id="modalmain" class="modal_main_form">
               <div class="modal-content">
                   <div class="modal_btn">
                       <img src="assets/img/delete-button.svg" class=" modal-close modal_form_close_all" alt="" onclick="modal_main_toggle();">
                   </div>
-                  <div class="row">
+                  <!-- <div class="row">
                       <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
                           {{ csrf_field() }}
                           <div class="col s12 xl12">
@@ -129,14 +130,7 @@
                                   <div class="pd40">
                                       <label for="" class="modal_input_label">Доп. члены команды (введите информацию об остальных членах команды в формате - Фамилия Имя - роль в команде, e-mail)</label>
                                       <div class="input-field">
-                                          <!-- <div class="frst_team"> -->
                                           <textarea id="textarea1" class="input_main_form_modal team_input team_input__textare" name="name_team_1" placeholder="введите информацию об остальных членах команды в формате - Фамилия Имя - роль в команде, e-mail" value=""></textarea>
-                                          <!-- <input class="input_main_form_modal team_input" type="email" name="email_team_1" placeholder="E-mail" value=""> -->
-                                          <!-- </div> -->
-                                          <!-- <div class="second_team">
-                                              <input class="input_main_form_modal team_input" type="text" name="role_team_1" placeholder="Роль в команде" value="">
-                                              <input class="input_main_form_modal team_input" type="text" name="phone_team_1" placeholder="Телефон" value="">
-                                          </div> -->
                                       </div>
                                   </div>
                               </div>
@@ -181,7 +175,7 @@
                               </div>
                           </div>
                       </form>
-                  </div>
+                  </div> -->
               </div>
           </div>
       </div>

@@ -1,17 +1,21 @@
-<!-- <div class="form_modal" id="cok_modal">
+<div class="form_modal" id="cok_modal">
       <div class="container">
           <div>
           <section class="secans modal_cookie_scroll" style="display: flex;
     justify-content: center;
-    align-items: center;
+    
     height: 70vh !important;">
   <div class="container">
     <div class="row">
-      <p class="pans"><span class="spanans"></span> <b><a href="https://vk.com/wall-78620921_755?w=wall-78620921_755" style="color:white;">Информация о подведении итогов конкурса</a></b></p>
-      <p class="pansz">«Всероссийский конкурс интерактивных реконструкций Великой Отечественной войны» подходит к своему завершению</p>
-      <p class="pansf">13 ноября в 14:00 состоится online-финал конкурса на платформе Zoom, где мы объявим победителей.</p>
+      <p class="pans"><span class="spanans"></span> <b><a href="https://anoasi.timepad.ru/event/1554606/" style="color:white;">Старт приёма заявок 15 марта.</a></b></p>
+      <p class="pansz">Online- презентация Конкурса проектов интерактивных военно-исторических реконструкций "Патриоты Сибири!" состоится 12 марта. Настоятельно рекомендуем всем потенциальным участникам (всем членам команды и их наставникам) зарегистрироваться на мероприятие</p>
+      <p class="pansf">В рамках онлайн-мероприятия:<br><br>
+- расскажем подробности о конкурсе и его этапах<br>
+- поможем подготовить успешную заявку<br>
+- проведем уникальный мастер-класс по использованию интерактивных и цифровых технологий в ваших проектах по военно-историческим реконструкциям истории Сибири<br>
+- ответим на все вопросы о конкурсе</p>
       <div class="btn_a">
-        <a href="https://vk.com/wall-78620921_755?w=wall-78620921_755" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Подробнее</a>
+        <a href="https://anoasi.timepad.ru/event/1554606/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
       </div>
     </div>
   </div>
@@ -25,4 +29,4 @@
               </div>
           </div>
       </div>
-  </div> -->
+  </div>

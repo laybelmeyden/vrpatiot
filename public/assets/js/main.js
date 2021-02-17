@@ -7,15 +7,15 @@ function modal_main_toggle() {
 function modal_main_toggle_close() {
     document.getElementById("modalflat").classList.toggle('visible');
 }
-// const modal_cookie_open = () => {
-//     document.getElementById("cok_modal").classList.add('modal_notifications_visible');
-// };
+const modal_cookie_open = () => {
+    document.getElementById("cok_modal").classList.add('modal_notifications_visible');
+};
 
-// function modal_main_toggle_2() {
-//     document.getElementById("cok_modal").classList.remove('modal_notifications_visible');
-// }
+function modal_main_toggle_2() {
+    document.getElementById("cok_modal").classList.remove('modal_notifications_visible');
+}
 
-// window.onload = setTimeout(modal_cookie_open, 1000);
+window.onload = setTimeout(modal_cookie_open, 1000);
 
 
 document.getElementById("added_news").onclick = () => {
