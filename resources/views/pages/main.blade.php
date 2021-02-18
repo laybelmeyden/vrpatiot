@@ -175,7 +175,7 @@
         <img src="assets/img/pgrants_logo_gp_gark.png" alt="">
       </div>
       <div>
-        <img src="assets/img/pdas.png" alt="">
+        <img src="assets/img/pdas.svg" alt="">
       </div>
     </div>
   </div>
