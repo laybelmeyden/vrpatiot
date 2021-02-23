@@ -7,17 +7,23 @@ use App\MainForm;
 use App\FileName;
 use Excel;
 use App\Exports\ProjectExport;
+use App\News;
 
 class MainController extends Controller
 {
   public function index()
   {
+    $news = News::latest()->get();
     $mainforms = MainForm::latest()->get();
-    return view('pages.main', compact('mainforms'));
+    return view('pages.main', compact('mainforms', 'news'));
   }
   public function programm()
   {
     return view('pages.programm');
+  }
+  public function news(News $id)
+  {
+    return view('pages.news', compact('id'));
   }
   public function result()
   {

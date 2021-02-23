@@ -3,24 +3,16 @@ function modal_main_toggle() {
     document.querySelector(".body").classList.toggle('noscroll');
 }
 
-
 function modal_main_toggle_close() {
     document.getElementById("modalflat").classList.toggle('visible');
 }
-const modal_cookie_open = () => {
-    document.getElementById("cok_modal").classList.add('modal_notifications_visible');
-};
-
-function modal_main_toggle_2() {
-    document.getElementById("cok_modal").classList.remove('modal_notifications_visible');
-}
-
-window.onload = setTimeout(modal_cookie_open, 1000);
 
 
-document.getElementById("added_news").onclick = () => {
-    document.getElementById("ucaht_1").classList.toggle('visible');
-}
+
+
+// document.getElementById("added_news").onclick = () => {
+//     document.getElementById("ucaht_1").classList.toggle('visible');
+// }
 
 
 function ValidateSize(file) {
@@ -32,25 +24,49 @@ function ValidateSize(file) {
 
     }
 }
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 1,
+// var swiper = new Swiper('.swiper-container', {
+//     slidesPerView: 3,
+//     spaceBetween: 20,
+//     breakpoints: {
+//         320: {
+//             slidesPerView: 1,
+//         },
+//         480: {
+//             slidesPerView: 1,
+//         },
+//         640: {
+//             slidesPerView: 3,
+//         }
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+// });
+var x = document.getElementsByClassName("slider-produtos-wrap");
+
+for (var i = 0; i < x.length; i++) {
+
+    var el = x[i];
+
+    var swiper = el.getElementsByClassName("swiper-container")[0];
+    var nx = el.getElementsByClassName("swiper-next")[0];
+    var pr = el.getElementsByClassName("swiper-prev")[0];
+
+    new Swiper(swiper, {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            992: {
+                slidesPerView: 2,
+            },
+            1350: {
+                slidesPerView: 3,
+            }
         },
-        // when window width is >= 480px
-        480: {
-            slidesPerView: 1,
-        },
-        // when window width is >= 640px
-        640: {
-            slidesPerView: 3,
+        navigation: {
+            nextEl: nx,
+            prevEl: pr
         }
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+    });
+}

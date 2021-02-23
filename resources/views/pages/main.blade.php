@@ -52,8 +52,8 @@
       </div>
     </div>
     <div class="btn__rules">
-  <a id="btn__rules" href="https://siberian-patriot.ru/storage/Polozhenie_o_Konkurse_proektov_interaktivnykh_voenno-istoricheskikh_rekonstruktsiy_Patrioty_Sibiri_33.pdf" class="waves-effect waves-light btn btn_header modal-trigger">Скачать Положение о Конкурсе</a>
-  </div>
+      <a id="btn__rules" href="https://siberian-patriot.ru/storage/Polozhenie_o_Konkurse_proektov_interaktivnykh_voenno-istoricheskikh_rekonstruktsiy_Patrioty_Sibiri_33.pdf" class="waves-effect waves-light btn btn_header modal-trigger">Скачать Положение о Конкурсе</a>
+    </div>
   </div>
 </section>
 
@@ -115,27 +115,57 @@
   </div>
 </section>
 @include('layouts.modalmain')
-<!-- <section id="news">
+<section id="news">
   <div class="container">
     <p class="news__title">НОВОСТИ И МЕРОПРИЯТИЯ</p>
   </div>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
+  <div class="container">
+    <div class="slider-produtos-wrap">
+      <div class="slider-produtos-destaque swiper-container">
+        <div class="swiper-wrapper">
+
+          @foreach ($news as $new)
+          <div class="swiper-slide">
+            <div class="news__img">
+              <img src="/storage/{{$new->img}}" alt="">
+            </div>
+            <div class="news__body">
+              <p>{{Str::limit($new->title_ru, 65, '...')}}</p>
+              <div class="btn__news">
+                <a href="/news{{$new->id}}"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                    <g filter="url(#filter0_d)">
+                      <rect x="4" width="37" height="37" rx="18.5" fill="url(#paint0_linear)" />
+                    </g>
+                    <path d="M28.3536 19.3536C28.5488 19.1583 28.5488 18.8417 28.3536 18.6464L25.1716 15.4645C24.9763 15.2692 24.6597 15.2692 24.4645 15.4645C24.2692 15.6597 24.2692 15.9763 24.4645 16.1716L27.2929 19L24.4645 21.8284C24.2692 22.0237 24.2692 22.3403 24.4645 22.5355C24.6597 22.7308 24.9763 22.7308 25.1716 22.5355L28.3536 19.3536ZM18 19.5H28V18.5H18V19.5Z" fill="#FBFAFA" />
+                    <defs>
+                      <filter id="filter0_d" x="0" y="0" width="45" height="45" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.12775 0 0 0 0 0.000781253 0 0 0 0 0.1875 0 0 0 0.41 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                      </filter>
+                      <linearGradient id="paint0_linear" x1="-2.86881" y1="37" x2="44.1465" y2="33.6718" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.00821062" stop-color="#E2575F" />
+                        <stop offset="0.609375" stop-color="#481659" />
+                        <stop offset="1" stop-color="#2B1B4E" />
+                      </linearGradient>
+                    </defs>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          @endforeach
+
+        </div>
+      </div>
+      <div class="swiper-prev"></div>
+      <div class="swiper-next"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
   </div>
-</section> -->
+</section>
 <section id="org">
   <div class="container">
     <div class="org__container">
@@ -210,8 +240,35 @@
         </form>
       </div>
     </div>
+    <script>
+      function modal_main_toggle_2() {
+        document.getElementById("cok_modal").classList.remove('modal_notifications_visible');
+      }
+      const modal_cookie_open = () => {
+        document.getElementById("cok_modal").classList.add('modal_notifications_visible');
+      };
+
+      window.onload = setTimeout(modal_cookie_open, 1000);
+    </script>
     <p class="copy__foter">Проект реализуется за счет гранта Президента Российской Федерации на развитие гражданского общества, предоставленного Фондом президентских грантов</p>
-  <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=72355792&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/72355792/1_0_14133FFF_14133FFF_1_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="72355792" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(72355792, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/72355792" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=72355792&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/72355792/1_0_14133FFF_14133FFF_1_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="72355792" data-lang="ru" /></a> <!-- /Yandex.Metrika informer -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+          (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(72355792, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true
+      });
+    </script> <noscript>
+      <div><img src="https://mc.yandex.ru/watch/72355792" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript> <!-- /Yandex.Metrika counter -->
   </div>
 </section>
 @endsection

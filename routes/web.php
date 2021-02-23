@@ -28,7 +28,7 @@ Route::get('/result', 'MainController@result')->name('result');
 Route::post('/contact', 'MainController@contact');
 Route::post('/main_form', 'MainController@main_form');
 Route::post('/update_main_form', 'MainController@update_main_form');
-
+Route::get('/news{id}', 'MainController@news');
 Route::get('/excel_export', 'MainController@excel_export');
 
 
