@@ -12,80 +12,64 @@ class UploadController extends Controller
 
 {
 
-public function uploadForm()
+    public function uploadForm()
 
-{
+    {
 
-return view('pages.upload_form');
+        return view('pages.upload_form');
+    }
 
-}
+    public function uploadSubmit(Request $request)
 
-public function uploadSubmit(Request $request)
+    {
 
-{
+        // $this->validate($request, [
 
-// $this->validate($request, [
+        // 'name' => 'required',
 
-// 'name' => 'required',
+        // 'photos'=>'required',
 
-// 'photos'=>'required',
+        // ]);
 
-// ]);
+        if ($request->hasFile('photos')) {
 
-if($request->hasFile('photos'))
+            $allowedfileExtension = ['pdf', 'jpg', 'png', 'docx'];
 
-{
+            $files = $request->file('photos');
 
-$allowedfileExtension=['pdf','jpg','png','docx'];
+            foreach ($files as $file) {
 
-$files = $request->file('photos');
+                $filename = $file->getClientOriginalName();
 
-foreach($files as $file){
+                $extension = $file->getClientOriginalExtension();
 
-$filename = $file->getClientOriginalName();
+                $check = in_array($extension, $allowedfileExtension);
 
-$extension = $file->getClientOriginalExtension();
+                //dd($check);
 
-$check=in_array($extension,$allowedfileExtension);
+                // if ($check) {
 
-//dd($check);
+                    $items = Item::create($request->all());
 
-if($check)
+                    foreach ($request->photos as $photo) {
 
-{
+                        $filename = $photo->store('photos');
 
-$items= Item::create($request->all());
+                        itemDetails::create([
 
-foreach ($request->photos as $photo) {
+                            'item_id' => $items->id,
 
-$filename = $photo->store('photos');
+                            'filename' => $filename
 
-itemDetails::create([
+                        ]);
+                    }
 
-'item_id' => $items->id,
+                //     echo "Upload Successfully";
+                // } else {
 
-'filename' => $filename
-
-]);
-
-}
-
-echo "Upload Successfully";
-
-}
-
-else
-
-{
-
-echo '<div class="alert alert-warning"><strong>Warning!</strong> Sorry Only Upload png , jpg , doc</div>';
-
-}
-
-}
-
-}
-
-}
-
+                //     echo '<div class="alert alert-warning"><strong>Warning!</strong> Sorry Only Upload png , jpg , doc</div>';
+                // }
+            }
+        }
+    }
 }
