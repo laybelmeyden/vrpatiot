@@ -10,9 +10,9 @@ function modal_main_toggle_close() {
 
 
 
-// document.getElementById("added_news").onclick = () => {
-//     document.getElementById("ucaht_1").classList.toggle('visible');
-// }
+document.getElementById("added_news").onclick = () => {
+    document.getElementById("ucaht_1").classList.toggle('visible');
+}
 
 
 function ValidateSize(file) {
