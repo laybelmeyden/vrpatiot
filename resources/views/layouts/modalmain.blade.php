@@ -1,6 +1,6 @@
   <div id="body_modal" class="form_modal">
       <div class="container form_modal_body">
-          <div style="height: 100%;
+          <!-- <div style="height: 100%;
     display: flex;  
     padding-top: 17%;
     flex-direction: column;">
@@ -15,13 +15,13 @@
     <p class="air_text_title" style="padding-top:60px;text-align: center;">
 Для уточнения вопросов по Вашим проектам можете обратиться на почту <a href="mailto:siberian-patriot@anoasi.com" style="color:#D81A12 !important">siberian-patriot@anoasi.com</a>
         </p>
-          </div>
+          </div> -->
           <div id="modalmain" class="modal_main_form">
               <div class="modal-content">
                   <div class="modal_btn">
                       <img src="assets/img/delete-button.svg" class=" modal-close modal_form_close_all" alt="" onclick="modal_main_toggle();">
                   </div>
-                  <!-- <div class="row">
+                  <div class="row">
                       <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
                           {{ csrf_field() }}
                           <div class="col s12 xl12">
@@ -175,7 +175,7 @@
                               </div>
                           </div>
                       </form>
-                  </div> -->
+                  </div>
               </div>
           </div>
       </div>
@@ -186,5 +186,4 @@
       ckdInp.addEventListener('input', () => {
           ckdInp.checked ? checkBtn.removeAttribute("disabled", "disabled") : checkBtn.setAttribute("disabled", "disabled")
       })
-      console.log(ckdInp.checked)
   </script>
