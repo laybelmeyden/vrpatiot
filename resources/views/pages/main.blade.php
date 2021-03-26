@@ -18,6 +18,17 @@
     </div>
   </div>
 </section>
+<section id="youtube">
+  <div class="container">
+    <p class="yout__title">Запись Online-презентации Конкурса проектов интерактивных военно-исторических реконструкций "Патриоты Сибири!" - 12 марта 2020 года</p>
+    <p class="yout__body">
+    Перед просмотром записи, пожалуйста, подпишитесь на канал
+    </p>
+    <div class="btn__rules">
+      <a id="btn__rules" target="_blank" href="https://youtu.be/Ah9Kc12NkuU" class="waves-effect waves-light btn btn_header modal-trigger">Смотреть запись</a>
+    </div>
+  </div>
+</section>
 <section id="about__main">
   <div class="about__back__main">
     <img src="assets/img/about__main.png" alt="assets/img/about__main.png">
@@ -197,38 +208,38 @@
     <div class="partners__logo_container">
       <div>
         <a href="">
-        <img src="assets/img/air_logo.svg" alt="">
+          <img src="assets/img/air_logo.svg" alt="">
         </a>
       </div>
       <div>
-      <a href="http://www.smena.org/">
-        <img src="assets/img/smena_logo.svg" alt="">
-      </a>
+        <a href="http://www.smena.org/">
+          <img src="assets/img/smena_logo.svg" alt="">
+        </a>
       </div>
       <div>
-      <a href="https://xn--80afcdbalict6afooklqi5o.xn--p1ai/">
-        <img src="assets/img/pgrants_logo_gp_gark.png" alt="">
-      </a>
+        <a href="https://xn--80afcdbalict6afooklqi5o.xn--p1ai/">
+          <img src="assets/img/pgrants_logo_gp_gark.png" alt="">
+        </a>
       </div>
       <div>
-      <a href="https://vk.com/myhistory_omsk">
-        <img src="assets/img/pdas.svg" alt="" style="    max-height: 100%;">
-      </a>
+        <a href="https://vk.com/myhistory_omsk">
+          <img src="assets/img/pdas.svg" alt="" style="    max-height: 100%;">
+        </a>
       </div>
       <div>
-      <a href="https://vk.com/tur_omsk">
-        <img src="assets/img/logo_white.png" alt="">
-      </a>
+        <a href="https://vk.com/tur_omsk">
+          <img src="assets/img/logo_white.png" alt="">
+        </a>
       </div>
       <div>
-      <a href="https://hnkm.ru/">
-        <img src="assets/img/Логотип ХНКМ-01.png" alt="">
-      </a>
+        <a href="https://hnkm.ru/">
+          <img src="assets/img/Логотип ХНКМ-01.png" alt="">
+        </a>
       </div>
       <div>
-      <a href="https://vk.com/molprav_55">
-        <img src="assets/img/pererisovanny_Montazhnaya_oblast_1.png" alt="">
-      </a>
+        <a href="https://vk.com/molprav_55">
+          <img src="assets/img/pererisovanny_Montazhnaya_oblast_1.png" alt="">
+        </a>
       </div>
     </div>
   </div>

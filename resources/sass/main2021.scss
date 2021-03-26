@@ -547,6 +547,48 @@ body {
     }
 }
 
+#youtube {
+    padding-top: 75px;
+    .yout__title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        color: #a33f45;
+    }
+    .yout__body {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        max-width: 814px;
+        width: 100%;
+        padding-top: 40px;
+    }
+    .btn__rules {
+        a {
+            margin-top: 38px;
+            background: linear-gradient( 85.95deg, #E2575F -16.36%, #481659 55.34%, #2B1B4E 101.93%);
+            box-shadow: 0px 4px 4px rgb(33 0 48 / 41%);
+            border-radius: 60px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.2em;
+            color: #FFFFFF;
+            width: 80%;
+            height: 103px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
+
 #partenrs__2021 {
     padding-top: 30px;
     padding-bottom: 40px;
