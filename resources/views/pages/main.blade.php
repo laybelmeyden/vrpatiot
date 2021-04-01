@@ -241,6 +241,26 @@
           <img src="assets/img/pererisovanny_Montazhnaya_oblast_1.png" alt="">
         </a>
       </div>
+      <div>
+        <a href="https://irkutsk.coddyschool.com/">
+          <img src="assets/img/cddd.png" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="http://patriot.nso.ru/">
+          <img src="assets/img/LOGO_2_1.png" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://vk.com/dobrotex">
+          <img src="assets/img/Logotip_DobroTekha_siniy.png" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="https://omsu.ru/">
+          <img src="assets/img/OmGU_logo_Dostoevskiy_3.jpg" alt="">
+        </a>
+      </div>
     </div>
   </div>
   </div>
