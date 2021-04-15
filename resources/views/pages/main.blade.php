@@ -207,7 +207,7 @@
     <p>Партнеры</p>
     <div class="partners__logo_container">
       <div>
-        <a href="">
+        <a href="https://rusinnovations.com/">
           <img src="assets/img/air_logo.svg" alt="">
         </a>
       </div>
@@ -218,7 +218,7 @@
       </div>
       <div>
         <a href="https://xn--80afcdbalict6afooklqi5o.xn--p1ai/">
-          <img src="assets/img/pgrants_logo_gp_gark.png" alt="">
+          <img src="assets/img/pgrants_logo_gp.png" alt="">
         </a>
       </div>
       <div>
@@ -233,32 +233,32 @@
       </div>
       <div>
         <a href="https://hnkm.ru/">
-          <img src="assets/img/Логотип ХНКМ-01.png" alt="">
+          <img src="assets/img/Logotip_KhNKM-01.png" alt="">
         </a>
       </div>
       <div>
         <a href="https://vk.com/molprav_55">
-          <img src="assets/img/pererisovanny_Montazhnaya_oblast_1.png" alt="">
+          <img src="assets/img/Pererisovannyy_montazhnaya_Oblast_1_1.png" alt="">
         </a>
       </div>
       <div>
         <a href="https://irkutsk.coddyschool.com/">
-          <img src="assets/img/cddd.png" alt="">
+          <img src="assets/img/logo123123123123.png" alt="">
         </a>
       </div>
       <div>
         <a href="http://patriot.nso.ru/">
-          <img src="assets/img/LOGO_2_1.png" alt="">
+          <img src="assets/img/Logo_2_dasdasd.png" alt="">
         </a>
       </div>
       <div>
         <a href="https://vk.com/dobrotex">
-          <img src="assets/img/Logotip_DobroTekha_siniy.png" alt="">
+          <img src="assets/img/Logotip_Dobrotekha_siniyasdasd.png" alt="">
         </a>
       </div>
       <div>
         <a href="https://omsu.ru/">
-          <img src="assets/img/OmGU_logo_Dostoevskiy_3.jpg" alt="">
+          <img src="assets/img/Omgu_logo_Dostoevskiy_3.png" alt="">
         </a>
       </div>
     </div>
