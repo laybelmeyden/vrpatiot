@@ -4,18 +4,24 @@
           <section class="secans modal_cookie_scroll" style="display: flex;
     justify-content: center;
     
-    height: 70vh !important;">
+    height: 80vh !important;">
   <div class="container">
     <div class="row">
-      <p class="pans"><span class="spanans"></span> <b><a href="https://anoasi.timepad.ru/event/1554606/" style="color:white;">Старт приёма заявок 15 марта.</a></b></p>
-      <p class="pansz">Online- презентация Конкурса проектов интерактивных военно-исторических реконструкций "Патриоты Сибири!" состоится 12 марта. Настоятельно рекомендуем всем потенциальным участникам (всем членам команды и их наставникам) зарегистрироваться на мероприятие</p>
-      <p class="pansf">В рамках онлайн-мероприятия:<br><br>
-- расскажем подробности о конкурсе и его этапах<br>
-- поможем подготовить успешную заявку<br>
-- проведем уникальный мастер-класс по использованию интерактивных и цифровых технологий в ваших проектах по военно-историческим реконструкциям истории Сибири<br>
-- ответим на все вопросы о конкурсе</p>
+      <p class="pans"><span class="spanans"></span> <b><a href="https://anoasi.timepad.ru/event/1623397/" style="color:white;">Приём заявок продлён до 5 мая (включительно)</a></b></p>
+      <!-- <p class="pansz">Приём заявок продлён до 5 мая (включительно)</p> -->
+      <p class="pansf">
+      22 мая - финал Конкурса в Омске<br><br>
+Площадка Исторического парка "Россия — Моя история"<br><br>
+Для всех участников:<br><br>
+- Премьерный показ короткометражного фильма по итогам конкурса<br>
+- Подведение итогов конкурса, награждение победителей<br>
+- Бесплатная экскурсия по Историческому парку "Россия-моя история"<br>
+- Фотозона и сертификаты для всех участников мероприятия<br>
+<br>
+Для участия необходимо только зарегистрироваться
+      </p>
       <div class="btn_a">
-        <a href="https://anoasi.timepad.ru/event/1554606/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
+        <a href="https://anoasi.timepad.ru/event/1623397/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
       </div>
     </div>
   </div>
