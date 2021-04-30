@@ -5,7 +5,7 @@
     justify-content: center;
     
     height: 80vh !important;">
-  <div class="container">
+  <div class="container" style="width: 90%;">
     <div class="row">
       <p class="pans"><span class="spanans"></span> <b><a href="https://anoasi.timepad.ru/event/1623397/" style="color:white;">Приём заявок продлён до 5 мая (включительно)</a></b></p>
       <!-- <p class="pansz">Приём заявок продлён до 5 мая (включительно)</p> -->
