@@ -43,6 +43,7 @@
     </div>
   </div>
   @endif
+  @include('layouts.nav')
   @yield('content')
   @include('layouts.modalcookie')
   @include('layouts.footer')

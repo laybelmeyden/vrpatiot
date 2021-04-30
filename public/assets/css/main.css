@@ -1415,7 +1415,8 @@ select {
     font-size: 24px;
     line-height: 29px;
     color: #FBFAFA;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .btn_a {
@@ -1449,14 +1450,35 @@ select {
     background: #D6A217 !important;
 }
 
+.main__items {
+    background: transparent !important;
+    position: absolute !important;
+}
+
+.main__items a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FBFAFA;
+    padding-bottom: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pansf {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 29px;
     color: #FBFAFA;
     padding-bottom: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pans {
@@ -1469,7 +1491,7 @@ select {
     text-align: center;
     color: #FBFAFA;
     padding-top: 38px;
-    padding-bottom: 36px;
+    padding-bottom: 20px;
 }
 
 .imgans {
