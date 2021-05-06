@@ -302,7 +302,7 @@
         document.getElementById("cok_modal").classList.add('modal_notifications_visible');
       };
 
-      window.onload = setTimeout(modal_cookie_open, 1000);
+      window.onload = setTimeout(modal_cookie_open, 3000);
     </script>
     <p class="copy__foter">Проект реализуется за счет гранта Президента Российской Федерации на развитие гражданского общества, предоставленного Фондом президентских грантов</p>
     <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=72355792&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/72355792/1_0_14133FFF_14133FFF_1_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="72355792" data-lang="ru" /></a> <!-- /Yandex.Metrika informer -->

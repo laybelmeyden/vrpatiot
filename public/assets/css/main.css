@@ -1427,9 +1427,9 @@ select {
 }
 
 .btn_ans {
-    background: #D81A12 !important;
+    background: linear-gradient(85.95deg, #e2575f -16.36%, #481659 55.34%, #2b1b4e 101.93%) !important;
     border-radius: 60px !important;
-    width: 389px !important;
+    width: 340px !important;
     height: 83px !important;
     margin-bottom: 24px;
     text-align: center;
@@ -1444,10 +1444,6 @@ select {
     display: flex !important;
     justify-content: center;
     align-items: center;
-}
-
-.btn_ans:hover {
-    background: #D6A217 !important;
 }
 
 .main__items {

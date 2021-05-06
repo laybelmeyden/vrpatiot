@@ -1,27 +1,48 @@
   <div id="body_modal" class="form_modal">
       <div class="container form_modal_body">
-          <!-- <div style="height: 100%;
+          <div style="height: 100%;
     display: flex;  
-    padding-top: 17%;
+    padding-top: 7%;
     flex-direction: column;">
               <p style="font-family: MontserratB !important;
     font-size: 32px !important;
     line-height: 30px;
     color: #425C5A !important;
-    font-weight: 800; text-align: center; ">Старт приёма заявок 15 марта. Online- презентация Конкурса проектов интерактивных военно-исторических реконструкций "Патриоты Сибири!" состоится 12 марта. Настоятельно рекомендуем всем потенциальным участникам (всем членам команды и их наставникам) зарегистрироваться на мероприятие, где мы ответим на все ваши вопросы и поделимся полезной информацией</p>
+    font-weight: 800; text-align: center; ">Приём заявок окончен!</p>
+    <p style="font-family: MontserratB !important;
+    font-size: 20px !important;
+    padding-top: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+    line-height: 30px;
+    color: #425C5A !important; ">Финал конкурса и объявление победителей состоятся 22 мая в Омске на площадке Исторического парка "Россия — Моя история"
+<br><br>
+Мероприятие ОЧНОЕ<br>
+Для всех участников:
+<br><br>
+- Премьерный показ короткометражного фильма по итогам конкурса<br>
+- Подведение итогов конкурса, награждение победителей<br>
+- Бесплатная экскурсия по Историческому парку "Россия-моя история"<br>
+- Фотозона и сертификаты для всех участников мероприятия
+<br><br>
+Для участия необходимо только зарегистрироваться
+</p>
         <div class="btn_a" style="margin-top: 40px;">
-        <a href="https://anoasi.timepad.ru/event/1554606/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
+        <a href="https://anoasi.timepad.ru/event/1623397/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
       </div>
-    <p class="air_text_title" style="padding-top:60px;text-align: center;">
-Для уточнения вопросов по Вашим проектам можете обратиться на почту <a href="mailto:siberian-patriot@anoasi.com" style="color:#D81A12 !important">siberian-patriot@anoasi.com</a>
+    <p class="air_text_title" style="padding-top:60px;text-align: center; padding-bottom:30px;">
+Для уточнения вопросов по Вашим проектам можете обратиться на почту <a href="mailto:siberian-patriot@anoasi.com" style="color:#D81A12 !important">siberian-patriot@anoasi.com</a><br>
+Следите за новостями на наших ресурсах:<br>
+- Сайт АНО АСИ: <a href="https://anoasi.com/" style="color:#D81A12 !important">https://anoasi.com/</a>
+- VK:<a href="https://vk.com/agenstvoasi" style="color:#D81A12 !important">https://vk.com/agenstvoasi</a>
         </p>
-          </div> -->
+          </div>
           <div id="modalmain" class="modal_main_form">
               <div class="modal-content">
                   <div class="modal_btn">
                       <img src="assets/img/delete-button.svg" class=" modal-close modal_form_close_all" alt="" onclick="modal_main_toggle();">
                   </div>
-                  <div class="row">
+                  <!-- <div class="row">
                       <form action="/main_form" method="POST" class="fs-form fs-form-full" autocomplete="off" enctype="multipart/form-data">
                           {{ csrf_field() }}
                           <div class="col s12 xl12">
@@ -175,7 +196,7 @@
                               </div>
                           </div>
                       </form>
-                  </div>
+                  </div> -->
               </div>
           </div>
       </div>
