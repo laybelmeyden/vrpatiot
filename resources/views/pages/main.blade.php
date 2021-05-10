@@ -22,7 +22,7 @@
   <div class="container">
     <p class="yout__title">Запись Online-презентации Конкурса проектов интерактивных военно-исторических реконструкций "Патриоты Сибири!" - 12 марта 2020 года</p>
     <p class="yout__body">
-    Перед просмотром записи, пожалуйста, подпишитесь на канал
+      Перед просмотром записи, пожалуйста, подпишитесь на канал
     </p>
     <div class="btn__rules">
       <a id="btn__rules" target="_blank" href="https://youtu.be/Ah9Kc12NkuU" class="waves-effect waves-light btn btn_header modal-trigger">Смотреть запись</a>
@@ -302,7 +302,15 @@
         document.getElementById("cok_modal").classList.add('modal_notifications_visible');
       };
 
-      window.onload = setTimeout(modal_cookie_open, 3000);
+      function modal_main_toggle() {
+        document.querySelector("#body_modal").classList.toggle('visible');
+        document.querySelector(".body").classList.toggle('noscroll');
+      }
+
+      function modal_main_toggle_close() {
+        document.getElementById("modalflat").classList.toggle('visible');
+      }
+      window.onload = setTimeout(modal_main_toggle, 2000);
     </script>
     <p class="copy__foter">Проект реализуется за счет гранта Президента Российской Федерации на развитие гражданского общества, предоставленного Фондом президентских грантов</p>
     <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=72355792&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/72355792/1_0_14133FFF_14133FFF_1_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="72355792" data-lang="ru" /></a> <!-- /Yandex.Metrika informer -->
