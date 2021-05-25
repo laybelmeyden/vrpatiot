@@ -8,27 +8,19 @@
     font-size: 32px !important;
     line-height: 30px;
     color: #425C5A !important;
-    font-weight: 800; text-align: center; ">Приём заявок окончен!</p>
+    font-weight: 800; text-align: center; ">Всем спасибо за участие!
+Итоги конкурса подведены</p>
     <p style="font-family: MontserratB !important;
     font-size: 20px !important;
     padding-top: 40px;
     padding-right: 80px;
     padding-left: 80px;
     line-height: 30px;
-    color: #425C5A !important; ">Финал конкурса и объявление победителей состоятся 22 мая в Омске на площадке Исторического парка "Россия — Моя история"
-<br><br>
-Мероприятие ОЧНОЕ<br>
-Для всех участников:
-<br><br>
-- Премьерный показ короткометражного фильма по итогам конкурса<br>
-- Подведение итогов конкурса, награждение победителей<br>
-- Бесплатная экскурсия по Историческому парку "Россия-моя история"<br>
-- Фотозона и сертификаты для всех участников мероприятия
-<br><br>
-Для участия необходимо только зарегистрироваться
+    color: #425C5A !important; ">
+
 </p>
         <div class="btn_a" style="margin-top: 40px;">
-        <a href="https://anoasi.timepad.ru/event/1623397/" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Регистрация на событие</a>
+        <a href="https://siberian-patriot.ru/news6" style="margin: 0 auto;" target="_blank" class="waves-effect waves-light btn btn_ans modal-trigger">Узнать результаты</a>
       </div>
     <p class="air_text_title" style="padding-top:60px;text-align: center; padding-bottom:30px;">
 Для уточнения вопросов по Вашим проектам можете обратиться на почту <a href="mailto:siberian-patriot@anoasi.com" style="color:#D81A12 !important">siberian-patriot@anoasi.com</a><br>
