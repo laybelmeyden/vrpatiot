@@ -1,5 +1,5 @@
   <div id="body_modal" class="form_modal">
-      <div class="container form_modal_body">
+      <div class="container form_modal_body" style="height: auto;">
           <div style="height: 100%;
     display: flex;  
     padding-top: 7%;
