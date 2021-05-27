@@ -18,6 +18,7 @@
 </nav>
 
 <script>
+    if(document.querySelector('body').clientWidth <= 1201){
     document.querySelector('#mobile__menu').addEventListener('click', ()=>{
         document.querySelector('#main__menu').classList.toggle('active');
         document.querySelector('body').classList.toggle('no_scroll');
@@ -28,4 +29,5 @@
         document.querySelector('body').classList.toggle('no_scroll');
         document.querySelector('.cls').classList.toggle('active__cls');
     }))
+}
 </script>
