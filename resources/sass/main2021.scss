@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -589,6 +590,82 @@ body {
     }
 }
 
+.burger-icon {
+    position: absolute;
+    height: 56px;
+    width: 56px;
+    display: none;
+}
+
+.burger-container {
+    position: relative;
+    height: 28px;
+    width: 36px;
+}
+
+.burger-bun-top,
+.burger-bun-bot,
+.burger-filling {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 36px;
+    border-radius: 2px;
+    background: white;
+}
+
+.burger-bun-top {
+    top: 0;
+    transform-origin: 34px 2px;
+}
+
+.burger-bun-bot {
+    bottom: 0;
+    transform-origin: 34px 2px;
+}
+
+.burger-filling {
+    top: 12px;
+}
+
+.main__items_navs {
+    display: flex;
+    a {
+        text-transform: uppercase;
+        color: #E2575F !important;
+        font-weight: 750 !important;
+        margin-right: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        div {
+            position: relative;
+            height: 5px;
+            background: #E2575F !important;
+            position: relative;
+            opacity: 1;
+        }
+        &:hover {
+            div {
+                animation: wd .5s;
+                opacity: 1;
+                width: 100%;
+                transition: .5s;
+            }
+        }
+    }
+}
+
+@keyframes wd {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
 #partenrs__2021 {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -675,7 +752,28 @@ body {
     }
 }
 
+.active {
+    .main__items_navs {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        padding-top: 60px;
+        div {
+            height: 0 !important;
+        }
+    }
+    height: 100vh;
+}
+
+.no_scroll {
+    overflow: hidden;
+}
+
 @media screen and (max-width:1201px) {
+    #news {
+        padding-top: 0;
+    }
     #stages .stages__count_grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -690,6 +788,25 @@ body {
             width: 100%;
         }
     }
+    .main__items_navs {
+        display: none;
+    }
+    .burger-icon {
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+}
+
+.cls {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.active__cls {
+    align-items: baseline;
 }
 
 @media screen and (max-width:992px) {

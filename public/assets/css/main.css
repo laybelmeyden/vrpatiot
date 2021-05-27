@@ -1448,7 +1448,6 @@ select {
 
 .main__items {
     background: transparent !important;
-    position: absolute !important;
 }
 
 .main__items a {
@@ -1458,7 +1457,6 @@ select {
     font-size: 18px;
     line-height: 29px;
     color: #FBFAFA;
-    padding-bottom: 43px;
     display: flex;
     align-items: center;
     justify-content: center;

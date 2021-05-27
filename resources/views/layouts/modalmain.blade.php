@@ -193,10 +193,10 @@
           </div>
       </div>
   </div>
-  <script>
+  <!-- <script>
       const checkBtn = document.querySelector('.btn_form_modal'),
           ckdInp = document.querySelector('#main_ckd');
       ckdInp.addEventListener('input', () => {
           ckdInp.checked ? checkBtn.removeAttribute("disabled", "disabled") : checkBtn.setAttribute("disabled", "disabled")
       })
-  </script>
+  </script> -->
