@@ -8,6 +8,7 @@ use App\FileName;
 use Excel;
 use App\Exports\ProjectExport;
 use App\News;
+use File;
 
 class MainController extends Controller
 {
@@ -20,6 +21,19 @@ class MainController extends Controller
   public function programm()
   {
     return view('pages.programm');
+  }
+  public function photos()
+  {
+
+  
+
+    $result = array();
+    $dirs  = File::Files(public_path('assets/img/light'));
+    foreach ($dirs as $item) {
+      array_push($result, $item->getFilename());
+    }
+
+    return view('pages.photos', compact('result'));
   }
   public function news(News $id)
   {

@@ -628,13 +628,50 @@ body {
     top: 12px;
 }
 
+.galls__title {
+    padding-top: 46px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #A1A0CC;
+    padding-bottom: 46px;
+    font-family: "MuseoCyrl900";
+}
+
+#lightgallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    a {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    padding-bottom: 90px;
+    .blur-up {
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        transition: filter 400ms, -webkit-filter 400ms;
+    }
+    .blur-up.lazyloaded {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+}
+
 .main__items_navs {
     display: flex;
     a {
         text-transform: uppercase;
         color: #E2575F !important;
         font-weight: 750 !important;
-        margin-right: 20px;
+        margin-right: 15px;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
@@ -771,6 +808,28 @@ body {
 }
 
 @media screen and (max-width:1201px) {
+    #lightgallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        a {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        padding-bottom: 90px;
+        .blur-up {
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+            transition: filter 400ms, -webkit-filter 400ms;
+        }
+        .blur-up.lazyloaded {
+            -webkit-filter: blur(0);
+            filter: blur(0);
+        }
+    }
     #news {
         padding-top: 0;
     }

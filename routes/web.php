@@ -24,6 +24,7 @@ Route::get('/', 'MainController@index')->name('main');
 Route::get('/programm', 'MainController@programm')->name('programm');
 
 Route::get('/result', 'MainController@result')->name('result');
+Route::get('/photos', 'MainController@photos')->name('photos');
 
 Route::post('/contact', 'MainController@contact');
 Route::post('/main_form', 'MainController@main_form');

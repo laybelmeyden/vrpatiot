@@ -3,6 +3,7 @@
         <a href="/#about__main">О конкурсе<div></div></a>
         <a href="/#nominations">НОМИНАЦИИ<div></div></a>
         <a href="/#news">НОВОСТИ<div></div></a>
+        <a href="/photos">ГАЛЕРЕЯ<div></div></a>
         <a href="/#org">ОРГАНИЗАТОР<div></div></a>
         <a href="/#footer">Обратная связь<div></div></a>
     </div>
