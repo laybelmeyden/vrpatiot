@@ -7,7 +7,7 @@
     <div id="lightgallery">
         @foreach($result as $item)
         <a href="/assets/img/light/{{$item}}">
-            <img src="/assets/img/light/{{$item}}" class="lazyload blur-up" data-sizes="auto"/>
+            <img src="/assets/img/light/{{$item}}" class="lazyload" data-sizes="auto"/>
         </a>
         @endforeach
     </div>
