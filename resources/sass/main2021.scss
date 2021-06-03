@@ -807,6 +807,10 @@ body {
     overflow: hidden;
 }
 
+.frames__video {
+    height: 550px;
+}
+
 @media screen and (max-width:1201px) {
     #lightgallery {
         display: grid;
