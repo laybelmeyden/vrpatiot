@@ -132,7 +132,7 @@
   </div>
   <div class="container">
     <div class="slider-produtos-wrap">
-      <div class="slider-produtos-destaque swiper-container">
+      <div class="slider-produtos-destaque swiper">
         <div class="swiper-wrapper">
 
           @foreach ($news as $new)

@@ -50,7 +50,7 @@ for (var i = 0; i < x.length; i++) {
 
     var el = x[i];
 
-    var swiper = el.getElementsByClassName("swiper-container")[0];
+    var swiper = el.getElementsByClassName("swiper")[0];
     var nx = el.getElementsByClassName("swiper-next")[0];
     var pr = el.getElementsByClassName("swiper-prev")[0];
 
